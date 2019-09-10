@@ -1,0 +1,25 @@
+$brown: #a07b50;
+$lightbrown: #ddd0c3;
+$white: #ffffff;
+$lightgray-background: #1f1c1d;
+$darkgray-background: #151313;
+$tablet-max-width: 1023px;
+$mobile-max-width: 767px;
+
+@mixin tablet-breakpoint {
+  @media (max-width: $tablet-max) {
+    @content;
+  }
+}
+
+@mixin mobile-breakpoint {
+  @media (max-width: $mobile-max) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
