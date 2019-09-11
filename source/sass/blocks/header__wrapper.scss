@@ -1,20 +1,19 @@
 .header__wrapper {
   margin: 0 auto;
-  width: 70.3%;
+  width: auto;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  flex-wrap: wrap;
   padding-top: 46px;
-  padding-bottom: 173px;
+  padding-bottom: 64px;
   overflow: hidden;
   z-index: 2;
 }
 
 @media (max-width: $tablet-max-width) {
   .header__wrapper {
-    width: 100%;
     padding-top: 28px;
     padding-bottom: 46px;
   }
@@ -23,6 +22,6 @@
 @media (max-width: $mobile-max-width) {
   .header__wrapper {
     padding-top: 25px;
-    padding-bottom: 280px;
+    padding-bottom: 281px;
   }
 }

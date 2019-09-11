@@ -2,13 +2,18 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   overflow: hidden;
 
   &--header {
     flex-direction: column;
-    justify-content: space-between;
-    max-height: 68px;
+
+    li {
+      margin-top: 9px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
 
     svg {
       fill: $white;
@@ -30,11 +35,11 @@
   .social {
     &--header {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
       max-height: auto;
-      max-width: 60px;
 
       li {
+        margin-top: 0;
         margin-right: 8px;
 
         &:last-of-type {
