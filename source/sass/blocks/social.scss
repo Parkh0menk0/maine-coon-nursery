@@ -1,0 +1,46 @@
+.social {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+
+  &--header {
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 68px;
+
+    svg {
+      fill: $white;
+      transition: all 0.3s ease-out;
+
+      &:hover,
+      &:focus {
+        fill: $brown;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .social {
+    &--header {
+      flex-direction: row;
+      justify-content: space-between;
+      max-height: auto;
+      max-width: 60px;
+
+      li {
+        margin-right: 8px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,2 +1,14 @@
-@import "fonts";
-@import "utils";
+@charset "UTF-8";
+@import "global/normalize";
+@import "global/variables";
+@import "global/fonts";
+@import "global/mixins";
+@import "global/common";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/header__wrapper";
+@import "blocks/crown";
+@import "blocks/header__content";
+@import "blocks/header__social";
+@import "blocks/social";
+@import "blocks/header__cat";
