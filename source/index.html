@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,81 @@
   <title>Питомник Мейн Кунов</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <div style="display:none;">
     <include src="build/img/svg/sprite_auto.svg"></include>
   </div>
 
+  <div class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <svg class="crown  crown--header" width="57" height="26">
+          <use xlink:href="#icon-crown" x="0" y="0"></use>
+        </svg>
+        <div class="header__content">
+          <p>Новосибирск</p>
+          <h1>Питомник<br>Мейн-Кунов</h1>
+          <p>
+            <b>Первый питомник с расширенным<br>спектром услуг</b>
+          </p>
+          <a href="#">Смотреть котиков</a>
+        </div>
+        <div class="header__social">
+          <ul class="social  social--header">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <span class="visually-hidden">ВКонтакте</span>
+                <svg class="social__icon" width="15" height="12">
+                  <use xlink:href="#icon-vk" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="social__icon" width="17" height="12">
+                  <use xlink:href="#icon-twitter" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="social__icon" width="7" height="12">
+                  <use xlink:href="#icon-facebook" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__cat">
+        <picture>
+          <!-- 1х: 275x256 px; 2x: 550x512 px; 3x: 825x768 px -->
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/main-cat-mobile@1x.webp 1x, img/main-cat-mobile@2x.webp 2x, img/main-cat-mobile@3x.webp 3x">
+          <!-- 1х: 534x534 px; 2x: 1067x1067 px; 3x: 1600x1600 px -->
+          <source type="image/webp" media="(max-width: 1023px)"
+            srcset="img/main-cat-tablet@1x.webp 1x, img/main-cat-tablet@2x.webp 2x, img/main-cat-tablet@3x.webp 3x">
+          <!-- 1х: 684x684 px; 2x: 1368x1368 px; 3x: 2052x2052 px -->
+          <source type="image/webp"
+            srcset="img/main-cat-desktop@1x.webp 1x, img/main-cat-desktop@2x.webp 2x, img/main-cat-desktop@3x.webp 3x">
+
+          <!-- 1х: 275x256 px; 2x: 550x512 px; 3x: 825x768 px -->
+          <source media="(max-width: 767px)"
+            srcset="img/main-cat-mobile@1x.png 1x, img/main-cat-mobile@2x.png 2x, img/main-cat-mobile@3x.png 3x">
+          <!-- 1х: 534x534 px; 2x: 1067x1067 px; 3x: 1600x1600 px -->
+          <source media="(max-width: 1023px)"
+            srcset="img/main-cat-tablet@1x.png 1x, img/main-cat-tablet@2x.png 2x, img/main-cat-tablet@3x.png 3x">
+          <!-- 1х: 684x684 px; 2x: 1368x1368 px; 3x: 2052x2052 px -->
+          <img src="img/main-cat-desktop@1x.png" srcset="img/main-cat-desktop@2x.png 2x, img/main-cat-desktop@3x.png 3x"
+            alt="Мейн Кун">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <!-- /.header -->
 </body>
+
 </html>
