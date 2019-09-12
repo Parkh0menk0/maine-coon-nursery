@@ -1,0 +1,31 @@
+.pets__list {
+  @include list-reset;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+
+  li {
+    margin-right: 45px;
+    opacity: 0.5;
+
+    &.current {
+      opacity: 1;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $white;
+  }
+}
