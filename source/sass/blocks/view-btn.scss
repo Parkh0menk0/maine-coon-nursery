@@ -1,0 +1,28 @@
+.view-btn {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid $brown;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  padding: 17px;
+  transition: all 0.3s ease-out;
+  margin-bottom: 110px;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+    border: 1px solid $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
