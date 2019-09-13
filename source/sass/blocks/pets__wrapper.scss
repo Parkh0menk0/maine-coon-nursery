@@ -2,3 +2,9 @@
   width: auto;
   padding-top: 223px;
 }
+
+@media (max-width: $tablet-max-width) {
+  .pets__wrapper {
+    padding-top: 102px;
+  }
+}

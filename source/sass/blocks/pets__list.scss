@@ -32,3 +32,9 @@
     color: $white;
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .pets__list {
+    width: 39%;
+  }
+}
