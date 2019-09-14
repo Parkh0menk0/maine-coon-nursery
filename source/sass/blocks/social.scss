@@ -8,16 +8,11 @@
     flex-direction: column;
 
     li {
-      margin-top: 14px;
-      height: 12px;
+      margin-top: 9px;
 
       &:first-of-type {
         margin-top: 0;
       }
-    }
-
-    a {
-      height: 12px;
     }
 
     svg {
