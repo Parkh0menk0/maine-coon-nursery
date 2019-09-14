@@ -31,3 +31,14 @@
     width: 200px;
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .pets {
+    h2 {
+      margin-bottom: 22px;
+    }
+    p {
+      margin-bottom: 44px;
+    }
+  }
+}

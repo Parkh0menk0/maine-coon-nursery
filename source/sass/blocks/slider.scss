@@ -1,3 +1,27 @@
 .slider {
-  background-color: red;
+  width: 84%;
+  position: relative;
+  overflow: hidden;
+  transform: translateX(-2.2%);
+
+  .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    transition: all ease 1s;
+  }
+
+  .slide {
+    display: block;
+    flex-shrink: 0;
+
+    &--w474 {
+      display: block;
+    }
+  }
+
 }

@@ -100,10 +100,18 @@
               <a href="#" class="pets__link">Котята</a>
             </li>
           </ul>
-          <div class="gallery">
-            <div class="gallery__wrapper  slider__wrapper">
-              <div class="gallery__layout-column">
-                <div class="gallery__item  slider__item">
+
+          <div class="slider-wrapper">
+            <button class="slider__control  slider__control--left">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg width="15" height="31" viewBox="0 0 15 31">
+                <use xlink:href="#icon-arrow-prev" x="0" y="0"></use>
+              </svg>
+            </button>
+            <section class="slider">
+              <h3 class="visually-hidden">Галерея питомцев</h3>
+              <div class="line">
+                <div class="slide  slide--w468">
                   <picture>
                     <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                     <source type="image/webp" media="(max-width: 767px)"
@@ -125,7 +133,7 @@
                     <img src="img/pets-list-1-desktop@1x.jpg" srcset="img/pets-list-1-desktop@2x.jpg 2x" alt="Мейн Кун">
                   </picture>
                 </div>
-                <div class="gallery__item  slider__item">
+                <div class="slide  slide--w415">
                   <picture>
                     <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                     <source type="image/webp" media="(max-width: 767px)"
@@ -147,28 +155,67 @@
                     <img src="img/pets-list-2-desktop@1x.jpg" srcset="img/pets-list-2-desktop@2x.jpg 2x" alt="Мейн Кун">
                   </picture>
                 </div>
+                <div class="slide  slide--w474">
+                  <picture>
+                    <!-- 1х: 275x256 px; 2x: 550x512 px; -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/pets-list-3-mobile@1x.webp 1x, img/pets-list-3-mobile@2x.webp 2x">
+                    <!-- 1х: 474x495 px; 2x: 948x990 px; -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/pets-list-3-tablet@1x.webp 1x, img/pets-list-3-tablet@2x.webp 2x">
+                    <!-- 1х: 471x485 px; 2x: 942x970 px; -->
+                    <source type="image/webp"
+                      srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
+
+                    <!-- 1х: 275x256 px; 2x: 550x512 px; -->
+                    <source media="(max-width: 767px)"
+                      srcset="img/pets-list-3-mobile@1x.jpg 1x, img/pets-list-3-mobile@2x.jpg 2x">
+                    <!-- 1х: 474x495 px; 2x: 948x990 px; -->
+                    <source media="(max-width: 1023px)"
+                      srcset="img/pets-list-3-tablet@1x.jpg 1x, img/pets-list-3-tablet@2x.jpg 2x">
+                    <!-- 1х: 471x485 px; 2x: 942x970 px; -->
+                    <img src="img/pets-list-3-desktop@1x.jpg" srcset="img/pets-list-3-desktop@2x.jpg 2x" alt="Мейн Кун">
+                  </picture>
+                </div>
+              </div>
+            </section>
+            <button class="slider__control  slider__control--right">
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg width="15" height="31" viewBox="0 0 15 31">
+                <use xlink:href="#icon-arrow-next" x="0" y="0"></use>
+              </svg>
+            </button>
+          </div>
+
+          <!-- <div class="gallery  slider">
+
+            <div class="cards-wrapper">
+              <ul class="cards__container">
+                <li class="box">
+
+                </li>
+                <li class="box">
+
+                </li>
+                <li class="box">
+
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <!-- <div class="gallery">
+            <div class="gallery__wrapper  slider__wrapper">
+              <div class="gallery__layout-column">
+                <div class="gallery__item  slider__item">
+
+                </div>
+                <div class="gallery__item  slider__item">
+
+                </div>
               </div>
               <div class="gallery__item  slider__item">
-                <picture>
-                  <!-- 1х: 275x256 px; 2x: 550x512 px; -->
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/pets-list-3-mobile@1x.webp 1x, img/pets-list-3-mobile@2x.webp 2x">
-                  <!-- 1х: 534x534 px; 2x: 1067x1067 px; -->
-                  <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="img/pets-list-3-tablet@1x.webp 1x, img/pets-list-3-tablet@2x.webp 2x">
-                  <!-- 1х: 471x485 px; 2x: 942x970 px; -->
-                  <source type="image/webp"
-                    srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
 
-                  <!-- 1х: 275x256 px; 2x: 550x512 px; -->
-                  <source media="(max-width: 767px)"
-                    srcset="img/pets-list-3-mobile@1x.jpg 1x, img/pets-list-3-mobile@2x.jpg 2x">
-                  <!-- 1х: 534x534 px; 2x: 1067x1067 px; -->
-                  <source media="(max-width: 1023px)"
-                    srcset="img/pets-list-3-tablet@1x.jpg 1x, img/pets-list-3-tablet@2x.jpg 2x">
-                  <!-- 1х: 471x485 px; 2x: 942x970 px; -->
-                  <img src="img/pets-list-3-desktop@1x.jpg" srcset="img/pets-list-3-desktop@2x.jpg 2x" alt="Мейн Кун">
-                </picture>
               </div>
             </div>
             <a class="slider__control slider__control--left" href="#" role="button">
@@ -177,7 +224,8 @@
             <a class="slider__control slider__control--right slider__control--show" href="#" role="button">
               <span class="visually-hidden">Предыдущий слайд</span>
             </a>
-          </div>
+          </div> -->
+
           <a href="#" class="view-btn">Смотреть больше</a>
         </div>
       </div>
