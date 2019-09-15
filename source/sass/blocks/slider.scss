@@ -1,27 +1,13 @@
-.slider {
-  width: 84%;
-  position: relative;
-  overflow: hidden;
-  transform: translateX(-2.2%);
-
-  .line {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+@media (max-width: $tablet-max-width) {
+  .slider {
+    width: 84%;
     position: relative;
     overflow: hidden;
-    left: 0;
-    transition: all ease 1s;
-  }
+    transform: translateX(-2.2%);
 
-  .slide {
-    display: block;
-    flex-shrink: 0;
-
-    &--w474 {
+    .slide {
       display: block;
+      flex-shrink: 0;
     }
   }
-
 }

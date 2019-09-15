@@ -1,5 +1,18 @@
 .gallery__wrapper {
-  align-self: flex-start;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 }
+
+
+
+// .line {
+//
+//
+//
+//   align-items: center;
+//   position: relative;
+//   overflow: hidden;
+//   left: 0;
+//   transition: all ease 1s;
+// }
