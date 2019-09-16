@@ -23,3 +23,21 @@
     }
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .slider__control {
+    width: 15px;
+    height: 31px;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      fill: transparent;
+      stroke: $brown;
+      stroke-width: 2;
+      width: 15px;
+      height: 31px;
+    }
+  }
+}

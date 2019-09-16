@@ -52,11 +52,11 @@
         </div>
         <div class="header__content">
           <p>Новосибирск</p>
-          <h1>Питомник<br>Мейн-Кунов</h1>
+          <h1 class="header__title">Питомник<br>Мейн-Кунов</h1>
           <p>
             <b>Первый питомник с расширенным<br>спектром услуг</b>
           </p>
-          <a href="#" class="view-btn">Смотреть котиков</a>
+          <a href="#">Смотреть котиков</a>
         </div>
       </div>
     </div>
@@ -83,8 +83,8 @@
     <section class="pets">
       <div class="container">
         <div class="pets__wrapper">
-          <h2>Питомцы</h2>
-          <p>Все представители нашего питомника имеют ветеринарный паспорт<br>с отметками о прививках и документ с
+          <h2 class="pets__title">Питомцы</h2>
+          <p class="pets__lead">Все представители нашего питомника имеют ветеринарный паспорт<br>с отметками о прививках и документ с
             родословной
           </p>
           <ul class="pets__list">
@@ -174,53 +174,126 @@
               </svg>
             </button>
           </div>
-          <a href="#" class="view-btn">Смотреть больше</a>
+          <a href="#" class="pets__btn">Смотреть больше</a>
         </div>
       </div>
     </section>
     <!-- /.pets -->
     <section class="breed-features">
-      <div class="breed-features__content container">
-        <h2 class="breed-features__heading">Особенности породы</h2>
-        <p class="breed-features__lead">
-          Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите
-          умное животное, которому нет равных
-        </p>
-        <div class="breed-features__image">
-          <picture>
-            <!-- 1х: 267x291px, 2x: 534x582px -->
-            <source type="image/webp" srcset="img/breed-features-mobile@1x.webp 1x, img/breed-features-mobile@2x.webp 2x" media="(max-width: 767px)">
-            <!-- 1х: 410x430px, 2x: 820x863px -->
-            <source type="image/webp" srcset="img/breed-features-tablet@1x.webp 1x, img/breed-features-tablet@2x.webp 2x" media="(max-width: 1023px)">
-            <!-- 1х: 623x640px, 2x: 1204x1283px -->
-            <source type="image/webp" srcset="img/breed-features-desktop@1x.webp 1x, img/breed-features-desktop@2x.webp 2x">
+      <div class="container">
+        <div class="breed-features__wrapper">
+          <h2 class="breed-features__title">Особенности породы</h2>
+          <p class="breed-features__lead">
+            Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите
+            умное животное, которому нет равных
+          </p>
+          <div class="breed-features__image">
+            <picture>
+              <!-- 1х: 267x291px, 2x: 534x582px -->
+              <source type="image/webp" srcset="img/breed-features-mobile@1x.webp 1x, img/breed-features-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <!-- 1х: 410x430px, 2x: 820x863px -->
+              <source type="image/webp" srcset="img/breed-features-tablet@1x.webp 1x, img/breed-features-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <!-- 1х: 623x640px, 2x: 1204x1283px -->
+              <source type="image/webp" srcset="img/breed-features-desktop@1x.webp 1x, img/breed-features-desktop@2x.webp 2x">
 
-            <!-- 1х: 267x291px, 2x: 534x582px -->
-            <source srcset="img/breed-features-mobile@1x.png 1x, img/breed-features-mobile@2x.png 2x" media="(max-width: 767px)">
-            <!-- 1х: 410x430px, 2x: 820x863px -->
-            <source srcset="img/breed-features-tablet@1x.png 1x, img/breed-features-tablet@2x.png 2x" media="(max-width: 1023px)">
-            <!-- 1х: 623x640px, 2x: 1204x1283px -->
-            <img src="img/breed-features-desktop@1x.png" srcset="img/breed-features-desktop@2x.png 2x" alt="Изображение рыжего Мейн Куна">
-          </picture>
+              <!-- 1х: 267x291px, 2x: 534x582px -->
+              <source srcset="img/breed-features-mobile@1x.png 1x, img/breed-features-mobile@2x.png 2x" media="(max-width: 767px)">
+              <!-- 1х: 410x430px, 2x: 820x863px -->
+              <source srcset="img/breed-features-tablet@1x.png 1x, img/breed-features-tablet@2x.png 2x" media="(max-width: 1023px)">
+              <!-- 1х: 623x640px, 2x: 1204x1283px -->
+              <img src="img/breed-features-desktop@1x.png" srcset="img/breed-features-desktop@2x.png 2x" alt="Изображение рыжего Мейн Куна">
+            </picture>
+          </div>
+          <ul class="breed-features__list">
+            <li class="breed-features__item">
+              Легко уживается в семьях с детьми или другими животными
+            </li>
+            <li class="breed-features__item">
+              Выполняет команды как дрессированная собака
+            </li>
+            <li class="breed-features__item">
+              Вес может достигать 12 кг, а длина 1 м
+            </li>
+            <li class="breed-features__item">
+              Внешний вид этой кошки похож на дикую рысь
+            </li>
+          </ul>
         </div>
-
-        <ul class="breed-features__list">
-          <li class="breed-features__item">
-            Легко уживается в семьях с детьми или другими животными
-          </li>
-          <li class="breed-features__item">
-            Выполняет команды как дрессированная собака
-          </li>
-          <li class="breed-features__item">
-            Вес может достигать 12 кг, а длина 1 м
-          </li>
-          <li class="breed-features__item">
-            Внешний вид этой кошки похож на дикую рысь
-          </li>
-        </ul>
       </div>
     </section>
     <!-- /.breed-features -->
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title">Почему именно мы?</h2>
+          <p class="advantages__lead">Приобретая животное в нашем питомнике, вы получите</p>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <a href="#" class="advantages__link">
+                <svg class="icon-free-vet" width="99" height="107" viewBox="0 0 99 107">
+                  <use xlink:href="#icon-free-vet" x="0" y="0"></use>
+                </svg>
+                <span>Бесплатное ветеринарное обслуживание 5 лет</span>
+              </a>
+            </li>
+            <li class="advantages__item">
+              <a href="#" class="advantages__link">
+                <svg class="icon-counseling24" width="107" height="97" viewBox="0 0 107 97">
+                  <use xlink:href="#icon-counseling24" x="0" y="0"></use>
+                </svg>
+                <span>Консультирование по любому вопросу 24 часа в сутки</span>
+              </a>
+            </li>
+            <li class="advantages__item">
+              <a href="#" class="advantages__link">
+                <svg class="icon-food-selection" width="71" height="108" viewBox="0 0 71 108">
+                  <use xlink:href="#icon-food-selection" x="0" y="0"></use>
+                </svg>
+                <span>Индивидуальный подбор питания для вашего кота</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /.advantages -->
+    <section class="care">
+      <div class="container">
+        <div class="care__wrapper">
+          <h2 class="care__title">Об уходе<br> за Мейн-Куном</h2>
+          <ul class="care__list">
+            <li class="care__item">
+              <a href="#" class="care__link">
+                <h3>Шерсть</h3>
+                <p>Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и
+                  послушной</p>
+              </a>
+            </li>
+            <li class="care__item">
+              <a href="#" class="care__link">
+                <h3>Когти</h3>
+                <p>Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку
+                </p>
+              </a>
+            </li>
+            <li class="care__item">
+              <a href="#" class="care__link">
+                <h3>Уши и глаза</h3>
+                <p>Владельцам котов необходимо регулярно осматривать ушки и глазасвоих питомцев, ведь это может быть
+                  признаками заболевания</p>
+              </a>
+            </li>
+            <li class="care__item">
+              <a href="#" class="care__link">
+                <h3>Питание</h3>
+                <p>В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но
+                  выбирать только вам</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
   <script src="js/main.min.js"></script>
 </body>

@@ -1,0 +1,24 @@
+.care__list {
+  @include list-reset;
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: $tablet-max-width) {
+  .care__list {
+    flex-direction: column;
+    width: 78.2%;
+    transform: translateX(8px);
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .care__list {
+    width: 100%;
+    transform: translateX(0);
+  }
+}

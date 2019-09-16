@@ -1,0 +1,29 @@
+.breed-features__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $yesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: $white;
+  text-align: center;
+  transform: translateX(11px);
+}
+
+@media (max-width: $tablet-max-width) {
+  .breed-features__title {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .breed-features__title {
+    margin-bottom: 25px;
+    text-align: center;
+    max-width: 289px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+

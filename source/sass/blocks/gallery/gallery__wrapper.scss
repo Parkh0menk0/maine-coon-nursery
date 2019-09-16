@@ -1,0 +1,30 @@
+.gallery__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+@media (max-width: $tablet-max-width) {
+  .gallery__wrapper {
+    min-height: 451px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .gallery__wrapper {
+    min-height: 451px;
+  }
+}
+
+
+
+// .line {
+//
+//
+//
+//   align-items: center;
+//   position: relative;
+//   overflow: hidden;
+//   left: 0;
+//   transition: all ease 1s;
+// }

@@ -1,0 +1,27 @@
+.advantages__lead {
+  margin: 0;
+  margin-bottom: 46px;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: $brown;
+  word-spacing: 2px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .advantages__lead {
+    margin-bottom: 59px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .advantages__lead {
+    word-spacing: 1px;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 36px;
+  }
+}

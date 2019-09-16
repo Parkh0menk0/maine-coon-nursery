@@ -7,3 +7,9 @@
     margin-bottom: 49px;
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .slider-wrapper {
+    min-height: 242px;
+  }
+}

@@ -1,0 +1,15 @@
+.breed-features__wrapper {
+  padding-top: 21px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .breed-features__wrapper {
+    padding-top: 31px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .breed-features__wrapper {
+    padding-top: 32px;
+  }
+}

@@ -1,0 +1,25 @@
+.pets__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $yesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: $white;
+  text-align: center;
+}
+
+@media (max-width: $tablet-max-width) {
+  .pets__title {
+    margin-bottom: 22px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .pets__title {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 22px;
+  }
+}

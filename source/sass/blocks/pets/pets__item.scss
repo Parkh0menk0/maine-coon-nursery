@@ -1,0 +1,12 @@
+.pets__item {
+  margin-right: 45px;
+  opacity: 0.5;
+
+  &.current {
+    opacity: 1;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

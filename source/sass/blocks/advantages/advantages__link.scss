@@ -1,0 +1,88 @@
+.advantages__link {
+  display: block;
+  max-width: 320px;
+  min-height: 263px;
+  margin: auto;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: $white;
+  padding-top: 47px;
+  padding-bottom: 16px;
+
+  &:hover {
+    background-color: $brown;
+
+    svg {
+      fill: $white;
+      stroke: $brown;
+    }
+  }
+
+  svg {
+    margin: 0 auto;
+    fill: $brown;
+    stroke-width: 2;
+    stroke: $lightgray-background;
+    margin-bottom: 23px;
+
+    &.icon-counseling24 {
+      margin-bottom: 33px;
+    }
+  }
+
+  span {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 233px;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .advantages__link {
+    padding-top: 49px;
+    min-height: 272px;
+
+    svg {
+      margin-bottom: 27px;
+
+      &.icon-counseling24 {
+        margin-bottom: 35px;
+      }
+    }
+
+    span {
+      transform: translateX(3px);
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .advantages__link {
+    font-size: 14px;
+    line-height: 140%;
+    padding-top: 39px;
+    max-width: 260px;
+    min-height: 218px;
+
+    svg {
+      width: 80px;
+      height: 90px;
+      transform: translateX(7px);
+      margin-bottom: 10px;
+
+      &.icon-counseling24 {
+        margin-bottom: 2px;
+      }
+    }
+
+    span {
+      transform: translateX(7px);
+      max-width: 213px;
+    }
+  }
+}
