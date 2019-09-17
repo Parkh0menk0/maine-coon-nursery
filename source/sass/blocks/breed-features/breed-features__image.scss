@@ -4,6 +4,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 142px;
+  transform: translateX(34px);
 
   &::before {
     content: "";
