@@ -19,5 +19,6 @@
 @media (max-width: $mobile-max-width) {
   .care__list {
     width: 100%;
+    transform: translateX(0);
   }
 }
