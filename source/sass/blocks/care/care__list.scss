@@ -12,13 +12,11 @@
   .care__list {
     flex-direction: column;
     width: 78.2%;
-    transform: translateX(8px);
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .care__list {
     width: 100%;
-    transform: translateX(0);
   }
 }

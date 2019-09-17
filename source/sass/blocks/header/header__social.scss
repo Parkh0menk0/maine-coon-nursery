@@ -1,15 +1,38 @@
 .header__social {
   position: relative;
   flex-direction: column;
-  margin-top: auto;
-  align-items: flex-start;
-  width: 10.2%;
+  flex-wrap: nowrap;
+  width: 10.3%;
+  padding-right: 113px;
+  padding-top: 373px;
+
+  li {
+    margin-top: 10px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  svg {
+    fill: $white;
+    transition: all 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+      fill: $brown;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 
   &::before {
     content: "";
     position: absolute;
-    top: -106px;
-    left: 6px;
+    top: 267px;
+    left: 7px;
     height: 77.5px;
     width: 1px;
     background-color: rgba(255, 255, 255, 0.61);
@@ -20,8 +43,20 @@
 
 @media (max-width: $tablet-max-width) {
   .header__social {
+    flex-direction: row;
+    max-height: auto;
     width: 100%;
     order: 2;
+    padding-top: 0;
+
+    li {
+      margin-top: 0;
+      margin-right: 8px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
 
     &::before {
       display: none;

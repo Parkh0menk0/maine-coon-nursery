@@ -8,13 +8,11 @@
   line-height: 42px;
   color: $white;
   text-align: center;
-  transform: translateX(11px);
 }
 
 @media (max-width: $tablet-max-width) {
-  .breed-features__title {
-    transform: translateX(0);
-  }
+  // .breed-features__title {
+  // }
 }
 
 @media (max-width: $mobile-max-width) {

@@ -1,5 +1,5 @@
 .header__content {
-  width: 89.8%;
+  width: 89.7%;
 
   p {
     margin: 0;
@@ -33,19 +33,19 @@
   }
 
   a {
+    text-align: center;
     width: 200px;
     font-family: $roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 14px;
     color: $white;
     display: block;
     overflow: hidden;
     cursor: pointer;
     border: 1px solid $brown;
     background-color: transparent;
-    text-align: center;
     text-decoration: none;
     padding: 18px;
     transition: all 0.3s ease-out;

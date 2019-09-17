@@ -1,10 +1,13 @@
 @charset "UTF-8";
+// Глобальные стили
 @import "global/normalize";
 @import "global/variables";
 @import "global/fonts";
 @import "global/mixins";
 @import "global/common";
 @import "global/container";
+// Социальные сети
+@import "blocks/social/social";
 // Главный блок
 @import "blocks/header/header";
 @import "blocks/header/header__wrapper";
@@ -12,7 +15,11 @@
 @import "blocks/header/header__content";
 @import "blocks/header/header__social";
 @import "blocks/header/header__cat";
-@import "blocks/social";
+// Слайдер
+@import "blocks/slider/slider-team";
+@import "blocks/slider/slider-wrapper";
+@import "blocks/slider/slider";
+@import "blocks/slider/slider__control";
 // Питомцы
 @import "blocks/pets/pets";
 @import "blocks/pets/pets__wrapper";
@@ -26,9 +33,6 @@
 @import "blocks/gallery/gallery__wrapper";
 @import "blocks/gallery/gallery__layout-column";
 @import "blocks/gallery/gallery__item";
-@import "blocks/slider-wrapper";
-@import "blocks/slider";
-@import "blocks/slider__control";
 // Особенности породы
 @import "blocks/breed-features/breed-features";
 @import "blocks/breed-features/breed-features__wrapper";
@@ -52,3 +56,12 @@
 @import "blocks/care/care__list";
 @import "blocks/care/care__item";
 @import "blocks/care/care__link";
+// Наша команда
+@import "blocks/team/team";
+@import "blocks/team/team__wrapper";
+@import "blocks/team/team__title";
+@import "blocks/team/team__lead";
+@import "blocks/team/team__list";
+@import "blocks/team/team__item";
+@import "blocks/team/team__item-wrapper";
+@import "blocks/team/team__social";

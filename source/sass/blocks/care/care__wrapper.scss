@@ -1,18 +1,18 @@
 .care__wrapper {
   padding-top: 84px;
-  padding-bottom: 55px;
+  padding-bottom: 56px;
 }
 
 @media (max-width: $tablet-max-width) {
   .care__wrapper {
     padding-top: 90px;
-    // padding-bottom: 55px;
+    padding-bottom: 76px;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .care__wrapper {
     padding-top: 54px;
-    // padding-bottom: 55px;
+    padding-bottom: 48px;
   }
 }

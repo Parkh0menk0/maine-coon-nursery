@@ -4,7 +4,6 @@
   position: relative;
   z-index: 1;
   margin-bottom: 142px;
-  transform: translateX(33px);
 
   &::before {
     content: "";
@@ -33,7 +32,6 @@
 
 @media (max-width: $tablet-max-width) {
   .breed-features__image {
-    transform: translateX(115px);
 
     & img {
       width: 401px;

@@ -1,0 +1,18 @@
+.team__wrapper {
+  padding-top: 83px;
+  padding-bottom: 72px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .team__wrapper {
+    padding-top: 83px;
+    padding-bottom: 193px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .team__wrapper {
+    padding-top: 53px;
+    padding-bottom: 60px;
+  }
+}

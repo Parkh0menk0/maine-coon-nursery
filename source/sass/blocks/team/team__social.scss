@@ -1,0 +1,54 @@
+.team__social {
+  align-items: center;
+
+  li {
+    // margin-right: 10px;
+
+    &:first-of-type {
+      order: 3;
+    }
+
+    &:nth-of-type(2) {
+      order: 2;
+    }
+
+    &:last-of-type {
+      order: 1;
+    }
+
+    &:first-of-type svg {
+      width: 21px;
+      height: 12px;
+    }
+
+    &:nth-of-type(2) svg {
+      width: 34px;
+      height: 18px;
+    }
+
+    &:last-of-type svg {
+      width: 12px;
+      height: 15px;
+    }
+  }
+
+  svg {
+    fill: $white;
+    transition: all 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+      fill: $brown;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .team__social {
+    justify-content: center;
+  }
+}

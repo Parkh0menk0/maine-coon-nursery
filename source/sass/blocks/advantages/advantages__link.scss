@@ -54,10 +54,6 @@
         margin-bottom: 35px;
       }
     }
-
-    span {
-      transform: translateX(3px);
-    }
   }
 }
 
@@ -72,7 +68,6 @@
     svg {
       width: 80px;
       height: 90px;
-      transform: translateX(7px);
       margin-bottom: 10px;
 
       &.icon-counseling24 {
@@ -81,7 +76,6 @@
     }
 
     span {
-      transform: translateX(7px);
       max-width: 213px;
     }
   }

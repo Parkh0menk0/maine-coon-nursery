@@ -1,0 +1,26 @@
+.team__lead {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: $brown;
+}
+
+@media (max-width: $tablet-max-width) {
+  .team__lead {
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .team__lead {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 99px;
+  }
+}

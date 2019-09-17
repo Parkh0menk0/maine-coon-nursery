@@ -22,34 +22,32 @@
             <use xlink:href="#icon-crown" x="0" y="0"></use>
           </svg>
         </a>
-        <div class="header__social">
-          <ul class="social  social--header">
-            <li class="social__item">
-              <a href="" class="social__link">
-                <span class="visually-hidden">ВКонтакте</span>
-                <svg class="social__icon" width="13" height="8" viewBox="0 0 21 12">
-                  <use xlink:href="#icon-vk" x="0" y="0"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link">
-                <span class="visually-hidden">Твиттер</span>
-                <svg class="social__icon" width="17" height="12" viewBox="0 0 21 15">
-                  <use xlink:href="#icon-twitter" x="0" y="0"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link">
-                <span class="visually-hidden">Фейсбук</span>
-                <svg class="social__icon" width="7" height="12" viewBox="0 0 7 12">
-                  <use xlink:href="#icon-facebook" x="0" y="0"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social  header__social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <span class="visually-hidden">ВКонтакте</span>
+              <svg class="social__icon" width="13" height="8" viewBox="0 0 13 8">
+                <use xlink:href="#icon-vk" x="0" y="0"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <span class="visually-hidden">Твиттер</span>
+              <svg class="social__icon" width="16" height="11" viewBox="0 0 16 11">
+                <use xlink:href="#icon-twitter" x="0" y="0"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="social__icon" width="6" height="12" viewBox="0 0 6 12">
+                <use xlink:href="#icon-facebook" x="0" y="0"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
         <div class="header__content">
           <p>Новосибирск</p>
           <h1 class="header__title">Питомник<br>Мейн-Кунов</h1>
@@ -86,7 +84,8 @@
       <div class="container">
         <div class="pets__wrapper">
           <h2 class="pets__title">Питомцы</h2>
-          <p class="pets__lead">Все представители нашего питомника имеют ветеринарный паспорт<br>с отметками о прививках и документ с
+          <p class="pets__lead">Все представители нашего питомника имеют ветеринарный паспорт<br>с отметками о прививках
+            и документ с
             родословной
           </p>
           <ul class="pets__list">
@@ -102,7 +101,7 @@
           </ul>
 
           <div class="slider-wrapper">
-            <button class="slider__control  slider__control--left">
+            <button type="button" class="slider__control  slider__control--left">
               <span class="visually-hidden">Предыдущий слайд</span>
               <svg width="15" height="31" viewBox="0 0 15 31">
                 <use xlink:href="#icon-arrow-prev" x="0" y="0"></use>
@@ -321,6 +320,83 @@
         </div>
       </div>
     </section>
+    <!-- /.care -->
+    <section class="team">
+      <div class="container">
+        <div class="team__wrapper">
+          <h2 class="team__title">Наша команда</h2>
+          <p class="team__lead">Все сотрудники нашего питомника дипломированые специалисты<br>
+            в области фелинологии и ветеринарии</p>
+          <section class="slider-team">
+            <h3 class="visually-hidden">Сотрудники</h3>
+            <button type="button">
+              <span class="visually-hidden">Предыдущий сотрудник</span>
+            </button>
+            <ul class="team__list">
+              <li class="team__item" itemscope itemtype="http://schema.org/Person">
+                <picture>
+                  <!-- 1х: 275x256 px; 2x: 550x512 px; -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/employee-1-mobile@1x.webp 1x, img/employee-1-mobile@2x.webp 2x">
+                  <!-- 1х: 534x534 px; 2x: 1067x1067 px; -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/employee-1-tablet@1x.webp 1x, img/employee-1-tablet@2x.webp 2x">
+                  <!-- 1х: 684x684 px; 2x: 1368x1368 px; -->
+                  <source type="image/webp"
+                    srcset="img/employee-1-desktop@1x.webp 1x, img/employee-1-desktop@2x.webp 2x">
+
+                  <!-- 1х: 275x256 px; 2x: 550x512 px; -->
+                  <source media="(max-width: 767px)"
+                    srcset="img/employee-1-mobile@1x.jpg 1x, img/employee-1-mobile@2x.jpg 2x">
+                  <!-- 1х: 534x534 px; 2x: 1067x1067 px; -->
+                  <source media="(max-width: 1023px)"
+                    srcset="img/employee-1-tablet@1x.jpg 1x, img/employee-1-tablet@2x.jpg 2x">
+                  <!-- 1х: 684x684 px; 2x: 1368x1368 px; -->
+                  <img src="img/employee-1-desktop@1x.jpg" srcset="img/employee-1-desktop@2x.jpg 2x" alt="Работник"
+                    itemprop="image">
+                </picture>
+                <div class="team__item-wrapper">
+                  <h4 itemprop="name">Серёжа Попов</h4>
+                  <b itemprop="jobTitle">Основатель питомника</b>
+                  <p>Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого
+                    приобретенного вами питомца</p>
+                  <ul class="social  team__social">
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <span class="visually-hidden">ВКонтакте</span>
+                        <svg class="social__icon" width="13" height="8" viewBox="0 0 13 8">
+                          <use xlink:href="#icon-vk" x="0" y="0"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <span class="visually-hidden">Твиттер</span>
+                        <svg class="social__icon" width="17" height="12" viewBox="0 0 21 15">
+                          <use xlink:href="#icon-twitter" x="0" y="0"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <svg class="social__icon" width="6" height="12" viewBox="0 0 6 12">
+                          <use xlink:href="#icon-facebook" x="0" y="0"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <button type="button">
+              <span class="visually-hidden">Следующий сотрудник</span>
+            </button>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- /.team -->
   </main>
   <script src="js/main.min.js"></script>
 </body>
