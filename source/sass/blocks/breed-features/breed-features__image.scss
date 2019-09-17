@@ -33,6 +33,7 @@
 
 @media (max-width: $tablet-max-width) {
   .breed-features__image {
+    transform: translateX(116px);
 
     & img {
       width: 401px;
