@@ -1,26 +1,25 @@
-.advantages__title {
+.faq__title {
   margin: 0;
   margin-bottom: 20px;
+  text-align: center;
   font-family: $yesevaOne;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 42px;
   color: $white;
-  text-align: center;
 }
 
 @media (max-width: $tablet-max-width) {
-  .advantages__title {
-    margin-bottom: 21px;
+  .faq__title {
+    margin-bottom: 19px;
   }
 }
 
 @media (max-width: $mobile-max-width) {
-  .advantages__title {
+  .faq__title {
     font-size: 28px;
     line-height: 32px;
-    max-width: 228px;
-    margin: 0 auto 24px;
+    margin-bottom: 24px;
   }
 }

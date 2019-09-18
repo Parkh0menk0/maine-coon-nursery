@@ -1,0 +1,23 @@
+.faq__list {
+  @include list-reset;
+  counter-reset: faq-counter;
+  width: 75.5%;
+  margin: 0 auto;
+  overflow: hidden;
+  transform: translateX(11px);
+  perspective: 900;
+}
+
+@media (max-width: $tablet-max-width) {
+  .faq__list {
+    transform: translateX(12px);
+    width: 89.1%;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .faq__list {
+    transform: translateX(0);
+    width: 100%;
+  }
+}
