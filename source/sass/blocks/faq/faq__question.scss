@@ -29,10 +29,8 @@
     border-right: 1px solid $brown;
   }
 
-  &--03 br {
-    display: none;
-  }
-
+  &--01 br,
+  &--03 br,
   &--04 br {
     display: none;
   }
@@ -54,7 +52,7 @@
 
 @media (max-width: $mobile-max-width) {
   .faq__question {
-    padding: 10px 50px 11px 14px;
+    padding: 10px 55px 11px 14px;
     font-size: 14px;
     line-height: 140%;
 
@@ -63,13 +61,11 @@
     }
 
     &--02 {
-      padding: 13px 50px 9px 14px;
+      padding: 13px 55px 9px 14px;
     }
 
-    &--03 br {
-      display: block;
-    }
-
+    &--01 br,
+    &--03 br,
     &--04 br {
       display: block;
     }
