@@ -1,18 +1,18 @@
 .faq__wrapper {
   padding-top: 74px;
-  padding-bottom: 72px;
+  padding-bottom: 26px;
 }
 
 @media (max-width: $tablet-max-width) {
   .faq__wrapper {
     padding-top: 137px;
-    padding-bottom: 193px;
+    padding-bottom: 26px;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .faq__wrapper {
     padding-top: 54px;
-    padding-bottom: 60px;
+    padding-bottom: 9px;
   }
 }

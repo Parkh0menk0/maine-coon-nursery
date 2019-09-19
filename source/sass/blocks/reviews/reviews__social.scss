@@ -1,0 +1,48 @@
+.reviews__social {
+  align-items: center;
+
+  li {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border: 1px solid $brown;
+    margin-right: 17px;
+
+    &:first-of-type {
+      order: 3;
+    }
+
+    &:nth-of-type(2) {
+      order: 2;
+    }
+
+    &:last-of-type {
+      order: 1;
+      display: none;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-out;
+    fill: $brown;
+
+    &:hover,
+    &:focus {
+      fill: $white;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .reviews__social {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+.reviews__list {
+  @include list-reset;
+  width: 89%;
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet-max-width) {
+  .reviews__list {
+    width: 81%;
+    transform: translateX(9px);
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .reviews__list {
+    width: 100%;
+    transform: translateX(0);
+  }
+}

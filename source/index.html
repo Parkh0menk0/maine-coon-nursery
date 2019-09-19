@@ -405,9 +405,10 @@
           <ol class="faq__list">
             <li class="faq__item">
               <div class="faq__item-wrapper">
-                <button type="button" class="faq__question  faq__question--01">С какого возраста можно<br> забирать котенка из
+                <button type="button" class="faq__question  faq__question--01">С какого возраста можно<br> забирать
+                  котенка из
                   питомника?</button>
-                <div class="faq__answer">
+                <div class="faq__answer dn">
                   <p>Есть важная причина, почему котенка стоит забирать домой только после трех
                     месяцев, – это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация
                     проводится через 3–4 недели. То
@@ -430,7 +431,8 @@
             </li>
             <li class="faq__item">
               <div class="faq__item-wrapper">
-                <button type="button" class="faq__question  faq__question--03">Можно ли купить кота,<br> если я живу в другом городе?</button>
+                <button type="button" class="faq__question  faq__question--03">Можно ли купить кота,<br> если я живу в
+                  другом городе?</button>
                 <div class="faq__answer">
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!</p>
                 </div>
@@ -438,7 +440,8 @@
             </li>
             <li class="faq__item">
               <div class="faq__item-wrapper">
-                <button type="button" class="faq__question  faq__question--04">Как подготовить дом<br> к приему нового питомца?</button>
+                <button type="button" class="faq__question  faq__question--04">Как подготовить дом<br> к приему нового
+                  питомца?</button>
                 <div class="faq__answer">
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!</p>
                 </div>
@@ -449,6 +452,81 @@
       </div>
     </section>
     <!-- /.faq -->
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews-slider">
+            <button type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <ul class="reviews__list">
+              <li class="reviews__item" itemscope itemtype="http://schema.org/Person">
+                <picture>
+                  <!-- 1х: 275x256 px; 2x: 550x512 px; -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/reviewer-1-mobile@1x.webp 1x, img/reviewer-1-mobile@2x.webp 2x">
+                  <!-- 1х: 534x534 px; 2x: 1067x1067 px; -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/reviewer-1-tablet@1x.webp 1x, img/reviewer-1-tablet@2x.webp 2x">
+                  <!-- 1х: 684x684 px; 2x: 1368x1368 px; -->
+                  <source type="image/webp"
+                    srcset="img/reviewer-1-desktop@1x.webp 1x, img/reviewer-1-desktop@2x.webp 2x">
+
+                  <!-- 1х: 275x256 px; 2x: 550x512 px; -->
+                  <source media="(max-width: 767px)"
+                    srcset="img/reviewer-1-mobile@1x.jpg 1x, img/reviewer-1-mobile@2x.jpg 2x">
+                  <!-- 1х: 534x534 px; 2x: 1067x1067 px; -->
+                  <source media="(max-width: 1023px)"
+                    srcset="img/reviewer-1-tablet@1x.jpg 1x, img/reviewer-1-tablet@2x.jpg 2x">
+                  <!-- 1х: 684x684 px; 2x: 1368x1368 px; -->
+                  <img src="img/reviewer-1-desktop@1x.jpg" srcset="img/reviewer-1-desktop@2x.jpg 2x" alt="Комментатор"
+                    itemprop="image">
+                </picture>
+                <div class="reviews__content">
+                  <h4 itemprop="name">Серёжа Попов</h4>
+                  <p>Я выражаю огромную благодарность<br> вашему питомнику. Мой Феликс невероятно<br> умен и воспитан. Огромным
+                    плюсом питомника<br> является возможность консультироваться<br> в любое время</p>
+                  <div class="reviews__content-wrapper">
+                    <time datetime="2018-05-24">24 мая 2018</time>
+                    <ul class="social  reviews__social">
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <span class="visually-hidden">ВКонтакте</span>
+                          <svg class="social__icon" width="13" height="8" viewBox="0 0 13 8">
+                            <use xlink:href="#icon-vk" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <span class="visually-hidden">Твиттер</span>
+                          <svg class="social__icon" width="17" height="12" viewBox="0 0 21 15">
+                            <use xlink:href="#icon-twitter" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <span class="visually-hidden">Фейсбук</span>
+                          <svg class="social__icon" width="6" height="12" viewBox="0 0 6 12">
+                            <use xlink:href="#icon-facebook" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.reviews -->
   </main>
   <script src="js/main.min.js"></script>
 </body>

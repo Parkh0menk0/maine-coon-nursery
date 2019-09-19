@@ -16,7 +16,6 @@
 @import "blocks/header/header__social";
 @import "blocks/header/header__cat";
 // Слайдер
-@import "blocks/slider/slider-team";
 @import "blocks/slider/slider-wrapper";
 @import "blocks/slider/slider";
 @import "blocks/slider/slider__control";
@@ -57,6 +56,7 @@
 @import "blocks/care/care__item";
 @import "blocks/care/care__link";
 // Наша команда
+@import "blocks/team/slider-team";
 @import "blocks/team/team";
 @import "blocks/team/team__wrapper";
 @import "blocks/team/team__title";
@@ -77,3 +77,13 @@
 @import "blocks/faq/dn";
 @import "blocks/faq/flipdown";
 @import "blocks/faq/active";
+// Отзывы
+@import "blocks/reviews/reviews-slider";
+@import "blocks/reviews/reviews";
+@import "blocks/reviews/reviews__wrapper";
+@import "blocks/reviews/reviews__title";
+@import "blocks/reviews/reviews__list";
+@import "blocks/reviews/reviews__item";
+@import "blocks/reviews/reviews__content";
+@import "blocks/reviews/reviews__content-wrapper";
+@import "blocks/reviews/reviews__social";

@@ -1,0 +1,18 @@
+.reviews__wrapper {
+  padding-top: 27px;
+  padding-bottom: 112px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .reviews__wrapper {
+    padding-top: 35px;
+    padding-bottom: 87px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .reviews__wrapper {
+    padding-top: 15px;
+    padding-bottom: 60px;
+  }
+}
