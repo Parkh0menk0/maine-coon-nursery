@@ -29,8 +29,12 @@
     color: $white;
     opacity: 0.7;
 
-    br:not(br:last-of-type) {
+    br {
       display: none;
+    }
+
+    brbr:last-of-type {
+      display: block;
     }
   }
 

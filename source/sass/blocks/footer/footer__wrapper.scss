@@ -1,0 +1,31 @@
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  width: 72.7%;
+
+  padding-top: 69px;
+  padding-bottom: 59px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .footer__wrapper {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 43px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .footer__wrapper {
+    flex-direction: column-reverse;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

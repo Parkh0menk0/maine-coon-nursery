@@ -1,0 +1,29 @@
+.footer__link {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  color: $lightbrown;
+
+  &--address {
+    margin-right: 8%;
+  }
+
+  &--tel {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .footer__link {
+    flex-direction: column-reverse;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &--address {
+      order: 2;
+    }
+  }
+}

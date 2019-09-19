@@ -1,0 +1,30 @@
+.footer__logo {
+  margin-right: 13%;
+
+  svg {
+    width: 49px;
+    height: 23px;
+    fill: $brown;
+    stroke: $darkgray-background;
+    stroke-width: 0.8;
+    transition: all 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+      fill: $white;
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .footer__logo {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .footer__logo {
+    display: block;
+  }
+}
+

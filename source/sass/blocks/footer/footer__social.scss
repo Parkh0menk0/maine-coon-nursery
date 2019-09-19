@@ -1,5 +1,6 @@
-.reviews__social {
+.footer__social {
   align-items: center;
+  margin-right: 17%;
 
   li {
     position: relative;
@@ -14,10 +15,8 @@
   }
 
   li {
-    width: 28px;
-    height: 28px;
-    border: 1px solid $brown;
-    margin-right: 17px;
+    width: 25px;
+    height: 25px;
 
     &:first-of-type {
       order: 3;
@@ -29,7 +28,6 @@
 
     &:last-of-type {
       order: 1;
-      display: none;
     }
   }
 
@@ -48,7 +46,6 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .reviews__social {
-    justify-content: center;
+  .footer__social {
   }
 }
