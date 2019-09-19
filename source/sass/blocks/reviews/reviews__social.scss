@@ -2,25 +2,15 @@
   align-items: center;
 
   li {
-    position: relative;
-  }
-
-  svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease-out;
-  }
-
-  li {
     width: 28px;
     height: 28px;
     border: 1px solid $brown;
     margin-right: 17px;
+    margin-bottom: 17px;
 
     &:first-of-type {
       order: 3;
+      margin-right: 0;
     }
 
     &:nth-of-type(2) {
@@ -39,10 +29,6 @@
     &:hover,
     &:focus {
       fill: $white;
-    }
-
-    &:active {
-      opacity: 0.5;
     }
   }
 }

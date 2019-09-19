@@ -9,6 +9,7 @@
     stroke: $darkgray-background;
     stroke-width: 0.8;
     transition: all 0.3s ease-out;
+    transform: translateX(4px);
 
     &:hover,
     &:focus {
@@ -20,11 +21,19 @@
 @media (max-width: $tablet-max-width) {
   .header__logo {
     margin-bottom: 84px;
+
+    svg {
+      transform: translateX(2px);
+    }
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .header__logo {
     margin-bottom: 42px;
+
+    svg {
+      transform: translateX(3px);
+    }
   }
 }

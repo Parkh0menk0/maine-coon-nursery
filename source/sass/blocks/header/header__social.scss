@@ -1,40 +1,32 @@
 .header__social {
-  position: relative;
   flex-direction: column;
-  flex-wrap: nowrap;
-  width: 10.3%;
   padding-right: 113px;
-  padding-top: 373px;
+  margin-top: auto;
 
   li {
-    margin-top: 10px;
+    margin-bottom: 8px;
 
-    &:first-of-type {
-      margin-top: 0;
+    &:last-of-type {
+      margin-bottom: 0;
     }
   }
 
   svg {
     fill: $white;
-    transition: all 0.3s ease-out;
 
     &:hover,
     &:focus {
       fill: $brown;
-    }
-
-    &:active {
-      opacity: 0.5;
     }
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 267px;
-    left: 7px;
-    height: 77.5px;
-    width: 1px;
+    bottom: 127px;
+    left: 6px;
+    height: 77px;
+    width: 2px;
     background-color: rgba(255, 255, 255, 0.61);
     margin-bottom: 29px;
     align-self: center;
@@ -44,14 +36,13 @@
 @media (max-width: $tablet-max-width) {
   .header__social {
     flex-direction: row;
-    max-height: auto;
-    width: 100%;
     order: 2;
+    padding-right: 0;
     padding-top: 0;
 
     li {
-      margin-top: 0;
-      margin-right: 8px;
+      margin-bottom: 0;
+      margin-right: 12px;
 
       &:last-of-type {
         margin-right: 0;

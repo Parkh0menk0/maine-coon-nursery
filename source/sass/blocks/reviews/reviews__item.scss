@@ -42,6 +42,7 @@
     color: $brown;
     margin-right: 35px;
     letter-spacing: 0.6px;
+    line-height: 2.5;
   }
 }
 
@@ -51,7 +52,8 @@
 
     img {
       top: -95px;
-      left: 137px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     h4 {

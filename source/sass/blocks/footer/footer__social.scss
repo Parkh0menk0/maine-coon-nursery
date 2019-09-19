@@ -3,18 +3,6 @@
   margin-right: 17%;
 
   li {
-    position: relative;
-  }
-
-  svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease-out;
-  }
-
-  li {
     width: 25px;
     height: 25px;
 
