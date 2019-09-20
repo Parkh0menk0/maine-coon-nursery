@@ -1,25 +1,11 @@
 .breed-features__list {
-  @include list-reset;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  font-size: 16px;
-  font-family: $roboto;
-  font-weight: 300;
-  line-height: 25px;
+  display: none;
 }
-
-// @media (max-width: $tablet-max-width) {
-
-// }
 
 @media (max-width: $mobile-max-width) {
   .breed-features__list {
-    position: static;
-    transform: none;
-    font-size: 14px;
-    line-height: 20px;
+    @include list-reset;
+    display: block;
+    width: 95%;
   }
 }

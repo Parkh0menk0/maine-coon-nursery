@@ -1,16 +1,3 @@
 .breed-features {
   background-color: $lightgray-background;
-  min-height: 947px;
-}
-
-@media (max-width: $tablet-max-width) {
-  .breed-features {
-    min-height: 772px;
-  }
-}
-
-@media (max-width: $mobile-max-width) {
-  .breed-features {
-    min-height: 816px;
-  }
 }

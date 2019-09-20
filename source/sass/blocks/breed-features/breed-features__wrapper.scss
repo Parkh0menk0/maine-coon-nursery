@@ -1,15 +1,18 @@
 .breed-features__wrapper {
   padding-top: 21px;
+  padding-bottom: 103px;
 }
 
 @media (max-width: $tablet-max-width) {
   .breed-features__wrapper {
     padding-top: 31px;
+    padding-bottom: 96px;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .breed-features__wrapper {
-    padding-top: 32px;
+    padding-top: 33px;
+    padding-bottom: 54px;
   }
 }

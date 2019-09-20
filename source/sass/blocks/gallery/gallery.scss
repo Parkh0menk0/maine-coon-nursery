@@ -7,11 +7,12 @@
 @media (max-width: $tablet-max-width) {
   .gallery {
     width: 100%;
+    min-height: 502px;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .gallery {
-    display: none;
+    min-height: 241px;
   }
 }
