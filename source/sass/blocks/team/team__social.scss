@@ -1,47 +1,45 @@
 .team__social {
+  @include list-reset;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center;
 
   li {
+    margin-right: 8px;
 
     &:first-of-type {
-      order: 3;
+      width: 22px;
+      height: 15px;
     }
 
     &:nth-of-type(2) {
-      order: 2;
+      width: 21px;
+      height: 15px;
     }
 
     &:last-of-type {
-      order: 1;
-    }
-
-    &:first-of-type svg {
-      width: 21px;
-      height: 12px;
-    }
-
-    &:nth-of-type(2) svg {
-      width: 34px;
-      height: 18px;
-    }
-
-    &:last-of-type svg {
-      width: 12px;
+      width: 7px;
       height: 15px;
     }
   }
 
-  svg {
+  .social__icon {
     fill: $white;
-    transition: all 0.3s ease-out;
 
-    &:hover,
-    &:focus {
-      fill: $brown;
+    &--vk {
+      width: 22px;
+      height: 17px;
     }
 
-    &:active {
-      opacity: 0.5;
+    &--twitter {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--facebook {
+      width: 7px;
+      height: 17px;
     }
   }
 }
