@@ -7,6 +7,16 @@
   padding-left: 58px;
   padding-bottom: 21px;
   padding-right: 55px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    border: 1px solid $white;
+  }
+
+  &:hover::after {
+    background-color: $white;
+  }
 
   h3 {
     margin: 0;
