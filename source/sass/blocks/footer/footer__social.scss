@@ -25,7 +25,8 @@
   }
 
   .social__icon {
-    fill: $white;
+    fill: $brown;
+    transition: all 0.3s ease-out;
 
     &--vk {
       width: 24px;
@@ -40,6 +41,11 @@
     &--facebook {
       width: 9px;
       height: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      fill: $white;
     }
   }
 }

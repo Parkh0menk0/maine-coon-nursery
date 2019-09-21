@@ -5,13 +5,15 @@
   font-size: 14px;
   line-height: 27px;
   color: $lightbrown;
-
-  &--address {
-    // margin-right: 8%;
-  }
+  transition: all 0.3s ease-out;
 
   &--tel {
     font-weight: bold;
+  }
+
+  &:hover,
+  &:focus {
+    color: $brown;
   }
 }
 
