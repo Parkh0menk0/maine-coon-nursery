@@ -1,6 +1,4 @@
 .footer__logo {
-  margin-right: 13%;
-
   svg {
     width: 49px;
     height: 23px;
@@ -25,6 +23,10 @@
 @media (max-width: $mobile-max-width) {
   .footer__logo {
     display: block;
+
+    svg {
+      width: 67px;
+      height: 37px;
+    }
   }
 }
-

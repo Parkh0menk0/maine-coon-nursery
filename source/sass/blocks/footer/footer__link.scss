@@ -7,7 +7,7 @@
   color: $lightbrown;
 
   &--address {
-    margin-right: 8%;
+    // margin-right: 8%;
   }
 
   &--tel {
@@ -19,11 +19,13 @@
   .footer__link {
     flex-direction: column-reverse;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
+    &--tel {
+      margin-bottom: 15px;
+    }
 
     &--address {
       order: 2;
+      margin-bottom: 3px;
     }
   }
 }

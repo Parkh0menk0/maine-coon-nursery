@@ -1,7 +1,7 @@
 .footer__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
@@ -14,7 +14,7 @@
 
 @media (max-width: $tablet-max-width) {
   .footer__wrapper {
-    width: 100%;
+    width: 93%;
     justify-content: space-between;
     padding-top: 35px;
     padding-bottom: 43px;
@@ -25,7 +25,7 @@
   .footer__wrapper {
     flex-direction: column-reverse;
 
-    padding-top: 10px;
+    padding-top: 32px;
     padding-bottom: 10px;
   }
 }

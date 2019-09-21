@@ -1,39 +1,137 @@
 .footer__social {
+  @include list-reset;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center;
-  margin-right: 17%;
 
   li {
-    width: 25px;
-    height: 25px;
+    margin-right: 8px;
 
     &:first-of-type {
-      order: 3;
+      width: 22px;
+      height: 15px;
     }
 
     &:nth-of-type(2) {
-      order: 2;
+      width: 21px;
+      height: 15px;
     }
 
     &:last-of-type {
-      order: 1;
+      width: 7px;
+      height: 15px;
     }
   }
 
-  svg {
-    fill: $brown;
+  .social__icon {
+    fill: $white;
 
-    &:hover,
-    &:focus {
-      fill: $white;
+    &--vk {
+      width: 24px;
+      height: 23px;
     }
 
-    &:active {
-      opacity: 0.5;
+    &--twitter {
+      width: 25px;
+      height: 22px;
+    }
+
+    &--facebook {
+      width: 9px;
+      height: 20px;
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .footer__social {
+    justify-content: center;
+
+    li {
+      margin-right: 9px;
+
+      &:first-of-type {
+        width: 21px;
+        height: 12px;
+        margin-right: 0;
+      }
+
+      &:nth-of-type(2) {
+        width: 21px;
+        height: 15px;
+      }
+
+      &:last-of-type {
+        width: 7px;
+        height: 15px;
+      }
+    }
+
+    .social__icon {
+      fill: $white;
+
+      &--vk {
+        width: 20px;
+        height: 16px;
+      }
+
+      &--twitter {
+        width: 22px;
+        height: 22px;
+      }
+
+      &--facebook {
+        width: 8px;
+        height: 16px;
+      }
     }
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .footer__social {
+    justify-content: center;
+    transform: translateX(-4px);
+    margin-bottom: 23px;
+
+    li {
+      margin-right: 22px;
+
+      &:first-of-type {
+        width: 21px;
+        height: 12px;
+        margin-right: 0;
+      }
+
+      &:nth-of-type(2) {
+        width: 21px;
+        height: 15px;
+      }
+
+      &:last-of-type {
+        width: 7px;
+        height: 15px;
+      }
+    }
+
+    .social__icon {
+      fill: $white;
+
+      &--vk {
+        width: 23px;
+        height: 16px;
+      }
+
+      &--twitter {
+        width: 23px;
+        height: 18px;
+      }
+
+      &--facebook {
+        width: 13px;
+        height: 18px;
+      }
+    }
   }
 }
