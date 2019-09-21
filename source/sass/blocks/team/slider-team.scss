@@ -26,6 +26,9 @@
 @media (max-width: $tablet-max-width) {
   .slider-team {
     position: relative;
+    margin: 0 auto;
+    width: 650px;
+    transform: translateX(-13px);
 
     button {
       position: absolute;
@@ -37,11 +40,11 @@
       }
 
       &:first-of-type {
-        right: 330px;
+        right: 285px;
       }
 
       &:last-of-type {
-        right: 52px;
+        right: 7px;
       }
     }
   }
@@ -49,6 +52,9 @@
 
 @media (max-width: $mobile-max-width) {
   .slider-team {
+    width: 100%;
+    transform: translateX(0);
+
     button {
 
       width: 19px;
@@ -56,7 +62,7 @@
 
       &:first-of-type,
       &:last-of-type {
-        bottom: 653px;
+        top: -10px;
       }
 
       &:first-of-type {

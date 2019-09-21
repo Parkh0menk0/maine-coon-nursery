@@ -30,7 +30,7 @@
           <li class="social__item">
             <a href="#" class="social__link">
               <span class="visually-hidden">ВКонтакте</span>
-              <svg class="social__icon" width="13" height="8" viewBox="0 0 13 8">
+              <svg class="social__icon  social__icon--vk" width="13" height="8" viewBox="0 0 13 8">
                 <use xlink:href="#icon-vk" x="0" y="0"></use>
               </svg>
             </a>
@@ -38,7 +38,7 @@
           <li class="social__item">
             <a href="#" class="social__link">
               <span class="visually-hidden">Твиттер</span>
-              <svg class="social__icon" width="16" height="11" viewBox="0 0 16 11">
+              <svg class="social__icon  social__icon--twitter" width="16" height="11" viewBox="0 0 16 11">
                 <use xlink:href="#icon-twitter" x="0" y="0"></use>
               </svg>
             </a>
@@ -46,7 +46,7 @@
           <li class="social__item">
             <a href="#" class="social__link">
               <span class="visually-hidden">Фейсбук</span>
-              <svg class="social__icon" width="6" height="12" viewBox="0 0 6 12">
+              <svg class="social__icon  social__icon--facebook" width="6" height="12" viewBox="0 0 6 12">
                 <use xlink:href="#icon-facebook" x="0" y="0"></use>
               </svg>
             </a>
@@ -331,58 +331,60 @@
             </button>
             <ul class="team__list">
               <li class="team__item" itemscope itemtype="http://schema.org/Person">
-                <picture>
-                  <!-- 1х: 275x256 px; 2x: 550x512 px; -->
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/employee-1-mobile@1x.webp 1x, img/employee-1-mobile@2x.webp 2x">
-                  <!-- 1х: 534x534 px; 2x: 1067x1067 px; -->
-                  <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="img/employee-1-tablet@1x.webp 1x, img/employee-1-tablet@2x.webp 2x">
-                  <!-- 1х: 684x684 px; 2x: 1368x1368 px; -->
-                  <source type="image/webp"
-                    srcset="img/employee-1-desktop@1x.webp 1x, img/employee-1-desktop@2x.webp 2x">
+                <div class="team__wrapper-outer">
+                  <picture>
+                    <!-- 1х: 275x256 px; 2x: 550x512 px; -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/employee-1-mobile@1x.webp 1x, img/employee-1-mobile@2x.webp 2x">
+                    <!-- 1х: 534x534 px; 2x: 1067x1067 px; -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/employee-1-tablet@1x.webp 1x, img/employee-1-tablet@2x.webp 2x">
+                    <!-- 1х: 684x684 px; 2x: 1368x1368 px; -->
+                    <source type="image/webp"
+                      srcset="img/employee-1-desktop@1x.webp 1x, img/employee-1-desktop@2x.webp 2x">
 
-                  <!-- 1х: 275x256 px; 2x: 550x512 px; -->
-                  <source media="(max-width: 767px)"
-                    srcset="img/employee-1-mobile@1x.jpg 1x, img/employee-1-mobile@2x.jpg 2x">
-                  <!-- 1х: 534x534 px; 2x: 1067x1067 px; -->
-                  <source media="(max-width: 1023px)"
-                    srcset="img/employee-1-tablet@1x.jpg 1x, img/employee-1-tablet@2x.jpg 2x">
-                  <!-- 1х: 684x684 px; 2x: 1368x1368 px; -->
-                  <img src="img/employee-1-desktop@1x.jpg" srcset="img/employee-1-desktop@2x.jpg 2x" alt="Работник"
-                    itemprop="image">
-                </picture>
-                <div class="team__item-wrapper">
-                  <h4 itemprop="name">Серёжа Попов</h4>
-                  <b itemprop="jobTitle">Основатель питомника</b>
-                  <p>Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого
-                    приобретенного вами питомца</p>
-                  <ul class="team__social">
-                    <li class="social__item">
-                      <a href="#" class="social__link">
-                        <span class="visually-hidden">ВКонтакте</span>
-                        <svg class="social__icon  social__icon--vk" width="21" height="12" viewBox="0 0 21 12">
-                          <use xlink:href="#icon-vk" x="0" y="0"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="#" class="social__link">
-                        <span class="visually-hidden">Твиттер</span>
-                        <svg class="social__icon  social__icon--twitter" width="21" height="15" viewBox="0 0 21 15">
-                          <use xlink:href="#icon-twitter" x="0" y="0"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="#" class="social__link">
-                        <span class="visually-hidden">Фейсбук</span>
-                        <svg class="social__icon  social__icon--facebook" width="7" height="15" viewBox="0 0 7 15">
-                          <use xlink:href="#icon-facebook" x="0" y="0"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+                    <!-- 1х: 275x256 px; 2x: 550x512 px; -->
+                    <source media="(max-width: 767px)"
+                      srcset="img/employee-1-mobile@1x.jpg 1x, img/employee-1-mobile@2x.jpg 2x">
+                    <!-- 1х: 534x534 px; 2x: 1067x1067 px; -->
+                    <source media="(max-width: 1023px)"
+                      srcset="img/employee-1-tablet@1x.jpg 1x, img/employee-1-tablet@2x.jpg 2x">
+                    <!-- 1х: 684x684 px; 2x: 1368x1368 px; -->
+                    <img src="img/employee-1-desktop@1x.jpg" srcset="img/employee-1-desktop@2x.jpg 2x" alt="Работник"
+                      itemprop="image">
+                  </picture>
+                  <div class="team__item-wrapper">
+                    <h4 itemprop="name">Серёжа Попов</h4>
+                    <b itemprop="jobTitle">Основатель питомника</b>
+                    <p>Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого
+                      приобретенного вами питомца</p>
+                    <ul class="team__social">
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <span class="visually-hidden">ВКонтакте</span>
+                          <svg class="social__icon  social__icon--vk" width="21" height="12" viewBox="0 0 21 12">
+                            <use xlink:href="#icon-vk" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <span class="visually-hidden">Твиттер</span>
+                          <svg class="social__icon  social__icon--twitter" width="21" height="15" viewBox="0 0 21 15">
+                            <use xlink:href="#icon-twitter" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <span class="visually-hidden">Фейсбук</span>
+                          <svg class="social__icon  social__icon--facebook" width="7" height="15" viewBox="0 0 7 15">
+                            <use xlink:href="#icon-facebook" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -402,7 +404,8 @@
           <ol class="faq__list">
             <li class="faq__item">
               <div class="faq__item-wrapper">
-                <button type="button" class="faq__question  faq__question--01  active">С какого возраста можно<br> забирать
+                <button type="button" class="faq__question  faq__question--01  active">С какого возраста можно<br>
+                  забирать
                   котенка из
                   питомника?</button>
                 <div class="faq__answer  dn">
@@ -491,7 +494,7 @@
                       <li class="social__item">
                         <a href="#" class="social__link">
                           <span class="visually-hidden">ВКонтакте</span>
-                          <svg class="social__icon" width="13" height="8" viewBox="0 0 13 8">
+                          <svg class="social__icon  social__icon--vk" width="13" height="8" viewBox="0 0 13 8">
                             <use xlink:href="#icon-vk" x="0" y="0"></use>
                           </svg>
                         </a>
@@ -499,7 +502,7 @@
                       <li class="social__item">
                         <a href="#" class="social__link">
                           <span class="visually-hidden">Твиттер</span>
-                          <svg class="social__icon" width="17" height="12" viewBox="0 0 21 15">
+                          <svg class="social__icon  social__icon--twitter" width="17" height="12" viewBox="0 0 21 15">
                             <use xlink:href="#icon-twitter" x="0" y="0"></use>
                           </svg>
                         </a>
@@ -507,7 +510,7 @@
                       <li class="social__item">
                         <a href="#" class="social__link">
                           <span class="visually-hidden">Фейсбук</span>
-                          <svg class="social__icon" width="6" height="12" viewBox="0 0 6 12">
+                          <svg class="social__icon  social__icon--facebook" width="6" height="12" viewBox="0 0 6 12">
                             <use xlink:href="#icon-facebook" x="0" y="0"></use>
                           </svg>
                         </a>
@@ -539,7 +542,7 @@
           <li class="social__item">
             <a href="#" class="social__link">
               <span class="visually-hidden">ВКонтакте</span>
-              <svg class="social__icon" width="13" height="8" viewBox="0 0 13 8">
+              <svg class="social__icon  social__icon--vk" width="13" height="8" viewBox="0 0 13 8">
                 <use xlink:href="#icon-vk" x="0" y="0"></use>
               </svg>
             </a>
@@ -547,7 +550,7 @@
           <li class="social__item">
             <a href="#" class="social__link">
               <span class="visually-hidden">Твиттер</span>
-              <svg class="social__icon" width="16" height="11" viewBox="0 0 16 11">
+              <svg class="social__icon  social__icon--twitter" width="16" height="11" viewBox="0 0 16 11">
                 <use xlink:href="#icon-twitter" x="0" y="0"></use>
               </svg>
             </a>
@@ -555,7 +558,7 @@
           <li class="social__item">
             <a href="#" class="social__link">
               <span class="visually-hidden">Фейсбук</span>
-              <svg class="social__icon" width="6" height="12" viewBox="0 0 6 12">
+              <svg class="social__icon  social__icon--facebook" width="6" height="12" viewBox="0 0 6 12">
                 <use xlink:href="#icon-facebook" x="0" y="0"></use>
               </svg>
             </a>

@@ -1,0 +1,22 @@
+.team__wrapper-outer {
+  border: 1px solid $brown;
+  padding: 22px 31px 22px 25px;
+  width: 64.2%;
+  margin-left: auto;
+}
+
+@media (max-width: $tablet-max-width) {
+  .team__wrapper-outer {
+    padding: 25px 23px 23px 25px;
+    width: 100%;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .team__wrapper-outer {
+    border: none;
+    padding: 0;
+  }
+}

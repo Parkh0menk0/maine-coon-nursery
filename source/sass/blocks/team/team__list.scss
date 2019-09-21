@@ -1,14 +1,11 @@
 .team__list {
   @include list-reset;
   width: 85%;
-  padding-left: 367px;
 }
 
 @media (max-width: $tablet-max-width) {
   .team__list {
-    width: 91%;
-    padding-left: 0;
-    transform: translateX(18px);
+    width: 100%;
   }
 }
 

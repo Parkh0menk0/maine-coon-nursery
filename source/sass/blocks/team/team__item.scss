@@ -1,12 +1,10 @@
 .team__item {
   position: relative;
-  border: 1px solid $brown;
-  padding: 22px 31px 22px 25px;
 
   img {
     position: absolute;
-    top: -1px;
-    right: 611px;
+    bottom: 11%;
+    right: 59.7%;
   }
 
   h4 {
@@ -44,26 +42,27 @@
 
 @media (max-width: $tablet-max-width) {
   .team__item {
-    padding: 25px 23px 23px 25px;
+    padding-left: 0;
 
     img {
-      position: absolute;
-      top: 298px;
-      right: 56px;
+      bottom: -95px;
+      right: 57px;
+    }
+
+    p {
+      margin: 0 0 48px;
     }
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .team__item {
-    border: none;
-    padding: 0;
-
     img {
       width: 126px;
       height: 126px;
       top: -63px;
-      left: 82px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     h4 {
@@ -77,14 +76,14 @@
       font-size: 14px;
       line-height: 135.94%;
       text-align: center;
-      margin-bottom: 17px;
+      margin-bottom: 16px;
     }
 
     p {
       font-size: 14px;
-      line-height: 140%;
+      line-height: 143%;
       text-align: center;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
   }
 }

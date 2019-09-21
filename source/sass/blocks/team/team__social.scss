@@ -47,5 +47,44 @@
 @media (max-width: $mobile-max-width) {
   .team__social {
     justify-content: center;
+
+    li {
+      margin-right: 13px;
+
+      &:first-of-type {
+        width: 21px;
+        height: 12px;
+        margin-right: 0;
+      }
+
+      &:nth-of-type(2) {
+        width: 21px;
+        height: 15px;
+      }
+
+      &:last-of-type {
+        width: 7px;
+        height: 15px;
+      }
+    }
+
+    .social__icon {
+      fill: $white;
+
+      &--vk {
+        width: 27px;
+        height: 19px;
+      }
+
+      &--twitter {
+        width: 26px;
+        height: 22px;
+      }
+
+      &--facebook {
+        width: 13px;
+        height: 18px;
+      }
+    }
   }
 }
