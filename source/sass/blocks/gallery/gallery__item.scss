@@ -3,3 +3,11 @@
     margin-bottom: 26px;
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .gallery__item {
+    &:first-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,28 +1,46 @@
-// 'use strict';
+'use strict';
 
-// (function () {
-//   var MAX_TABLET_WIDTH = 1023;
-//   var sliderWidth = document.querySelector('.slider').offsetWidth;
+(function () {
+  var MAX_TABLET_WIDTH = 1023;
 
-//   var line = document.querySelector('.line');
-//   var slides = document.querySelectorAll('.slide');
-//   var previousBtn = document.querySelector('.slider__control--left');
-//   var nextBtn = document.querySelector('.slider__control--right');
-
-//   var widthArray = [];
-//   var lineWidth = 0;
-//   var offset = 0;
-//   var step = 0;
-//   var balance = 0;
+  var galleryСontent = document.querySelector('.gallery__wrapper');
+  var wrapping = document.querySelector('.gallery__layout-column');
 
   /**
-   * Функция, удаляющая (добавляющая) класс slider при изменении размера экрана.
+   * Функция, котрая перестраивает галерею в слайдер при разрешении экрана менее 1024 пикселей.
    */
-  // function checkWidth() {
-  //   var windowWidth = window.innerWidth;
-  //   var gallery = document.querySelector('.pets__gallery');
-  //   windowWidth <= MAX_TABLET_WIDTH ? gallery.classList.add('slider') : gallery.classList.remove('slider');
-  // }
+  function addSlider() {
+    var windowWidth = window.innerWidth;
+    if (windowWidth <= MAX_TABLET_WIDTH) {
+      if (wrapping) {
+        while (wrapping.firstChild) {
+          galleryСontent.insertBefore(wrapping.firstChild, wrapping);
+        }
+      }
+      if (galleryСontent.contains(wrapping)) {
+        galleryСontent.removeChild(wrapping);
+      }
+    }
+  }
+
+  addSlider();
+
+  window.addEventListener('resize', addSlider);
+
+
+
+  //   var sliderWidth = document.querySelector('.slider').offsetWidth;
+
+  //   var line = document.querySelector('.line');
+  //   var slides = document.querySelectorAll('.slide');
+  //   var previousBtn = document.querySelector('.slider__control--left');
+  //   var nextBtn = document.querySelector('.slider__control--right');
+
+  //   var widthArray = [];
+  //   var lineWidth = 0;
+  //   var offset = 0;
+  //   var step = 0;
+  //   var balance = 0;
 
   /**
    * Функция, сдвигающая слайд влево.
@@ -68,8 +86,6 @@
   //   }
   // }
 
-  // window.addEventListener('resize', checkWidth);
-
   // slides.forEach(function (item) {
   //   widthArray.push(item.offsetWidth);
   //   lineWidth += item.offsetWidth;
@@ -79,4 +95,4 @@
 
   // previousBtn.addEventListener('click', shiftLeft);
   // nextBtn.addEventListener('click', shiftRight);
-// })();
+})();

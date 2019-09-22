@@ -1,17 +1,18 @@
-.gallery-slider {
+.pets__slider {
   button {
     display: none;
   }
 }
 
 @media (max-width: $tablet-max-width) {
-  .gallery-slider {
+  .pets__slider {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     button {
+      display: block;
       width: 31px;
       height: 31px;
       border: none;
@@ -32,7 +33,7 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .gallery-slider {
+  .pets__slider {
     button {
       width: 19px;
       height: 19px;
