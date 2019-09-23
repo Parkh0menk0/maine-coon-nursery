@@ -27,12 +27,6 @@
     background-position: center;
     border-left: 1px solid $brown;
   }
-
-  &--01 br,
-  &--03 br,
-  &--04 br {
-    display: none;
-  }
 }
 
 @media (max-width: $tablet-max-width) {
@@ -61,12 +55,6 @@
 
     &--02 {
       padding: 13px 55px 9px 14px;
-    }
-
-    &--01 br,
-    &--03 br,
-    &--04 br {
-      display: block;
     }
   }
 }

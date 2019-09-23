@@ -31,10 +31,6 @@
     color: $white;
     opacity: 0.7;
 
-    br {
-      display: none;
-    }
-
     br:last-of-type {
       display: block;
     }
@@ -97,10 +93,6 @@
       line-height: 140%;
       text-align: center;
       margin-bottom: 23px;
-
-      br {
-        display: none;
-      }
     }
   }
 }
