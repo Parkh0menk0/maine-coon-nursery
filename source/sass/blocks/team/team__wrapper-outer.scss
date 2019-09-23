@@ -3,6 +3,11 @@
   padding: 22px 31px 22px 25px;
   width: 64.2%;
   margin-left: auto;
+
+  img {
+    width: px;
+    height: px;
+  }
 }
 
 @media (max-width: $tablet-max-width) {
@@ -10,6 +15,11 @@
     padding: 25px 23px 23px 25px;
     width: 100%;
     margin-left: 0;
+
+    img {
+      width: 207px;
+      height: 208px;
+    }
   }
 }
 
@@ -17,5 +27,10 @@
   .team__wrapper-outer {
     border: none;
     padding: 0;
+
+    img {
+      width: 166px;
+      height: 166px;
+    }
   }
 }

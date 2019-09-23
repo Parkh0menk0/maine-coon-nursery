@@ -2,6 +2,21 @@
   &:first-of-type {
     margin-bottom: 26px;
   }
+
+  &:first-of-type img {
+    width: 517px;
+    height: 214px;
+  }
+
+  &:nth-of-type(2) img {
+    width: 518px;
+    height: 241px;
+  }
+
+  &:last-of-type img {
+    width: 471px;
+    height: 485px;
+  }
 }
 
 @media (max-width: $tablet-max-width) {
@@ -22,6 +37,21 @@
 
     &:first-of-type {
       margin-bottom: 0;
+    }
+
+    &:first-of-type img {
+      width: 474px;
+      height: 197px;
+    }
+
+    &:nth-of-type(2) img {
+      width: 474px;
+      height: 197px;
+    }
+
+    &:last-of-type img {
+      width: 474px;
+      height: 495px;
     }
   }
 }
@@ -45,6 +75,21 @@
 
     &:first-of-type {
       margin-bottom: 0;
+    }
+
+    &:first-of-type img {
+      width: 234px;
+      height: 99px;
+    }
+
+    &:nth-of-type(2) img {
+      width: 208px;
+      height: 99px;
+    }
+
+    &:last-of-type img {
+      width: 294px;
+      height: 308px;
     }
   }
 }

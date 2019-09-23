@@ -4,6 +4,8 @@
   padding-left: 434px;
 
   img {
+    width: 481px;
+    height: 331px;
     position: absolute;
     top: 46px;
     left: 53px;
@@ -51,6 +53,8 @@
     padding-left: 0;
 
     img {
+      width: 302px;
+      height: 208px;
       top: -95px;
       left: 50%;
       transform: translateX(-50%);
@@ -74,6 +78,8 @@
 @media (max-width: $mobile-max-width) {
   .reviews__item {
     img {
+      width: 242px;
+      height: 166px;
       top: -83px;
       left: 50%;
       transform: translateX(-50%);

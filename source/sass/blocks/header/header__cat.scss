@@ -3,4 +3,27 @@
   right: 0;
   bottom: -5px;
   z-index: 1;
+
+  img {
+    width: 684px;
+    height: 684px;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .header__cat {
+    img {
+      width: 534px;
+      height: 534px;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .header__cat {
+    img {
+      width: 275px;
+      height: 256px;
+    }
+  }
 }
