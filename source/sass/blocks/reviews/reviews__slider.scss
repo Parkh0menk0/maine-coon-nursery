@@ -1,4 +1,4 @@
-.reviews-slider {
+.reviews__slider {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,7 +10,7 @@
 }
 
 @media (max-width: $tablet-max-width) {
-  .reviews-slider {
+  .reviews__slider {
     position: relative;
 
     button {
@@ -44,7 +44,7 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .reviews-slider {
+  .reviews__slider {
     button {
       position: absolute;
       width: 19px;

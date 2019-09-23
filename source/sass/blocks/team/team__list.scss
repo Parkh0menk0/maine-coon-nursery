@@ -1,6 +1,8 @@
 .team__list {
   @include list-reset;
+  position: relative;
   width: 85%;
+  height: 400px;
 }
 
 @media (max-width: $tablet-max-width) {

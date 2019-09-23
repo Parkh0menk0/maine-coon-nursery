@@ -55,7 +55,7 @@
 @import "blocks/care/care__item";
 @import "blocks/care/care__link";
 // Наша команда
-@import "blocks/team/slider-team";
+@import "blocks/team/team__slider";
 @import "blocks/team/team";
 @import "blocks/team/team__wrapper-outer";
 @import "blocks/team/team__wrapper";
@@ -65,6 +65,7 @@
 @import "blocks/team/team__item";
 @import "blocks/team/team__item-wrapper";
 @import "blocks/team/team__social";
+@import "blocks/team/team__item-show";
 // Вопрос-Ответ
 @import "blocks/faq/faq";
 @import "blocks/faq/faq__wrapper";
@@ -78,7 +79,7 @@
 @import "blocks/faq/flipdown";
 @import "blocks/faq/active";
 // Отзывы
-@import "blocks/reviews/reviews-slider";
+@import "blocks/reviews/reviews__slider";
 @import "blocks/reviews/reviews";
 @import "blocks/reviews/reviews__wrapper";
 @import "blocks/reviews/reviews__title";
@@ -87,6 +88,7 @@
 @import "blocks/reviews/reviews__content";
 @import "blocks/reviews/reviews__content-wrapper";
 @import "blocks/reviews/reviews__social";
+@import "blocks/reviews/reviews__item-show";
 // Подвал
 @import "blocks/footer/footer";
 @import "blocks/footer/footer__wrapper";

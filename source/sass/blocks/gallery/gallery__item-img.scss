@@ -17,11 +17,6 @@
 
 @media (max-width: $tablet-max-width) {
   .gallery__item-img {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
     &--1 {
       width: 474px;
       height: 197px;
@@ -41,12 +36,6 @@
 
 @media (max-width: $mobile-max-width) {
   .gallery__item-img {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
     &--1 {
       width: 234px;
       height: 99px;

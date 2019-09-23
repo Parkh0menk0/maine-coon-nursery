@@ -1,4 +1,4 @@
-.slider-team {
+.team__slider {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,7 +24,7 @@
 }
 
 @media (max-width: $tablet-max-width) {
-  .slider-team {
+  .team__slider {
     position: relative;
     margin: 0 auto;
     width: 650px;
@@ -51,7 +51,7 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .slider-team {
+  .team__slider {
     width: 100%;
     transform: translateX(0);
 
