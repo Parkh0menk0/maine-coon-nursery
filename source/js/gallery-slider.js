@@ -2,9 +2,15 @@
 
 (function () {
   var MAX_TABLET_WIDTH = 1023;
-
+  var left = 65;
+  var offset = 0;
+  var step = 0;
   var galleryСontent = document.querySelector('.gallery__wrapper');
   var wrapping = document.querySelector('.gallery__layout-column');
+  var slides = document.querySelectorAll('.gallery__item');
+  var insertPictures = [];
+  var previousBtn = document.querySelector('.pets__slider  button:first-of-type');
+  var nextBtn = document.querySelector('.pets__slider  button:last-of-type');
 
   /**
    * Функция, котрая перестраивает галерею в слайдер при разрешении экрана менее 1024 пикселей.
@@ -23,76 +29,69 @@
     }
   }
 
-  addSlider();
-
-  window.addEventListener('resize', addSlider);
-
-
-
-  //   var sliderWidth = document.querySelector('.slider').offsetWidth;
-
-  //   var line = document.querySelector('.line');
-  //   var slides = document.querySelectorAll('.slide');
-  //   var previousBtn = document.querySelector('.slider__control--left');
-  //   var nextBtn = document.querySelector('.slider__control--right');
-
-  //   var widthArray = [];
-  //   var lineWidth = 0;
-  //   var offset = 0;
-  //   var step = 0;
-  //   var balance = 0;
-
   /**
    * Функция, сдвигающая слайд влево.
    */
-  // function shiftLeft() {
-  //   balance = lineWidth - sliderWidth - (offset + widthArray[step]);
-  //   if (balance >= 0) {
-  //     offset += widthArray[step];
-  //     line.style.left = -offset + 'px';
-  //   } else {
-  //     line.style.left = -(lineWidth - sliderWidth) + 'px';
-  //     offset = 0;
-  //     step = -1;
-  //   }
+  function shiftLeft() {
+    var slides2 = document.querySelectorAll('.gallery__item');
+    var offset2 = 0;
+    slides2.forEach(function (item) {
+      item.style.left = offset2 * 474 - 474 + 'px';
+      offset2++;
+    });
+    slides2[0].remove();
+    draw();
+    // left -= 474;
+    // if (left < -948) {
+    //   left = 65;
+    // }
+    // galleryСontent.style.left = left + 'px';
 
-  //   if (step + 1 == slides.length) {
-  //     step = 0;
-  //     offset = 0;
-  //   } else {
-  //     step++;
-  //   }
-  // }
+  }
 
   /**
    * Функция, сдвигающая слайд вправо.
    */
-  // function shiftRight() {
-  //   balance = lineWidth - sliderWidth - (offset + widthArray[step]);
-  //   if (balance >= 0) {
-  //     offset += widthArray[step];
-  //     line.style.left = offset + 'px';
-  //   } else {
-  //     line.style.left = lineWidth - sliderWidth + 'px';
-  //     offset = 0;
-  //     step = -1;
-  //   }
+  function shiftRight() {
+    left += 474;
+    if (left > 65) {
+      left = -883;
+    }
+    galleryСontent.style.left = left + 'px';
+  }
 
-  //   if (step + 1 == slides.length) {
-  //     step = 0;
-  //     offset = 0;
-  //   } else {
-  //     step++;
-  //   }
-  // }
+  function draw() {
+    var img = insertPictures[step];
+    img.style.left = offset * 474 + 'px';
+    galleryСontent.appendChild(img);
+    if (step + 1 === insertPictures.length) {
+      step = 0;
+      offset = 2;
+    } else {
+      step++;
+      offset++;
+    }
+  }
 
-  // slides.forEach(function (item) {
-  //   widthArray.push(item.offsetWidth);
-  //   lineWidth += item.offsetWidth;
-  // });
+  addSlider();
 
-  // line.style.width = lineWidth + 'px';
+  window.addEventListener('resize', addSlider);
 
-  // previousBtn.addEventListener('click', shiftLeft);
-  // nextBtn.addEventListener('click', shiftRight);
+  function init() {
+    slides.forEach(function (item) {
+      insertPictures.push(item.cloneNode(true));
+      item.remove();
+    });
+
+    for (var i = 0; i < insertPictures.length; i++) {
+      draw();
+    }
+  }
+
+  init();
+
+  previousBtn.addEventListener('click', shiftLeft);
+  nextBtn.addEventListener('click', shiftRight);
+
+
 })();

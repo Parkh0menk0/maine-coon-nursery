@@ -4,3 +4,26 @@
   justify-content: flex-start;
   transform: translateX(34px);
 }
+
+@media (max-width: $tablet-max-width) {
+  .gallery__wrapper {
+    position: relative;
+    align-items: center;
+    width: 474px;
+    height: 495px;
+    transform: translateX(0);
+    left: -410px;
+    transition: all 0.3s ease-out;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .gallery__wrapper {
+    align-items: center;
+    width: 100%;
+    height: 248px;
+    transform: translateX(0);
+    left: 0;
+    transition: all 0.3s ease-out;
+  }
+}

@@ -1,4 +1,5 @@
 .gallery {
+  overflow: hidden;
   width: 92%;
   margin: 0 auto;
   margin-bottom: 49px;
@@ -6,13 +7,18 @@
 
 @media (max-width: $tablet-max-width) {
   .gallery {
-    width: 100%;
-    min-height: 502px;
+    width: 84.2%;
+    height: 495px;
+    transform: translateX(-13px);
+    margin-bottom: 56px;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .gallery {
-    min-height: 241px;
+    width: 92%;
+    height: 248px;
+    transform: translateX(0);
+    margin-bottom: 42px;
   }
 }
