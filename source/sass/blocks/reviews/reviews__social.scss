@@ -2,11 +2,10 @@
   align-items: center;
 
   li {
+
     width: 28px;
     height: 28px;
-    border: 1px solid $brown;
     margin-right: 17px;
-    margin-bottom: 17px;
 
     &:first-of-type {
       order: 3;
@@ -21,6 +20,15 @@
       order: 1;
       display: none;
     }
+  }
+
+  a {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid $brown;
+    margin-right: 17px;
+    margin-bottom: 17px;
   }
 
   svg {
