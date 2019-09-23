@@ -14,7 +14,7 @@
 @media (max-width: $tablet-max-width) {
   .care {
     background-image: url("../img/bg-care-tablet@1x.jpg");
-    background-size: 768px auto;
+    background-size: cover;
 
     @media (min-resolution: $retina-2x-dpi),
       (min-resolution: $retina-2x-dppx) {
@@ -25,12 +25,12 @@
 
 @media (max-width: $mobile-max-width) {
   .care {
-    background-image: url("../img/bg-care-mobile@1x.jpg");
-    background-size: 320px auto;
+    background-image: url("../img/bg-care-tablet@1x.jpg");
+    background-size: cover;
 
     @media (min-resolution: $retina-2x-dpi),
       (min-resolution: $retina-2x-dppx) {
-      background-image: url("../img/bg-care-mobile@2x.jpg");
+      background-image: url("../img/bg-care-tablet@2x.jpg");
     }
   }
 }
