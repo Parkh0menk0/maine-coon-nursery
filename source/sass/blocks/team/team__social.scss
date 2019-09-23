@@ -27,6 +27,11 @@
   .social__icon {
     fill: $white;
 
+    &:hover,
+    &:focus {
+      fill: $brown;
+    }
+
     &--vk {
       width: 35px;
       height: 24px;
