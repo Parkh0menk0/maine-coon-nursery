@@ -50,7 +50,8 @@
     background-color: transparent;
     text-decoration: none;
     padding: 18px;
-    transition: all 0.3s ease-out;
+    transition: color 0.3s ease-out,
+      border 0.3s ease-out;
     margin-bottom: 110px;
 
     &:hover,
