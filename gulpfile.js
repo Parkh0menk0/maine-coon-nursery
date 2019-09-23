@@ -110,6 +110,7 @@ gulp.task("scripts", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(concat('main.js'))
+    .pipe(gulp.dest('build/js'))
     .pipe(uglify())
     .pipe(rename('main.min.js'))
     .pipe(sourcemap.write(''))
