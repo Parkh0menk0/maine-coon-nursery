@@ -918,37 +918,37 @@ input[type="radio"].visually-hidden {
     .gallery__item:first-of-type {
       margin-bottom: 0; } }
 
-.gallery__item-img--1 {
+.gallery__item-img--top {
   width: 517px;
   height: 214px; }
 
-.gallery__item-img--2 {
+.gallery__item-img--bottom {
   width: 518px;
   height: 241px; }
 
-.gallery__item-img--3 {
+.gallery__item-img--large {
   width: 471px;
   height: 485px; }
 
 @media (max-width: 1023px) {
-  .gallery__item-img--1 {
+  .gallery__item-img--top {
     width: 474px;
     height: 197px; }
-  .gallery__item-img--2 {
+  .gallery__item-img--bottom {
     width: 474px;
     height: 197px; }
-  .gallery__item-img--3 {
+  .gallery__item-img--large {
     width: 474px;
     height: 495px; } }
 
 @media (max-width: 767px) {
-  .gallery__item-img--1 {
+  .gallery__item-img--top {
     width: 234px;
     height: 99px; }
-  .gallery__item-img--2 {
+  .gallery__item-img--bottom {
     width: 208px;
     height: 99px; }
-  .gallery__item-img--3 {
+  .gallery__item-img--large {
     width: 294px;
     height: 308px; } }
 
