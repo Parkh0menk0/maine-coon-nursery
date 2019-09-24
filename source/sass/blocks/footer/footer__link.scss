@@ -7,8 +7,13 @@
   color: $lightbrown;
   transition: color 0.3s ease-out;
 
+  &--address {
+    transform: translateX(25px);
+  }
+
   &--tel {
     font-weight: bold;
+    transform: translateX(-29px);
   }
 
   &:hover,
