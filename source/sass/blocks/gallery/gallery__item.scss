@@ -6,10 +6,6 @@
 
 @media (max-width: $tablet-max-width) {
   .gallery__item {
-    // width: 474px;
-    // height: 495px;
-    // transition: all 0.3s ease-out;
-
     &:first-of-type {
       margin-bottom: 0;
     }

@@ -4,6 +4,7 @@
 @import "global/variables";
 @import "global/fonts";
 @import "global/mixins";
+@import "global/swiper";
 @import "global/common";
 @import "global/container";
 // Социальные сети
@@ -27,13 +28,15 @@
 @import "blocks/pets/pets__btn";
 @import "blocks/gallery/swiper-container";
 @import "blocks/gallery/gallery";
-// @import "blocks/gallery/gallery__cats-m";
-@import "blocks/gallery/gallery__cats-w";
-@import "blocks/gallery/gallery__kittens";
 @import "blocks/gallery/gallery__wrapper";
 @import "blocks/gallery/gallery__layout-column";
 @import "blocks/gallery/gallery__item";
 @import "blocks/gallery/gallery__item-img";
+// Слайдер
+@import "blocks/slider/slider";
+@import "blocks/slider/slider__adult-cats";
+@import "blocks/slider/slider__adult-kittens";
+@import "blocks/slider/slider__kittens";
 // Особенности породы
 @import "blocks/breed-features/breed-features";
 @import "blocks/breed-features/breed-features__wrapper";
