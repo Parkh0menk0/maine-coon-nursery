@@ -2514,9 +2514,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 36px; } }
 
 .faq__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   counter-reset: faq-counter;
   width: 75.6%;
   margin: 0 auto;
@@ -2845,9 +2842,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 136px; } }
 
 .reviews__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   width: 89%;
   position: relative;
   margin: 0 auto; }
