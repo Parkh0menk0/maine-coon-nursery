@@ -24,6 +24,8 @@
 @media (max-width: $mobile-max-width) {
   .footer__wrapper {
     flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
 
     padding-top: 32px;
     padding-bottom: 10px;

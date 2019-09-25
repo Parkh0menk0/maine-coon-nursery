@@ -39,11 +39,11 @@
   .faq__question {
     padding: 21px 140px 16px 29px;
 
-    &--02 {
+    &--zeroTwo {
       padding: 28px 140px 28px 26px;
     }
 
-    &--04 {
+    &--zeroFour {
       padding: 31px 140px 25px 28px;
     }
   }
@@ -51,7 +51,7 @@
 
 @media (max-width: $mobile-max-width) {
   .faq__question {
-    padding: 10px 55px 10px 14px;
+    padding: 10px 17% 11px 14px;
     font-size: 14px;
     line-height: 140%;
 
@@ -59,8 +59,17 @@
       width: 14.3%;
     }
 
-    &--02 {
-      padding: 13px 55px 9px 14px;
+    &--zeroTwo {
+      padding: 12px 17% 10px 14px;
+      letter-spacing: 0.05px;
+    }
+
+    &--zeroThree {
+      padding: 10px 17% 10px 14px;
+    }
+
+    &--zeroFour {
+      padding: 10px 17% 10px 14px;
     }
   }
 }

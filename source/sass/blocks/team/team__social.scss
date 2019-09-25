@@ -17,30 +17,12 @@
   }
 }
 
-// @media (max-width: $tablet-max-width) {
-//   .team__social {
-//     flex-direction: row;
-//     order: 2;
-//     padding-right: 0;
-//     padding-top: 0;
+@media (max-width: $mobile-max-width) {
+  .team__social {
+    justify-content: center;
 
-//     li {
-//       margin-bottom: 0;
-//       margin-right: 12px;
-
-//       &:last-of-type {
-//         margin-right: 0;
-//       }
-//     }
-
-//     &::before {
-//       display: none;
-//     }
-//   }
-// }
-
-// @media (max-width: $mobile-max-width) {
-//   .team__social {
-//     display: none;
-//   }
-// }
+    li {
+      margin-right: 11px;
+    }
+  }
+}

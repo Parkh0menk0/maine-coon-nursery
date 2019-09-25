@@ -12,5 +12,6 @@
 @media (max-width: $mobile-max-width) {
   .faq__title {
     margin-bottom: 24px;
+    transform: translateX(0);
   }
 }

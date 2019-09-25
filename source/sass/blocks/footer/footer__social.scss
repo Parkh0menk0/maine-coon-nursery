@@ -29,47 +29,9 @@
 
 @media (max-width: $mobile-max-width) {
   .footer__social {
-    justify-content: center;
-    transform: translateX(-4px);
-    margin-bottom: 23px;
-
+    margin-bottom: 26px;
     li {
-      margin-right: 22px;
-
-      &:first-of-type {
-        width: 21px;
-        height: 12px;
-        margin-right: 0;
-      }
-
-      &:nth-of-type(2) {
-        width: 21px;
-        height: 15px;
-      }
-
-      &:last-of-type {
-        width: 7px;
-        height: 15px;
-      }
-    }
-
-    .social__icon {
-      fill: $white;
-
-      &--vk {
-        width: 23px;
-        height: 16px;
-      }
-
-      &--twitter {
-        width: 23px;
-        height: 18px;
-      }
-
-      &--facebook {
-        width: 13px;
-        height: 18px;
-      }
+      margin-right: 20px;
     }
   }
 }

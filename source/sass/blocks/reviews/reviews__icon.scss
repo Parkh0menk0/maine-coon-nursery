@@ -1,0 +1,17 @@
+.reviews__icon {
+  fill: $brown;
+}
+
+@media (max-width: $mobile-max-width) {
+  .reviews__icon {
+    &--tw {
+      width: 16px;
+      height: 12px;
+    }
+
+    &--vk {
+      width: 18px;
+      height: 10px;
+    }
+  }
+}

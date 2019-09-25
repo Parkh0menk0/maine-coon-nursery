@@ -1,5 +1,7 @@
 @media (max-width: $mobile-max-width) {
   .breed-features__item {
+    padding-left: 10px;
+    max-width: 96%;
     position: relative;
 
     font-family: $roboto;
@@ -9,29 +11,35 @@
     line-height: 20px;
     color: $white;
 
-    padding-left: 18px;
-
     &::before {
       content: "";
       position: absolute;
       border-radius: 50%;
       background-color: $brown;
       top: 5px;
-      left: 0;
+      left: -7px;
       width: 8px;
       height: 8px;
     }
 
-    &:not(:nth-child(3)) {
-      max-width: 233px;
+    // &--cohabitation {
+    //   max-width: 10%;
+    // }
+
+    // &--instruction {
+    //   max-width: 10%;
+    // }
+
+    // &--weight {
+    //   max-width: 10%;
+    // }
+
+    &--appearance {
+      max-width: 78%;
     }
 
     &:not(:last-child) {
       margin-bottom: 20px;
-    }
-
-    &:last-of-type {
-      width: 81%;
     }
   }
 }

@@ -7,10 +7,6 @@
     }
   }
 
-  svg {
-    fill: $brown;
-  }
-
   a {
     width: 28px;
     height: 28px;
@@ -31,5 +27,9 @@
 @media (max-width: $mobile-max-width) {
   .reviews__social {
     justify-content: center;
+
+    li {
+      margin-right: 15px;
+    }
   }
 }

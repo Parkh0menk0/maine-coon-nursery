@@ -41,11 +41,13 @@
 
     &--tel {
       margin-bottom: 15px;
+      transform: translateX(0);
     }
 
     &--address {
       order: 2;
       margin-bottom: 3px;
+      transform: translateX(0);
     }
   }
 }
