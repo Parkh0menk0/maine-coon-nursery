@@ -1,14 +1,6 @@
 .breed-features__title {
-  margin: 0;
   margin-bottom: 20px;
-  font-family: $yesevaOne;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  color: $white;
-  text-align: center;
-  transform: translateX(12px);
+  transform: translateX(10px);
 }
 
 @media (max-width: $tablet-max-width) {
@@ -22,7 +14,5 @@
     margin-bottom: 25px;
     text-align: center;
     width: 100%;
-    font-size: 28px;
-    line-height: 32px;
   }
 }

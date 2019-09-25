@@ -1,14 +1,6 @@
 .breed-features__lead {
-  margin: 0 auto;
   margin-bottom: 23px;
-  font-family: $roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
-  color: $brown;
   width: 62%;
-  text-align: center;
 }
 
 @media (max-width: $tablet-max-width) {
@@ -21,7 +13,5 @@
   .breed-features__lead {
     margin-bottom: 27px;
     width: 96%;
-    font-size: 14px;
-    line-height: 19px;
   }
 }

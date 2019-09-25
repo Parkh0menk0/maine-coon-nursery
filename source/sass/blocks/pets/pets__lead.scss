@@ -1,19 +1,10 @@
 .pets__lead {
-  margin: 0;
   margin-bottom: 42px;
-  font-family: $roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  color: $brown;
   max-width: 523px;
 }
 
 @media (max-width: $mobile-max-width) {
   .pets__lead {
-    font-size: 14px;
     line-height: 144%;
     margin-bottom: 30px;
     word-spacing: 1px;

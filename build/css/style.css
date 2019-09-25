@@ -1076,6 +1076,51 @@ form input[type="radio"] {
   .container {
     padding: 0 15px; } }
 
+.section__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.section__title {
+  margin: 0;
+  font-family: "Yeseva One", "Georgia", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center; }
+
+@media (max-width: 767px) {
+  .section__title {
+    font-size: 28px;
+    line-height: 32px; } }
+
+.section__lead {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #a07b50; }
+
+@media (max-width: 767px) {
+  .section__lead {
+    font-size: 14px;
+    line-height: 140%; } }
+
 .social {
   margin: 0;
   padding: 0;
@@ -1343,19 +1388,6 @@ form input[type="radio"] {
   background-color: #1f1c1d; }
 
 .pets__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 223px;
   padding-bottom: 21px; }
 
@@ -1368,15 +1400,7 @@ form input[type="radio"] {
     padding-top: 53px; } }
 
 .pets__title {
-  margin: 0;
-  margin-bottom: 20px;
-  font-family: "Yeseva One", "Georgia", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff;
-  text-align: center; }
+  margin-bottom: 20px; }
 
 @media (max-width: 1023px) {
   .pets__title {
@@ -1384,25 +1408,14 @@ form input[type="radio"] {
 
 @media (max-width: 767px) {
   .pets__title {
-    font-size: 28px;
-    line-height: 32px;
     margin-bottom: 22px; } }
 
 .pets__lead {
-  margin: 0;
   margin-bottom: 42px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  color: #a07b50;
   max-width: 523px; }
 
 @media (max-width: 767px) {
   .pets__lead {
-    font-size: 14px;
     line-height: 144%;
     margin-bottom: 30px;
     word-spacing: 1px; } }
@@ -1726,17 +1739,9 @@ form input[type="radio"] {
     padding-bottom: 54px; } }
 
 .breed-features__title {
-  margin: 0;
   margin-bottom: 20px;
-  font-family: "Yeseva One", "Georgia", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff;
-  text-align: center;
-  -webkit-transform: translateX(12px);
-          transform: translateX(12px); }
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px); }
 
 @media (max-width: 1023px) {
   .breed-features__title {
@@ -1747,9 +1752,7 @@ form input[type="radio"] {
   .breed-features__title {
     margin-bottom: 25px;
     text-align: center;
-    width: 100%;
-    font-size: 28px;
-    line-height: 32px; } }
+    width: 100%; } }
 
 .breed-features__image img {
   display: block;
@@ -1775,16 +1778,8 @@ form input[type="radio"] {
     height: 303px; } }
 
 .breed-features__lead {
-  margin: 0 auto;
   margin-bottom: 23px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
-  color: #a07b50;
-  width: 62%;
-  text-align: center; }
+  width: 62%; }
 
 @media (max-width: 1023px) {
   .breed-features__lead {
@@ -1793,9 +1788,7 @@ form input[type="radio"] {
 @media (max-width: 767px) {
   .breed-features__lead {
     margin-bottom: 27px;
-    width: 96%;
-    font-size: 14px;
-    line-height: 19px; } }
+    width: 96%; } }
 
 .breed-features__list {
   display: none; }
@@ -1852,15 +1845,7 @@ form input[type="radio"] {
     padding-bottom: 30px; } }
 
 .advantages__title {
-  margin: 0;
-  margin-bottom: 20px;
-  font-family: "Yeseva One", "Georgia", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff;
-  text-align: center; }
+  margin-bottom: 20px; }
 
 @media (max-width: 1023px) {
   .advantages__title {
@@ -1868,21 +1853,11 @@ form input[type="radio"] {
 
 @media (max-width: 767px) {
   .advantages__title {
-    font-size: 28px;
-    line-height: 32px;
     max-width: 228px;
-    margin: 0 auto 24px; } }
+    margin-bottom: 24px; } }
 
 .advantages__lead {
-  margin: 0;
   margin-bottom: 46px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  color: #a07b50;
   word-spacing: 2px; }
 
 @media (max-width: 1023px) {
@@ -1892,8 +1867,6 @@ form input[type="radio"] {
 @media (max-width: 767px) {
   .advantages__lead {
     word-spacing: 1px;
-    font-size: 14px;
-    line-height: 140%;
     margin-bottom: 36px; } }
 
 .advantages__list {
@@ -2050,15 +2023,7 @@ form input[type="radio"] {
     padding-bottom: 30px; } }
 
 .care__title {
-  margin: 0;
-  margin-bottom: 48px;
-  font-family: "Yeseva One", "Georgia", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff;
-  text-align: center; }
+  margin-bottom: 48px; }
 
 @media (max-width: 1023px) {
   .care__title {
@@ -2066,9 +2031,7 @@ form input[type="radio"] {
 
 @media (max-width: 767px) {
   .care__title {
-    margin: 0 auto 33px;
-    font-size: 28px;
-    line-height: 32px; } }
+    margin-bottom: 33px; } }
 
 .care__list {
   margin: 0;
@@ -2300,19 +2263,6 @@ form input[type="radio"] {
       height: 166px; } }
 
 .team__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 83px;
   padding-bottom: 72px; }
 
@@ -2327,15 +2277,7 @@ form input[type="radio"] {
     padding-bottom: 60px; } }
 
 .team__title {
-  margin: 0;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: "Yeseva One", "Georgia", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff; }
+  margin-bottom: 20px; }
 
 @media (max-width: 1023px) {
   .team__title {
@@ -2343,21 +2285,11 @@ form input[type="radio"] {
 
 @media (max-width: 767px) {
   .team__title {
-    font-size: 28px;
-    line-height: 32px;
     margin-bottom: 24px; } }
 
 .team__lead {
-  margin: 0;
   margin-bottom: 25px;
-  text-align: center;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;
-  color: #a07b50;
-  max-width: 515px; }
+  max-width: 505px; }
 
 @media (max-width: 1023px) {
   .team__lead {
@@ -2365,8 +2297,6 @@ form input[type="radio"] {
 
 @media (max-width: 767px) {
   .team__lead {
-    font-size: 14px;
-    line-height: 140%;
     margin-bottom: 99px; } }
 
 .team__list {
@@ -2391,7 +2321,7 @@ form input[type="radio"] {
   bottom: 11%;
   right: 59.7%; }
 
-.team__item h4 {
+.team__item h3 {
   margin: 0 0 6px;
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
@@ -2437,7 +2367,7 @@ form input[type="radio"] {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-  .team__item h4 {
+  .team__item h3 {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -2544,7 +2474,7 @@ form input[type="radio"] {
   background-color: #1f1c1d; }
 
 .faq__wrapper {
-  padding-top: 74px;
+  padding-top: 72px;
   padding-bottom: 26px; }
 
 @media (max-width: 1023px) {
@@ -2558,15 +2488,7 @@ form input[type="radio"] {
     padding-bottom: 9px; } }
 
 .faq__title {
-  margin: 0;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: "Yeseva One", "Georgia", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff; }
+  margin-bottom: 20px; }
 
 @media (max-width: 1023px) {
   .faq__title {
@@ -2574,20 +2496,10 @@ form input[type="radio"] {
 
 @media (max-width: 767px) {
   .faq__title {
-    font-size: 28px;
-    line-height: 32px;
     margin-bottom: 24px; } }
 
 .faq__lead {
-  margin: 0;
-  margin-bottom: 54px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: center;
-  color: #a07b50; }
+  margin-bottom: 54px; }
 
 @media (max-width: 1023px) {
   .faq__lead {
@@ -2595,10 +2507,7 @@ form input[type="radio"] {
 
 @media (max-width: 767px) {
   .faq__lead {
-    margin: 0 auto;
     max-width: 190px;
-    font-size: 14px;
-    line-height: 140%;
     margin-bottom: 36px; } }
 
 .faq__list {
@@ -2851,7 +2760,7 @@ form input[type="radio"] {
 
 .reviews__wrapper {
   padding-top: 27px;
-  padding-bottom: 129px; }
+  padding-bottom: 111px; }
 
 @media (max-width: 1023px) {
   .reviews__wrapper {
@@ -2864,15 +2773,7 @@ form input[type="radio"] {
     padding-bottom: 60px; } }
 
 .reviews__title {
-  margin: 0;
-  margin-bottom: 59px;
-  text-align: center;
-  font-family: "Yeseva One", "Georgia", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  color: #ffffff; }
+  margin-bottom: 59px; }
 
 @media (max-width: 1023px) {
   .reviews__title {
@@ -2880,8 +2781,6 @@ form input[type="radio"] {
 
 @media (max-width: 767px) {
   .reviews__title {
-    font-size: 28px;
-    line-height: 32px;
     margin-bottom: 136px; } }
 
 .reviews__list {
@@ -2911,7 +2810,7 @@ form input[type="radio"] {
     position: absolute;
     top: 46px;
     left: 53px; }
-  .reviews__item h4 {
+  .reviews__item h3 {
     margin: 0 0 13px;
     font-family: "Roboto", "Arial", sans-serif;
     font-style: normal;
@@ -2946,7 +2845,7 @@ form input[type="radio"] {
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
-    .reviews__item h4 {
+    .reviews__item h3 {
       text-align: center; }
     .reviews__item p {
       margin: 0 0 26px;
@@ -2962,7 +2861,7 @@ form input[type="radio"] {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-  .reviews__item h4 {
+  .reviews__item h3 {
     font-size: 18px;
     line-height: 21px;
     text-align: center;

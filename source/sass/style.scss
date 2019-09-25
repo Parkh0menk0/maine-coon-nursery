@@ -8,6 +8,11 @@
 @import "global/animation";
 @import "global/common";
 @import "global/container";
+// Общие стили
+@import "blocks/section/section";
+@import "blocks/section/section__wrapper";
+@import "blocks/section/section__title";
+@import "blocks/section/section__lead";
 // Социальные сети
 @import "blocks/social/social";
 // Главный блок

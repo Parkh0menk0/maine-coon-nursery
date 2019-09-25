@@ -1,13 +1,5 @@
 .care__title {
-  margin: 0;
   margin-bottom: 48px;
-  font-family: $yesevaOne;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  color: $white;
-  text-align: center;
 }
 
 @media (max-width: $tablet-max-width) {
@@ -18,8 +10,6 @@
 
 @media (max-width: $mobile-max-width) {
   .care__title {
-    margin: 0 auto 33px;
-    font-size: 28px;
-    line-height: 32px;
+    margin-bottom: 33px;
   }
 }

@@ -1,13 +1,5 @@
 .faq__lead {
-  margin: 0;
   margin-bottom: 54px;
-  font-family: $roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: center;
-  color: $brown;
 }
 
 @media (max-width: $tablet-max-width) {
@@ -18,10 +10,7 @@
 
 @media (max-width: $mobile-max-width) {
   .faq__lead {
-    margin: 0 auto;
     max-width: 190px;
-    font-size: 14px;
-    line-height: 140%;
     margin-bottom: 36px;
   }
 }

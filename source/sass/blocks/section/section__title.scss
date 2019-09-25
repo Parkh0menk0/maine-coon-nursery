@@ -1,0 +1,17 @@
+.section__title {
+  margin: 0;
+  font-family: $yesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: $white;
+  text-align: center;
+}
+
+@media (max-width: $mobile-max-width) {
+  .section__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
