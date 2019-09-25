@@ -2328,7 +2328,8 @@ form input[type="radio"] {
 .team__item blockquote {
   margin: 0; }
 
-.team__item h3 {
+.team__item span {
+  display: block;
   margin: 0 0 6px;
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
