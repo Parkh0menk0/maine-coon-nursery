@@ -1,14 +1,16 @@
-.pets__link {
+.pets__choise-btn {
   font-family: $roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
   color: $white;
+  border: none;
+  background-color: transparent;
 }
 
 @media (max-width: $mobile-max-width) {
-  .pets__link {
+  .pets__choise-btn {
     font-size: 16px;
     line-height: 19px;
   }
