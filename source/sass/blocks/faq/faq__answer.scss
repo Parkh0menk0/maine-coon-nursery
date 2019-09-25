@@ -5,6 +5,13 @@
   padding: 38px 42px 39px;
   border: 1px solid $brown;
   border-top: none;
+  animation: questionHide 0.7s ease both;
+  z-index: 1;
+
+  &--show {
+    display: block;
+    animation: questionShow 0.7s ease both;
+  }
 
   p {
     margin: 0;

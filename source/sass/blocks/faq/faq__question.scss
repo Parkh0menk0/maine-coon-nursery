@@ -6,13 +6,14 @@
   font-size: 16px;
   line-height: 19px;
   color: $lightbrown;
-  background-color: transparent;
+  background-color: $lightgray-background;
   cursor: pointer;
   width: 100%;
   padding: 47px 80px 43px 42px;
   border: 1px solid $brown;
   text-align: left;
   outline: none;
+  z-index: 2;
 
   &::after {
     content: "";

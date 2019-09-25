@@ -1,4 +1,4 @@
-.active {
+.active-btn {
   &::after {
     content: "";
     position: absolute;
@@ -14,7 +14,7 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .active {
+  .active-btn {
     &::after {
       width: 14.3%;
     }
