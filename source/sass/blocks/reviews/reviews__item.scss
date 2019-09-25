@@ -9,7 +9,12 @@
     left: 53px;
   }
 
-  h3 {
+  blockquote {
+    margin: 0;
+  }
+
+  cite {
+    display: block;
     margin: 0 0 13px;
     font-family: $roboto;
     font-style: normal;

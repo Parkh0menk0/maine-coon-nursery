@@ -1438,7 +1438,7 @@ form input[type="radio"] {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  width: 273px;
+  width: 259px;
   margin-bottom: 44px; }
 
 @media (max-width: 1023px) {
@@ -1452,7 +1452,7 @@ form input[type="radio"] {
     margin-bottom: 38px; } }
 
 .pets__item {
-  margin-right: 30px;
+  margin-right: 44px;
   opacity: 0.5; }
   .pets__item.current {
     opacity: 1; }
@@ -1469,7 +1469,8 @@ form input[type="radio"] {
   line-height: 21px;
   color: #ffffff;
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  padding: 0; }
 
 @media (max-width: 767px) {
   .pets__choise-btn {
@@ -2279,7 +2280,7 @@ form input[type="radio"] {
     padding-bottom: 60px; } }
 
 .team__title {
-  margin-bottom: 20px; }
+  margin-bottom: 19px; }
 
 @media (max-width: 1023px) {
   .team__title {
@@ -2290,7 +2291,7 @@ form input[type="radio"] {
     margin-bottom: 24px; } }
 
 .team__lead {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   max-width: 505px; }
 
 @media (max-width: 1023px) {
@@ -2322,6 +2323,9 @@ form input[type="radio"] {
   position: absolute;
   bottom: 11%;
   right: 59.7%; }
+
+.team__item blockquote {
+  margin: 0; }
 
 .team__item h3 {
   margin: 0 0 6px;
@@ -2387,7 +2391,7 @@ form input[type="radio"] {
 
 .team__item-wrapper {
   background-color: #1f1c1d;
-  padding: 68px 98px 72px; }
+  padding: 68px 98px 74px; }
 
 @media (max-width: 1023px) {
   .team__item-wrapper {
@@ -2812,7 +2816,10 @@ form input[type="radio"] {
     position: absolute;
     top: 46px;
     left: 53px; }
-  .reviews__item h3 {
+  .reviews__item blockquote {
+    margin: 0; }
+  .reviews__item cite {
+    display: block;
     margin: 0 0 13px;
     font-family: "Roboto", "Arial", sans-serif;
     font-style: normal;
