@@ -29,6 +29,12 @@
   }
 }
 
+@media (max-width: $tablet-max-width) {
+  .pets__btn {
+    transform: translateX(-2px);
+  }
+}
+
 @media (max-width: $mobile-max-width) {
   .pets__btn {
     width: 141px;

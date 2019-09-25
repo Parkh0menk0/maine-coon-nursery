@@ -1,7 +1,7 @@
 .header__logo {
   display: block;
   width: 100%;
-  margin-bottom: 104px;
+  margin-bottom: 107px;
   text-align: center;
 
   svg {
@@ -9,7 +9,6 @@
     stroke: $darkgray-background;
     stroke-width: 0.8;
     transition: fill 0.3s ease-out;
-    transform: translateX(4px);
 
     &:hover,
     &:focus {
@@ -20,11 +19,7 @@
 
 @media (max-width: $tablet-max-width) {
   .header__logo {
-    margin-bottom: 84px;
-
-    svg {
-      transform: translateX(2px);
-    }
+    margin-bottom: 89px;
   }
 }
 

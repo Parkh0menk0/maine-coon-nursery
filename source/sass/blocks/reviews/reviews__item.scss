@@ -59,17 +59,13 @@
       transform: translateX(-50%);
     }
 
-    h3 {
+    cite {
       text-align: center;
     }
 
     p {
       margin: 0 0 26px;
       text-align: center;
-
-      br:last-of-type {
-        display: none;
-      }
     }
   }
 }

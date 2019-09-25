@@ -22,6 +22,19 @@
   }
 }
 
+@media (max-width: $tablet-max-width) {
+  .footer__link {
+    &--address {
+      transform: translateX(27px);
+    }
+
+    &--tel {
+      font-weight: bold;
+      transform: translateX(6px);
+    }
+  }
+}
+
 @media (max-width: $mobile-max-width) {
   .footer__link {
     flex-direction: column-reverse;

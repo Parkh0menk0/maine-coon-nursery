@@ -28,6 +28,7 @@
     line-height: 60px;
     color: $white;
     max-width: 350px;
+    transform: translateX(-3px);
   }
 
   b {
@@ -81,7 +82,7 @@
     }
 
     a {
-      margin-bottom: 58px;
+      margin-bottom: 60px;
     }
   }
 }
