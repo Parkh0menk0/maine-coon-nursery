@@ -9,11 +9,12 @@
   background-color: $lightgray-background;
   cursor: pointer;
   width: 100%;
-  padding: 47px 80px 43px 42px;
+  padding: 47px 15% 43px 42px;
   border: 1px solid $brown;
   text-align: left;
   outline: none;
   z-index: 2;
+  transition: background-color 0.3s ease-out;
 
   &::after {
     content: "";
@@ -28,8 +29,9 @@
     border-left: 1px solid $brown;
   }
 
+  &:hover,
   &:hover::after {
-    background-color: $lightbrown;
+    background-color: $darkgray-background;
   }
 }
 
