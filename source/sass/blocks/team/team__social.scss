@@ -1,95 +1,46 @@
 .team__social {
-  @include list-reset;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  align-items: center;
-
   li {
-    margin-right: 8px;
-
-    &:first-of-type {
-      width: 22px;
-      height: 15px;
-    }
-
-    &:nth-of-type(2) {
-      width: 21px;
-      height: 15px;
-    }
+    margin-right: 9px;
 
     &:last-of-type {
-      width: 7px;
-      height: 15px;
+      margin-right: 0;
     }
   }
 
-  .social__icon {
+  svg {
     fill: $white;
 
     &:hover,
     &:focus {
       fill: $brown;
     }
-
-    &--vk {
-      width: 35px;
-      height: 24px;
-    }
-
-    &--twitter {
-      width: 30px;
-      height: 22px;
-    }
-
-    &--facebook {
-      width: 9px;
-      height: 20px;
-    }
   }
 }
 
-@media (max-width: $mobile-max-width) {
-  .team__social {
-    justify-content: center;
+// @media (max-width: $tablet-max-width) {
+//   .team__social {
+//     flex-direction: row;
+//     order: 2;
+//     padding-right: 0;
+//     padding-top: 0;
 
-    li {
-      margin-right: 13px;
+//     li {
+//       margin-bottom: 0;
+//       margin-right: 12px;
 
-      &:first-of-type {
-        width: 21px;
-        height: 12px;
-        margin-right: 0;
-      }
+//       &:last-of-type {
+//         margin-right: 0;
+//       }
+//     }
 
-      &:nth-of-type(2) {
-        width: 21px;
-        height: 15px;
-      }
+//     &::before {
+//       display: none;
+//     }
+//   }
+// }
 
-      &:last-of-type {
-        width: 7px;
-        height: 15px;
-      }
-    }
-
-    .social__icon {
-      fill: $white;
-
-      &--vk {
-        width: 27px;
-        height: 19px;
-      }
-
-      &--twitter {
-        width: 26px;
-        height: 22px;
-      }
-
-      &--facebook {
-        width: 13px;
-        height: 18px;
-      }
-    }
-  }
-}
+// @media (max-width: $mobile-max-width) {
+//   .team__social {
+//     display: none;
+//   }
+// }

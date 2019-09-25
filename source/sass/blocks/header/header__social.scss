@@ -4,11 +4,16 @@
   margin-top: auto;
 
   li {
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 
     &:last-of-type {
       margin-bottom: 0;
     }
+  }
+
+  a {
+    width: 12px;
+    height: 11px;
   }
 
   svg {

@@ -1,48 +1,30 @@
 .reviews__social {
-  align-items: center;
-
   li {
-
-    width: 28px;
-    height: 28px;
     margin-right: 17px;
-
-    &:first-of-type {
-      order: 3;
-      margin-right: 0;
-    }
-
-    &:nth-of-type(2) {
-      order: 2;
-    }
 
     &:last-of-type {
-      order: 1;
-      display: none;
-    }
-  }
-
-  a {
-    display: block;
-    width: 28px;
-    height: 28px;
-    border: 1px solid $brown;
-    margin-right: 17px;
-    margin-bottom: 17px;
-
-    svg:hover,
-    svg:focus {
-      fill: $white;
-    }
-
-    &:hover,
-    &:focus {
-      border: 1px solid $white;
+      margin-right: 0;
     }
   }
 
   svg {
     fill: $brown;
+  }
+
+  a {
+    width: 28px;
+    height: 28px;
+    border: 1px solid $brown;
+
+    &:hover,
+    &:focus {
+      border-color: $white;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: $white;
+    }
   }
 }
 

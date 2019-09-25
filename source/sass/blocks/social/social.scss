@@ -6,17 +6,13 @@
   flex-wrap: wrap;
   overflow: hidden;
 
-  li {
-    position: relative;
-    width: 12px;
-    height: 16px;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     transition: fill 0.3s ease-out,
       opacity 0.3s ease-out;
 
