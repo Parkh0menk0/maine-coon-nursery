@@ -2120,7 +2120,7 @@ form input[type="radio"] {
   padding-top: 37px;
   padding-left: 58px;
   padding-bottom: 21px;
-  padding-right: 55px;
+  padding-right: 19%;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease-out, border 0.3s ease-out;
   transition: background-color 0.3s ease-out, border 0.3s ease-out; }
