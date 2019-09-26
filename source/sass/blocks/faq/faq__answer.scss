@@ -40,13 +40,17 @@
 
 @media (max-width: $tablet-max-width) {
   .faq__answer {
-    padding: 24px 143px 29px 28px;
+    &--show {
+      padding: 24px 143px 29px 28px;
+    }
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .faq__answer {
-    padding: 11px 25px 11px 14px;
+    &--show {
+      padding: 11px 25px 11px 14px;;
+    }
 
     p {
       font-size: 14px;
