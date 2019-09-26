@@ -1,0 +1,18 @@
+.slider__button {
+  display: block;
+  width: 14px;
+  height: 31px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--prev {
+    background-image: url("../img/arrowPrev.svg");
+  }
+
+  &--next {
+    background-image: url("../img/arrowNext.svg");
+  }
+}

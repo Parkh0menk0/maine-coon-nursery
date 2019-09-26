@@ -6,6 +6,12 @@
   align-items: flex-start;
 }
 
+@media (max-width: 1110px) {
+  .reviews__content {
+    padding: 109px 30px 82px 120px;
+  }
+}
+
 @media (max-width: $tablet-max-width) {
   .reviews__content {
     padding: 148px 89px 16px 111px;

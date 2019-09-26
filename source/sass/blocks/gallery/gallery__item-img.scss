@@ -28,6 +28,7 @@
     }
 
     &--large {
+      min-width: 474px;
       width: 474px;
       height: 495px;
     }
@@ -37,18 +38,24 @@
 @media (max-width: $mobile-max-width) {
   .gallery__item-img {
     &--top {
+      min-width: 234px;
       width: 234px;
       height: 99px;
     }
 
     &--bottom {
+      min-width: 208px;
       width: 208px;
       height: 99px;
     }
 
     &--large {
-      width: 294px;
-      height: 308px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 231px;
+      width: 231px;
+      height: 250px;
     }
   }
 }

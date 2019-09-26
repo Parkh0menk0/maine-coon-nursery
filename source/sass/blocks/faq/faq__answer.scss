@@ -1,16 +1,16 @@
 .faq__answer {
   display: none;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  padding: 38px 42px 39px;
-  border: 1px solid $brown;
-  border-top: none;
-  animation: questionHide 0.7s ease both;
-  z-index: 1;
+  transition: 0.3s ease-out;
+  border: 0 solid $brown;
 
   &--show {
     display: block;
-    animation: questionShow 0.7s ease both;
+    width: 99.9%;
+    height: 100%;
+    padding: 38px 42px 39px;
+    border: 1px solid $brown;
+    border-top: none;
+    z-index: 1;
   }
 
   p {
@@ -36,13 +36,17 @@
 
 @media (max-width: $tablet-max-width) {
   .faq__answer {
-    padding: 24px 143px 29px 28px;
+    &--show {
+      padding: 24px 143px 29px 28px;
+    }
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .faq__answer {
-    padding: 11px 25px 11px 14px;
+    &--show {
+      padding: 11px 25px 11px 14px;;
+    }
 
     p {
       font-size: 14px;
