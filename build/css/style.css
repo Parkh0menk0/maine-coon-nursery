@@ -1143,6 +1143,7 @@ form input[type="radio"] {
     width: 474px;
     height: 197px; }
   .gallery__item-img--large {
+    min-width: 474px;
     width: 474px;
     height: 495px; } }
 
