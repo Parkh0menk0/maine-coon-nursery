@@ -64,6 +64,31 @@
   }
 }
 
+@media (max-width: 1170px) {
+  .breed-features__item {
+
+    &--cohabitation {
+      left: -368px;
+      max-width: 167px;
+    }
+
+    &--instruction {
+      right: -442px;
+      max-width: 132px;
+    }
+
+    &--weight {
+      right: -342px;
+      max-width: 110px;
+    }
+
+    &--appearance {
+      left: -295px;
+      max-width: 140px;
+    }
+  }
+}
+
 @media (max-width: $tablet-max-width) {
   .breed-features__item {
     &::before {

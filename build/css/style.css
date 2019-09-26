@@ -1109,6 +1109,7 @@ form input[type="radio"] {
   background-color: #1f1c1d; }
 
 .breed-features__wrapper {
+  position: relative;
   padding-top: 21px;
   padding-bottom: 129px; }
 
@@ -1168,8 +1169,7 @@ form input[type="radio"] {
 
 @media (max-width: 1023px) {
   .breed-features__image {
-    -webkit-transform: translateX(115px);
-            transform: translateX(115px); }
+    width: 435px; }
     .breed-features__image img {
       width: 401px; }
     .breed-features__image::before {
@@ -1283,6 +1283,20 @@ form input[type="radio"] {
     text-align: right; }
     .breed-features__item--appearance::before {
       right: -31px; }
+
+@media (max-width: 1170px) {
+  .breed-features__item--cohabitation {
+    left: -368px;
+    max-width: 167px; }
+  .breed-features__item--instruction {
+    right: -442px;
+    max-width: 132px; }
+  .breed-features__item--weight {
+    right: -342px;
+    max-width: 110px; }
+  .breed-features__item--appearance {
+    left: -295px;
+    max-width: 140px; } }
 
 @media (max-width: 1023px) {
   .breed-features__item::before {
