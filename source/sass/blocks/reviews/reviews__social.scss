@@ -1,9 +1,12 @@
 .reviews__social {
+  align-items: flex-start;
   li {
     margin-right: 17px;
+    margin-bottom: 17px;
 
     &:last-of-type {
       margin-right: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -30,6 +33,7 @@
 
     li {
       margin-right: 15px;
+      margin-bottom: 0;
     }
   }
 }

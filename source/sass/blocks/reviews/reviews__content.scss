@@ -1,5 +1,5 @@
 .reviews__content {
-  padding: 109px 90px 99px 145px;
+  padding: 109px 90px 82px 145px;
   background-color: $darkgray-background;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 
 @media (max-width: $tablet-max-width) {
   .reviews__content {
-    padding: 148px 89px 33px 111px;
+    padding: 148px 89px 16px 111px;
     align-items: center;
   }
 }

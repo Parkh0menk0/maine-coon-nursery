@@ -1,4 +1,6 @@
 .footer__social {
+  align-self: center;
+
   li {
     margin-right: 8px;
 
@@ -30,6 +32,7 @@
 @media (max-width: $mobile-max-width) {
   .footer__social {
     margin-bottom: 26px;
+
     li {
       margin-right: 20px;
     }
