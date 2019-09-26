@@ -6,7 +6,7 @@
   var next = document.querySelector('.team__slider button:first-of-type');
   var previous = document.querySelector('.team__slider button:last-of-type');
   var currentSlide = 0;
-  var slideInterval = setInterval(nextSlide,2000);
+  var slideInterval = setInterval(nextSlide,1000);
 
   function nextSlide() {
     goToSlide(currentSlide + 1);
