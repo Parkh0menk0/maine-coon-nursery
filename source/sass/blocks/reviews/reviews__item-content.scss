@@ -1,0 +1,26 @@
+.reviews__item-content {
+  margin: 0 0 39px;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  color: $white;
+  opacity: 0.7;
+}
+
+@media (max-width: $tablet-max-width) {
+  .reviews__item-content {
+    margin: 0 0 26px;
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .reviews__item-content {
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+}

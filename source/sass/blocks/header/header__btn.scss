@@ -1,0 +1,46 @@
+.header__btn {
+  text-align: center;
+  width: 200px;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid $brown;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 18px;
+  transition: color 0.3s ease-out,
+    border 0.3s ease-out;
+  margin-bottom: 110px;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+    border: 1px solid $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .header__btn {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .header__btn {
+    width: 141px;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 12px;
+  }
+}

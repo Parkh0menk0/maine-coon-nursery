@@ -14,19 +14,19 @@
     margin-right: 0;
     margin-bottom: 23px;
 
-    &:first-of-type {
+    &--wool {
       order: 1;
     }
 
-    &:nth-of-type(2) {
+    &--claws {
       order: 3;
     }
 
-    &:nth-of-type(3) {
+    &--earsandeyes {
       order: 2;
     }
 
-    &:nth-of-type(4) {
+    &--food {
       order: 4;
     }
   }
@@ -36,12 +36,12 @@
   .care__item {
     margin-bottom: 30px;
 
-    &:nth-of-type(2) p {
+    &--claws p {
       width: 80%;
       line-height: 140%;
     }
 
-    &:nth-of-type(2) a {
+    &--claws a {
       padding: 21px 18% 21px 24px;
     }
   }

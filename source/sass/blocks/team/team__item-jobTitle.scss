@@ -1,0 +1,25 @@
+.team__item-jobTitle {
+  margin: 0 0 23px;
+  display: block;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $brown;
+}
+
+@media (max-width: $tablet-max-width) {
+  .team__item-jobTitle {
+    margin: 0 0 24px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .team__item-jobTitle {
+    font-size: 14px;
+    line-height: 135.94%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}

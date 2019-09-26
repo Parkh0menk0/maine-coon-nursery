@@ -55,12 +55,12 @@
           </li>
         </ul>
         <div class="header__content">
-          <p>Новосибирск</p>
+          <span>Новосибирск</span>
           <h1 class="header__title">Питомник Мейн-Кунов</h1>
-          <p>
+          <p class="header__lead">
             <b>Первый питомник с расширенным спектром услуг</b>
           </p>
-          <a href="#">Смотреть котиков</a>
+          <a href="#" class="header__btn">Смотреть котиков</a>
         </div>
       </div>
     </div>
@@ -108,12 +108,12 @@
           </ul>
           <div class="slider pets__slider">
             <div class="slider__adult-cats">
-              <div class="gallery swiper-container">
+              <div class="gallery">
                 <h3 class="visually-hidden">Галерея питомцев</h3>
-                <div class="gallery__wrapper swiper-wrapper">
+                <div class="gallery__wrapper">
                   <div class="gallery__layout-column">
                     <!-- 1-e изображение галереи -->
-                    <div class="gallery__item swiper-slide">
+                    <div class="gallery__item">
                       <picture>
                         <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                         <source type="image/webp" media="(max-width: 767px)"
@@ -137,7 +137,7 @@
                       </picture>
                     </div>
                     <!-- 2-e изображение галереи -->
-                    <div class="gallery__item swiper-slide">
+                    <div class="gallery__item">
                       <picture>
                         <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                         <source type="image/webp" media="(max-width: 767px)"
@@ -162,7 +162,7 @@
                     </div>
                   </div>
                   <!-- 3-e изображение галереи -->
-                  <div class="gallery__item swiper-slide">
+                  <div class="gallery__item">
                     <picture>
                       <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                       <source type="image/webp" media="(max-width: 767px)"
@@ -196,12 +196,12 @@
               <a href="#" class="pets__btn">Смотреть больше</a>
             </div>
             <div class="slider__adult-kittens">
-              <div class="gallery swiper-container">
+              <div class="gallery">
                 <h3 class="visually-hidden">Галерея питомцев</h3>
-                <div class="gallery__wrapper swiper-wrapper">
+                <div class="gallery__wrapper">
                   <div class="gallery__layout-column">
                     <!-- 1-e изображение галереи -->
-                    <div class="gallery__item swiper-slide">
+                    <div class="gallery__item">
                       <picture>
                         <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                         <source type="image/webp" media="(max-width: 767px)"
@@ -225,7 +225,7 @@
                       </picture>
                     </div>
                     <!-- 2-e изображение галереи -->
-                    <div class="gallery__item swiper-slide">
+                    <div class="gallery__item">
                       <picture>
                         <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                         <source type="image/webp" media="(max-width: 767px)"
@@ -250,7 +250,7 @@
                     </div>
                   </div>
                   <!-- 3-e изображение галереи -->
-                  <div class="gallery__item swiper-slide">
+                  <div class="gallery__item">
                     <picture>
                       <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                       <source type="image/webp" media="(max-width: 767px)"
@@ -284,12 +284,12 @@
               <a href="#" class="pets__btn">Смотреть больше</a>
             </div>
             <div class="slider__kittens">
-              <div class="gallery swiper-container">
+              <div class="gallery">
                 <h3 class="visually-hidden">Галерея питомцев</h3>
-                <div class="gallery__wrapper swiper-wrapper">
+                <div class="gallery__wrapper">
                   <div class="gallery__layout-column">
                     <!-- 1-e изображение галереи -->
-                    <div class="gallery__item swiper-slide">
+                    <div class="gallery__item">
                       <picture>
                         <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                         <source type="image/webp" media="(max-width: 767px)"
@@ -313,7 +313,7 @@
                       </picture>
                     </div>
                     <!-- 2-e изображение галереи -->
-                    <div class="gallery__item swiper-slide">
+                    <div class="gallery__item">
                       <picture>
                         <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                         <source type="image/webp" media="(max-width: 767px)"
@@ -338,7 +338,7 @@
                     </div>
                   </div>
                   <!-- 3-e изображение галереи -->
-                  <div class="gallery__item swiper-slide">
+                  <div class="gallery__item">
                     <picture>
                       <!-- 1х: 275x256 px; 2x: 550x512 px; -->
                       <source type="image/webp" media="(max-width: 767px)"
@@ -467,31 +467,35 @@
         <div class="section__wrapper care__wrapper">
           <h2 class="section__title care__title">Об уходе за Мейн-Куном</h2>
           <ul class="care__list">
-            <li class="care__item">
+            <li class="care__item  care__item--wool">
               <a href="#" class="care__link">
-                <h3>Шерсть</h3>
-                <p>Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и
+                <h3 class="care__link-title">Шерсть</h3>
+                <p class="care__link-content">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет
+                  блестящей, мягкой и
                   послушной</p>
               </a>
             </li>
-            <li class="care__item">
+            <li class="care__item  care__item--claws">
               <a href="#" class="care__link">
-                <h3>Когти</h3>
-                <p>Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку
+                <h3 class="care__link-title">Когти</h3>
+                <p class="care__link-content">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как
+                  подобрать идеальную когтеточку
                 </p>
               </a>
             </li>
-            <li class="care__item">
+            <li class="care__item  care__item--earsandeyes">
               <a href="#" class="care__link">
-                <h3>Уши и глаза</h3>
-                <p>Владельцам котов необходимо регулярно осматривать ушки и глазасвоих питомцев, ведь это может быть
+                <h3 class="care__link-title">Уши и глаза</h3>
+                <p class="care__link-content">Владельцам котов необходимо регулярно осматривать ушки и глазасвоих
+                  питомцев, ведь это может быть
                   признаками заболевания</p>
               </a>
             </li>
-            <li class="care__item">
+            <li class="care__item  care__item--food">
               <a href="#" class="care__link">
-                <h3>Питание</h3>
-                <p>В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но
+                <h3 class="care__link-title">Питание</h3>
+                <p class="care__link-content">В нашем питомнике существует два подхода: натуральное питание и питание
+                  промышленными кормами, но
                   выбирать только вам</p>
               </a>
             </li>
@@ -537,10 +541,10 @@
                   <div class="team__item-wrapper">
                     <blockquote>
                       <cite>
-                        <span itemprop="name">Серёжа Попов</span>
-                        <b itemprop="jobTitle">Основатель питомника</b>
+                        <span class="team__item-title" itemprop="name">Серёжа Попов</span>
+                        <b class="team__item-jobTitle" itemprop="jobTitle">Основатель питомника</b>
                       </cite>
-                      <p>Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого
+                      <p class="team__item-content">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого
                         приобретенного вами питомца</p>
                     </blockquote>
                     <ul class="social team__social">
@@ -670,8 +674,8 @@
                 </picture>
                 <div class="reviews__content">
                   <blockquote>
-                    <cite itemprop="name">Серёжа Попов</cite>
-                    <p>Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан.
+                    <cite class="reviews__item-title" itemprop="name">Серёжа Попов</cite>
+                    <p class="reviews__item-content">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан.
                       Огромным
                       плюсом питомника является возможность консультироваться в любое время</p>
                   </blockquote>

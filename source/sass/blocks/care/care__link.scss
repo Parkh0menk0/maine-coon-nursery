@@ -30,27 +30,6 @@
   &:hover::after {
     background-color: $darkgray-background;
   }
-
-  h3 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-family: $roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 26px;
-    color: $brown;
-  }
-
-  p {
-    margin: 0;
-    font-family: $roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 23px;
-    color: $white;
-  }
 }
 
 @media (max-width: $tablet-max-width) {
@@ -64,15 +43,6 @@
   .care__link {
     padding: 21px 18% 18px 24px;
     min-height: 152px;
-
-    h3 {
-      font-size: 18px;
-      line-height: 21px;
-    }
-
-    p {
-      line-height: 20px;
-    }
 
     &::after {
       width: 15.6%;

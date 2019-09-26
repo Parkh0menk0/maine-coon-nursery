@@ -1,0 +1,17 @@
+.care__link-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: $brown;
+}
+
+@media (max-width: $mobile-max-width) {
+  .care__link-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}

@@ -24,7 +24,6 @@
     left: -409px;
     max-width: 255px;
     text-align: right;
-    font-size: 14px;
 
     &::before {
       right: -39px;
@@ -134,7 +133,7 @@
 
     &--cohabitation {
       top: 2px;
-      left: 0px;
+      left: 0;
       max-width: 233px;
       text-align: left;
 
@@ -146,7 +145,7 @@
 
     &--instruction {
       top: 5px;
-      left: 0px;
+      left: 0;
       max-width: 160px;
 
       &::before {
@@ -157,7 +156,7 @@
 
     &--weight {
       top: 5px;
-      left: 0px;
+      left: 0;
       max-width: 254px;
 
       &::before {
@@ -168,7 +167,7 @@
 
     &--appearance {
       top: 5px;
-      left: 0px;
+      left: 0;
       max-width: 163px;
       text-align: left;
 

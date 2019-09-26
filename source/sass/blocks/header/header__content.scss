@@ -1,9 +1,8 @@
 .header__content {
   width: auto;
 
-  p {
-    margin: 0;
-    margin-bottom: 18px;
+  span {
+    display: block;
     font-family: $roboto;
     font-style: normal;
     font-weight: normal;
@@ -12,78 +11,17 @@
     text-align: left;
     color: $brown;
     max-width: 330px;
-
-    &:nth-of-type(2) {
-      margin-bottom: 48px;
-    }
-  }
-
-  h1 {
-    margin: 0;
-    margin-bottom: 16px;
-    font-family: $yesevaOne;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 52px;
-    line-height: 60px;
-    color: $white;
-    max-width: 350px;
-    transform: translateX(-3px);
+    margin-bottom: 48px;
   }
 
   b {
     font-weight: normal;
-  }
-
-  a {
-    text-align: center;
-    width: 200px;
-    font-family: $roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 14px;
-    color: $white;
-    display: block;
-    overflow: hidden;
-    cursor: pointer;
-    border: 1px solid $brown;
-    background-color: transparent;
-    text-decoration: none;
-    padding: 18px;
-    transition: color 0.3s ease-out,
-      border 0.3s ease-out;
-    margin-bottom: 110px;
-
-    &:hover,
-    &:focus {
-      color: $brown;
-      border: 1px solid $white;
-    }
-
-    &:active {
-      opacity: 0.5;
-    }
   }
 }
 
 @media (max-width: $tablet-max-width) {
   .header__content {
     width: 100%;
-
-    h1 {
-      margin-bottom: 20px;
-    }
-
-    p {
-      &:nth-of-type(2) {
-        margin-bottom: 49px;
-      }
-    }
-
-    a {
-      margin-bottom: 60px;
-    }
   }
 }
 
@@ -94,32 +32,11 @@
     flex-direction: column;
     align-items: center;
 
-    h1 {
-      text-align: center;
-      font-size: 36px;
-      line-height: 42px;
-      margin-bottom: 15px;
-      max-width: 277px;
-    }
-
-    p {
+    span {
       font-size: 14px;
       line-height: 150%;
       margin-bottom: 5px;
       max-width: 277px;
-
-      &:nth-of-type(2) {
-        margin-bottom: 33px;
-        text-align: center;
-      }
-    }
-
-    a {
-      width: 141px;
-      margin-bottom: 0;
-      font-size: 12px;
-      line-height: 14px;
-      padding: 12px;
     }
   }
 }

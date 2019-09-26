@@ -4,12 +4,10 @@
 @import "global/variables";
 @import "global/fonts";
 @import "global/mixins";
-@import "global/swiper";
 @import "global/animation";
 @import "global/common";
 @import "global/container";
 // Общие стили
-@import "blocks/section/section";
 @import "blocks/section/section__wrapper";
 @import "blocks/section/section__title";
 @import "blocks/section/section__lead";
@@ -20,6 +18,9 @@
 @import "blocks/header/header__wrapper";
 @import "blocks/header/header__logo";
 @import "blocks/header/header__content";
+@import "blocks/header/header__title";
+@import "blocks/header/header__lead";
+@import "blocks/header/header__btn";
 @import "blocks/header/header__social";
 @import "blocks/header/header__cat";
 // Питомцы
@@ -32,15 +33,12 @@
 @import "blocks/pets/pets__choise-btn";
 @import "blocks/pets/pets__slider";
 @import "blocks/pets/pets__btn";
-@import "blocks/gallery/swiper-container";
 @import "blocks/gallery/gallery";
 @import "blocks/gallery/gallery__wrapper";
 @import "blocks/gallery/gallery__layout-column";
 @import "blocks/gallery/gallery__item";
 @import "blocks/gallery/gallery__item-img";
 // Слайдер
-@import "blocks/slider/slider";
-@import "blocks/slider/slider__adult-cats";
 @import "blocks/slider/slider__adult-kittens";
 @import "blocks/slider/slider__kittens";
 // Особенности породы
@@ -66,6 +64,8 @@
 @import "blocks/care/care__list";
 @import "blocks/care/care__item";
 @import "blocks/care/care__link";
+@import "blocks/care/care__link-title";
+@import "blocks/care/care__link-content";
 // Наша команда
 @import "blocks/team/team__slider";
 @import "blocks/team/team";
@@ -75,6 +75,9 @@
 @import "blocks/team/team__lead";
 @import "blocks/team/team__list";
 @import "blocks/team/team__item";
+@import "blocks/team/team__item-title";
+@import "blocks/team/team__item-jobTitle";
+@import "blocks/team/team__item-content";
 @import "blocks/team/team__item-wrapper";
 @import "blocks/team/team__social";
 @import "blocks/team/team__item-show";
@@ -95,6 +98,8 @@
 @import "blocks/reviews/reviews__title";
 @import "blocks/reviews/reviews__list";
 @import "blocks/reviews/reviews__item";
+@import "blocks/reviews/reviews__item-title";
+@import "blocks/reviews/reviews__item-content";
 @import "blocks/reviews/reviews__content";
 @import "blocks/reviews/reviews__content-wrapper";
 @import "blocks/reviews/reviews__social";

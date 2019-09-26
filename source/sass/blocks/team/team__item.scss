@@ -8,39 +8,6 @@
   blockquote {
     margin: 0;
   }
-
-  span {
-    display: block;
-    margin: 0 0 6px;
-    font-family: $roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: $brown;
-  }
-
-  b {
-    margin: 0 0 23px;
-    display: block;
-    font-family: $roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: $brown;
-  }
-
-  p {
-    margin: 0 0 46px;
-    font-family: $roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 25px;
-    color: $white;
-    opacity: 0.7;
-  }
 }
 
 @media (max-width: $tablet-max-width) {
@@ -50,14 +17,6 @@
     img {
       bottom: -95px;
       right: 57px;
-    }
-
-    b {
-      margin: 0 0 24px;
-    }
-
-    p {
-      margin: 0 0 48px;
     }
   }
 }
@@ -70,27 +29,6 @@
       top: -63px;
       left: 50%;
       transform: translateX(-50%);
-    }
-
-    span {
-      font-size: 18px;
-      line-height: 21px;
-      text-align: center;
-      margin-bottom: 4px;
-    }
-
-    b {
-      font-size: 14px;
-      line-height: 135.94%;
-      text-align: center;
-      margin-bottom: 16px;
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 143%;
-      text-align: center;
-      margin-bottom: 22px;
     }
   }
 }

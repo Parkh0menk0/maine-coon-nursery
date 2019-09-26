@@ -1,0 +1,15 @@
+.care__link-content {
+  margin: 0;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  color: $white;
+}
+
+@media (max-width: $mobile-max-width) {
+  .care__link-content {
+    line-height: 20px;
+  }
+}

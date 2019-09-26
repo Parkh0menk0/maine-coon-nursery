@@ -1,0 +1,28 @@
+.header__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: $yesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 60px;
+  color: $white;
+  max-width: 350px;
+  transform: translateX(-3px);
+}
+
+@media (max-width: $tablet-max-width) {
+  .header__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .header__title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 15px;
+    max-width: 277px;
+  }
+}
