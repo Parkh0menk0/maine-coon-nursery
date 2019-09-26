@@ -560,7 +560,9 @@ form input[type="radio"] {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out; }
   .social svg {
     -webkit-transition: fill 0.3s ease-out, opacity 0.3s ease-out;
     transition: fill 0.3s ease-out, opacity 0.3s ease-out; }
