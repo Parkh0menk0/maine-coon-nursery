@@ -933,7 +933,8 @@ form input[type="radio"] {
   color: #ffffff;
   border: none;
   background-color: transparent;
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
 
 @media (max-width: 767px) {
   .pets__choise-btn {
@@ -1962,6 +1963,7 @@ form input[type="radio"] {
 @media (max-width: 767px) {
   .team__list {
     width: 100%;
+    height: 275px;
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 
@@ -1971,7 +1973,6 @@ form input[type="radio"] {
   top: 0px;
   width: 100%;
   height: 100%;
-  opacity: 0;
   z-index: 1;
   -webkit-transition: opacity 1s;
   transition: opacity 1s; }
