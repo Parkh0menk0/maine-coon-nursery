@@ -1,45 +1,181 @@
-@media (max-width: $mobile-max-width) {
-  .breed-features__item {
-    padding-left: 10px;
-    max-width: 96%;
-    position: relative;
+.breed-features__item {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  color: $white;
+  position: relative;
 
-    font-family: $roboto;
-    font-style: normal;
-    font-weight: 300;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $brown;
+  }
+
+  &--cohabitation {
     font-size: 14px;
-    line-height: 20px;
-    color: $white;
+    line-height: 21px;
+    top: 343px;
+    left: -409px;
+    max-width: 255px;
+    text-align: right;
+    font-size: 14px;
 
     &::before {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      background-color: $brown;
+      right: -39px;
+    }
+  }
+
+  &--instruction {
+    top: 411px;
+    right: -482px;
+    max-width: 201px;
+
+    &::before {
+      top: 3px;
+      left: -36px;
+    }
+  }
+
+  &--weight {
+    top: 584px;
+    right: -444px;
+    max-width: 160px;
+
+    &::before {
+      top: 6px;
+      left: -33px;
+    }
+  }
+
+  &--appearance {
+    max-width: 200px;
+    top: 495px;
+    left: -370px;
+    text-align: right;
+
+    &::before {
+      right: -31px;
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .breed-features__item {
+    &::before {
       top: 5px;
-      left: -7px;
+      width: 10px;
+      height: 10px;
+    }
+
+    &--cohabitation {
+      top: 343px;
+      left: -277px;
+      max-width: 167px;
+
+      &::before {
+        right: -25px;
+      }
+    }
+
+    &--instruction {
+      top: 353px;
+      right: -308px;
+      max-width: 132px;
+
+      &::before {
+        top: 3px;
+        left: -23px;
+      }
+    }
+
+    &--weight {
+      top: 409px;
+      right: -284px;
+      max-width: 110px;
+
+      &::before {
+        top: 4px;
+        left: -22px;
+      }
+    }
+
+    &--appearance {
+      max-width: 140px;
+      top: 311px;
+      left: -261px;
+
+      &::before {
+        right: -20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .breed-features__item {
+    font-size: 14px;
+    line-height: 140%;
+    padding-left: 0;
+
+    &::before {
       width: 8px;
       height: 8px;
     }
 
-    // &--cohabitation {
-    //   max-width: 10%;
-    // }
-
-    // &--instruction {
-    //   max-width: 10%;
-    // }
-
-    // &--weight {
-    //   max-width: 10%;
-    // }
-
-    &--appearance {
-      max-width: 78%;
-    }
-
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+
+    &--cohabitation {
+      top: 2px;
+      left: 0px;
+      max-width: 233px;
+      text-align: left;
+
+      &::before {
+        top: 4px;
+        left: -18px;
+      }
+    }
+
+    &--instruction {
+      top: 5px;
+      left: 0px;
+      max-width: 160px;
+
+      &::before {
+        top: 4px;
+        left: -18px;
+      }
+    }
+
+    &--weight {
+      top: 5px;
+      left: 0px;
+      max-width: 254px;
+
+      &::before {
+        top: 4px;
+        left: -18px;
+      }
+    }
+
+    &--appearance {
+      top: 5px;
+      left: 0px;
+      max-width: 163px;
+      text-align: left;
+
+      &::before {
+        top: 4px;
+        left: -18px;
+      }
     }
   }
 }
