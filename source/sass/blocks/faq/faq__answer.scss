@@ -1,16 +1,12 @@
 .faq__answer {
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
+  display: none;
   transition: 0.3s ease-out;
-  animation: questionHide 0.7s ease both;
   border: 0 solid $brown;
 
   &--show {
     display: block;
     width: 99.9%;
     height: 100%;
-    animation: questionShow 0.7s ease both;
     padding: 38px 42px 39px;
     border: 1px solid $brown;
     border-top: none;

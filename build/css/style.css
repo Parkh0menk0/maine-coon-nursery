@@ -2286,20 +2286,14 @@ form input[type="radio"] {
       background-color: #1f1c1d; } }
 
 .faq__answer {
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
+  display: none;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
-  -webkit-animation: questionHide 0.7s ease both;
-          animation: questionHide 0.7s ease both;
   border: 0 solid #a07b50; }
   .faq__answer--show {
     display: block;
     width: 99.9%;
     height: 100%;
-    -webkit-animation: questionShow 0.7s ease both;
-            animation: questionShow 0.7s ease both;
     padding: 38px 42px 39px;
     border: 1px solid #a07b50;
     border-top: none;
