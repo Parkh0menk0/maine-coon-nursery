@@ -1,4 +1,5 @@
 .faq__question {
+  box-sizing: border-box;
   position: relative;
   font-family: $roboto;
   font-style: normal;
@@ -8,13 +9,15 @@
   color: $lightbrown;
   background-color: $lightgray-background;
   cursor: pointer;
-  width: 100%;
+  width: 99.9%;
   padding: 47px 15% 43px 42px;
   border: 1px solid $brown;
   text-align: left;
   outline: none;
   z-index: 2;
   transition: background-color 0.3s ease-out;
+
+  appearance: none;
 
   &::after {
     content: "";
@@ -70,6 +73,10 @@
 
     &--zeroFour {
       padding: 10px 17% 10px 14px;
+    }
+
+    &:hover::after {
+      background-color: $lightgray-background;
     }
   }
 }
