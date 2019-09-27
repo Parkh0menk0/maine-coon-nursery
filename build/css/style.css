@@ -1686,7 +1686,7 @@ img {
 @media (max-width: 767px) {
   .care__wrapper {
     padding-top: 54px;
-    padding-bottom: 30px; } }
+    padding-bottom: 50px; } }
 
 .care__title {
   margin-bottom: 48px; }
@@ -1873,7 +1873,7 @@ img {
       position: absolute;
       z-index: 2; }
       .team__slider button:first-of-type, .team__slider button:last-of-type {
-        bottom: -97px; }
+        bottom: -107px; }
       .team__slider button:first-of-type {
         right: 285px; }
       .team__slider button:last-of-type {
@@ -1930,7 +1930,7 @@ img {
 @media (max-width: 1023px) {
   .team__wrapper {
     padding-top: 84px;
-    padding-bottom: 193px; } }
+    padding-bottom: 205px; } }
 
 @media (max-width: 767px) {
   .team__wrapper {
@@ -2000,7 +2000,7 @@ img {
   .team__item {
     padding-left: 0; }
     .team__item img {
-      bottom: -95px;
+      bottom: -105px;
       right: 57px; } }
 
 @media (max-width: 767px) {
@@ -2106,12 +2106,12 @@ img {
 
 .faq__wrapper {
   padding-top: 72px;
-  padding-bottom: 26px; }
+  padding-bottom: 30px; }
 
 @media (max-width: 1023px) {
   .faq__wrapper {
     padding-top: 137px;
-    padding-bottom: 26px; } }
+    padding-bottom: 31px; } }
 
 @media (max-width: 767px) {
   .faq__wrapper {
