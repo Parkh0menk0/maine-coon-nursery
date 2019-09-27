@@ -3,13 +3,17 @@
   width: 96%;
   margin: 0 auto;
   column-count: 2;
+  column-gap: 3.5%;
+  column-width: 200px;
 }
 
 @media (max-width: $tablet-max-width) {
   .care__list {
-    flex-direction: column;
     width: 78.2%;
     transform: translateX(9px);
+    column-count: 1;
+    column-gap: 0;
+    column-width: auto;
   }
 }
 
