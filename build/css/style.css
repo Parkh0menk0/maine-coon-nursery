@@ -916,7 +916,9 @@ form input[type="radio"] {
 
 .pets__item {
   margin-right: 44px;
-  opacity: 0.5; }
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out; }
   .pets__item.current {
     opacity: 1; }
   .pets__item:last-of-type {
@@ -1577,7 +1579,12 @@ form input[type="radio"] {
   text-align: center;
   color: #ffffff;
   padding-top: 47px;
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+  -webkit-transition: background-color 0.3s ease-out, fill 0.3s ease-out, stroke 0.3s ease-out;
+  transition: background-color 0.3s ease-out, fill 0.3s ease-out, stroke 0.3s ease-out; }
+  .advantages__link svg {
+    -webkit-transition: fill 0.3s ease-out, stroke 0.3s ease-out;
+    transition: fill 0.3s ease-out, stroke 0.3s ease-out; }
   .advantages__link:hover {
     background-color: #a07b50; }
     .advantages__link:hover svg {
@@ -2246,7 +2253,8 @@ form input[type="radio"] {
   transition: background-color 0.3s ease-out;
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none; }
+          appearance: none;
+  transition: background-color 0.3s ease-out; }
   .faq__question::after {
     content: "";
     position: absolute;
@@ -2257,7 +2265,9 @@ form input[type="radio"] {
     background-image: url("../img/+.svg");
     background-repeat: no-repeat;
     background-position: center;
-    border-left: 1px solid #a07b50; }
+    border-left: 1px solid #a07b50;
+    -webkit-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out; }
   .faq__question:hover, .faq__question:hover::after {
     background-color: #151313; }
 
