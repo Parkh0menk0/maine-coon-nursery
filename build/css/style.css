@@ -749,8 +749,7 @@ img {
     margin-bottom: 35px;
     text-align: center;
     font-size: 14px;
-    line-height: 20px;
-    text-align: center; } }
+    line-height: 20px; } }
 
 .header__btn {
   text-align: center;
@@ -1601,9 +1600,6 @@ img {
   padding-bottom: 16px;
   -webkit-transition: background-color 0.3s ease-out, fill 0.3s ease-out, stroke 0.3s ease-out;
   transition: background-color 0.3s ease-out, fill 0.3s ease-out, stroke 0.3s ease-out; }
-  .advantages__link svg {
-    -webkit-transition: fill 0.3s ease-out, stroke 0.3s ease-out;
-    transition: fill 0.3s ease-out, stroke 0.3s ease-out; }
   .advantages__link:hover {
     background-color: #a07b50; }
     .advantages__link:hover svg {
@@ -1614,7 +1610,9 @@ img {
     fill: #a07b50;
     stroke-width: 2;
     stroke: #1f1c1d;
-    margin-bottom: 23px; }
+    margin-bottom: 23px;
+    -webkit-transition: fill 0.3s ease-out, stroke 0.3s ease-out;
+    transition: fill 0.3s ease-out, stroke 0.3s ease-out; }
     .advantages__link svg.icon-counseling24 {
       margin-bottom: 33px; }
   .advantages__link span {
@@ -1982,8 +1980,8 @@ img {
 
 .team__item {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -2225,11 +2223,10 @@ img {
   text-align: left;
   outline: none;
   z-index: 2;
-  -webkit-transition: background-color 0.3s ease-out;
-  transition: background-color 0.3s ease-out;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out; }
   .faq__question::after {
     content: "";
@@ -2385,11 +2382,7 @@ img {
         right: 104px;
         background-image: url("../img/arrowNextLong.svg"); }
       .reviews__slider button:first-of-type, .reviews__slider button:last-of-type {
-        top: 38px; }
-  .reviews__slider .reviews__slider-button-prev {
-    background-image: url("../img/arrowLongPrev.svg"); }
-  .reviews__slider .reviews__slider-button-prev {
-    background-image: url("../img/arrowLongNext.svg"); } }
+        top: 38px; } }
 
 @media (max-width: 767px) {
   .reviews__slider button {
