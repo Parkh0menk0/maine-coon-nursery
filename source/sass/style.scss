@@ -15,14 +15,15 @@
 @import "blocks/social/social";
 // Главный блок
 @import "blocks/header/header";
+@import "blocks/header/header__container";
 @import "blocks/header/header__wrapper";
 @import "blocks/header/header__logo";
 @import "blocks/header/header__content";
+@import "blocks/header/header__city";
 @import "blocks/header/header__title";
 @import "blocks/header/header__lead";
 @import "blocks/header/header__btn";
 @import "blocks/header/header__social";
-@import "blocks/header/header__cat";
 // Питомцы
 @import "blocks/pets/pets";
 @import "blocks/pets/pets__wrapper";
@@ -81,7 +82,6 @@
 @import "blocks/team/team__item";
 @import "blocks/team/team__item-title";
 @import "blocks/team/team__item-jobTitle";
-@import "blocks/team/team__item-content";
 @import "blocks/team/team__item-wrapper";
 @import "blocks/team/team__social";
 @import "blocks/team/team__item-show";
@@ -94,7 +94,7 @@
 @import "blocks/faq/faq__item";
 @import "blocks/faq/faq__question";
 @import "blocks/faq/faq__answer";
-@import "blocks/faq/active-btn";
+@import "blocks/faq/faq__active-btn";
 // Отзывы
 @import "blocks/reviews/reviews__slider";
 @import "blocks/reviews/reviews";
@@ -103,7 +103,6 @@
 @import "blocks/reviews/reviews__list";
 @import "blocks/reviews/reviews__item";
 @import "blocks/reviews/reviews__item-title";
-@import "blocks/reviews/reviews__item-content";
 @import "blocks/reviews/reviews__content";
 @import "blocks/reviews/reviews__content-wrapper";
 @import "blocks/reviews/reviews__social";

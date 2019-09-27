@@ -1,14 +1,20 @@
 'use strict';
 
 (function () {
-  var question = document.querySelectorAll('.faq__question');
-  var i;
+  var questions = document.querySelectorAll('.faq__question');
 
-  if (question) {
-    for (i = 0; i < question.length; i++) {
-      question[i].addEventListener('click', function () {
-        this.classList.toggle('active-btn');
-        this.nextElementSibling.classList.toggle('faq__answer--show');
+  if (questions) {
+    for (var i = 0; i < questions.length; i++) {
+      questions[i].addEventListener('click', function (evt) {
+        for (var j = 0; j < questions.length; j++) {
+          if (questions[j] !== evt.target) {
+            questions[j].nextElementSibling.classList.remove('faq__answer--show');
+            questions[j].classList.remove('faq__active-btn');
+          }
+        }
+
+        evt.target.classList.toggle('faq__active-btn');
+        evt.target.nextElementSibling.classList.toggle('faq__answer--show');
       });
     }
   }

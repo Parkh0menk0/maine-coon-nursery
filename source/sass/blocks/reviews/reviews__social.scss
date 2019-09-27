@@ -16,6 +16,8 @@
     height: 28px;
     border: 1px solid $brown;
 
+    transition: border-color 0.3s ease-out;
+
     &:hover,
     &:focus {
       border-color: $white;

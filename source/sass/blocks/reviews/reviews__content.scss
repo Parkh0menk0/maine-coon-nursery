@@ -6,6 +6,17 @@
   align-items: flex-start;
 }
 
+.reviews__content blockquote p {
+  margin: 0 0 39px;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  color: $white;
+  opacity: 0.7;
+}
+
 @media (max-width: 1110px) {
   .reviews__content {
     padding: 109px 30px 82px 120px;
@@ -17,10 +28,22 @@
     padding: 148px 89px 16px 111px;
     align-items: center;
   }
+
+  .reviews__content blockquote p {
+    margin: 0 0 26px;
+    text-align: center;
+  }
 }
 
 @media (max-width: $mobile-max-width) {
   .reviews__content {
     padding: 114px 27px 39px;
+  }
+
+  .reviews__content blockquote p {
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 23px;
   }
 }

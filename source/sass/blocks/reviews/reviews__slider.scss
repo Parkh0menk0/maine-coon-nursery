@@ -24,15 +24,24 @@
       cursor: pointer;
       background-repeat: no-repeat;
       background-position: center;
+      opacity: 0.5;
+
+      transition: opacity 0.3s ease-out;
+
+      &:hover {
+        opacity: 1;
+      }
 
       &:first-of-type {
+        z-index: 5;
         left: 126px;
-        background-image: url("data:image/svg+xml,%3Csvg width='60' height='18' viewBox='0 0 60 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 9L1 9M1 9L14.4857 17M1 9L14.4857 0.999999' stroke='%23A07B50' stroke-opacity='0.5' stroke-width='0.5'/%3E%3C/svg%3E%0A");
+        background-image: url("../img/arrowPrevLong.svg");
+        background-position: center;
       }
 
       &:last-of-type {
         right: 104px;
-        background-image: url("data:image/svg+xml,%3Csvg width='60' height='18' viewBox='0 0 60 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 9L59 9M59 9L45.5143 17M59 9L45.5143 1' stroke='%23A07B50' stroke-opacity='0.5' stroke-width='0.5'/%3E%3C/svg%3E%0A");
+        background-image: url("../img/arrowNextLong.svg");
       }
 
       &:first-of-type,
@@ -40,6 +49,14 @@
         top: 38px;
       }
     }
+  }
+
+  .reviews__slider .reviews__slider-button-prev {
+    background-image: url("../img/arrowLongPrev.svg");
+  }
+
+  .reviews__slider .reviews__slider-button-prev {
+    background-image: url("../img/arrowLongNext.svg");
   }
 }
 
@@ -56,12 +73,12 @@
       }
 
       &:first-of-type {
-        background-image: url("data:image/svg+xml,%3Csvg width='15' height='31' viewBox='0 0 15 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 1L2 16.037L14 30' stroke='%23A07B50' stroke-opacity='0.47' stroke-width='2'/%3E%3C/svg%3E%0A");
+        background-image: url("../img/arrowPrev.svg");
         left: -4px;
       }
 
       &:last-of-type {
-        background-image: url("data:image/svg+xml,%3Csvg width='15' height='31' viewBox='0 0 15 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L13 16.037L1 30' stroke='%23A07B50' stroke-opacity='0.47' stroke-width='2'/%3E%3C/svg%3E%0A");
+        background-image: url("../img/arrowNext.svg");
         right: -4px;
       }
     }

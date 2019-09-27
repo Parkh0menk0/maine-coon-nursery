@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Питомник Мейн-Кунов в Новосибирске. Первый питомник с расширенным спектром услуг">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Питомник Мейн Кунов</title>
@@ -12,7 +13,6 @@
   <link rel="preload" href="./fonts/Robotomedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/yesevaone.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 </head>
 
 <body>
@@ -122,9 +122,9 @@
   </div>
 
   <header class="header">
-    <div class="container">
+    <div class="header__container container">
       <div class="header__wrapper">
-        <a href="#" class="logo header__logo" aria-label="Логотип питомника Мейн Кунов">
+        <a class="logo header__logo" aria-label="Логотип питомника Мейн Кунов">
           <svg class="crown crown--header" width="55" height="25">
             <use xlink:href="#icon-crown" x="0" y="0"></use>
           </svg>
@@ -156,25 +156,12 @@
           </li>
         </ul>
         <div class="header__content">
-          <span>Новосибирск</span>
+          <p class="header__city">Новосибирск</p>
           <h1 class="header__title">Питомник Мейн-Кунов</h1>
-          <p class="header__lead">
-            <b>Первый питомник с расширенным спектром услуг</b>
-          </p>
+          <p class="header__lead">Первый питомник с расширенным спектром услуг</p>
           <a href="#" class="header__btn">Смотреть котиков</a>
         </div>
       </div>
-    </div>
-    <div class="header__cat">
-      <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="img/main-cat-mobile@1x.webp 1x, img/main-cat-mobile@2x.webp 2x">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="img/main-cat-tablet@1x.webp 1x, img/main-cat-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/main-cat-desktop@1x.webp 1x, img/main-cat-desktop@2x.webp 2x">
-
-        <source media="(max-width: 767px)" srcset="img/main-cat-mobile@1x.png 1x, img/main-cat-mobile@2x.png 2x">
-        <source media="(max-width: 1023px)" srcset="img/main-cat-tablet@1x.png 1x, img/main-cat-tablet@2x.png 2x">
-        <img src="img/main-cat-desktop@1x.png" srcset="img/main-cat-desktop@2x.png 2x" alt="Мейн Кун">
-      </picture>
     </div>
   </header>
   <main>
@@ -493,8 +480,8 @@
             <button type="button" class="slider__button slider__button--prev">
               <span class="visually-hidden">Предыдущий сотрудник</span>
             </button>
-            <ul class="team__list">
-              <li class="team__item">
+            <div class="team__list">
+              <div class="team__item">
                 <div class="team__wrapper-outer">
                   <picture>
 
@@ -509,15 +496,15 @@
 
                     <source media="(max-width: 1023px)" srcset="img/employee-1-tablet@1x.jpg 1x, img/employee-1-tablet@2x.jpg 2x">
 
-                    <img src="img/employee-1-desktop@1x.jpg" srcset="img/employee-1-desktop@2x.jpg 2x" alt="Работник" itemprop="image">
+                    <img src="img/employee-1-desktop@1x.jpg" srcset="img/employee-1-desktop@2x.jpg 2x" alt="Работник">
                   </picture>
                   <div class="team__item-wrapper">
                     <blockquote>
                       <cite>
-                        <span class="team__item-title" itemprop="name">Серёжа Попов</span>
-                        <b class="team__item-jobTitle" itemprop="jobTitle">Основатель питомника</b>
+                        <span class="team__item-title">Серёжа Попов</span>
+                        <b class="team__item-jobTitle">Основатель питомника</b>
                       </cite>
-                      <p class="team__item-content">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого
+                      <p>Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого
                         приобретенного вами питомца</p>
                     </blockquote>
                     <ul class="social team__social">
@@ -548,8 +535,8 @@
                     </ul>
                   </div>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
             <button type="button" class="slider__button slider__button--next">
               <span class="visually-hidden">Следующий сотрудник</span>
             </button>
@@ -566,7 +553,7 @@
           <div class="faq__list">
             <div class="faq__item">
               <div class="faq__item-wrapper">
-                <button type="button" class="faq__question faq__question--zeroOne active-btn">С какого возраста можно
+                <button type="button" class="faq__question faq__question--zeroOne faq__active-btn">С какого возраста можно
                   забирать
                   котенка из
                   питомника?</button>
@@ -619,7 +606,7 @@
         <div class="section__wrapper reviews__wrapper">
           <h2 class="section__title reviews__title">Отзывы</h2>
           <div class="reviews__slider slider">
-            <button type="button" class="slider__button slider__button--prev">
+            <button type="button" class="reviews__slider-button-prev slider__button slider__button--prev">
               <span class="visually-hidden">Предыдущий отзыв</span>
             </button>
             <div class="reviews__list">
@@ -630,12 +617,12 @@
                   <source type="image/webp" srcset="img/reviewer-1-desktop@1x.webp 1x, img/reviewer-1-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/reviewer-1-mobile@1x.jpg 1x, img/reviewer-1-mobile@2x.jpg 2x">
                   <source media="(max-width: 1023px)" srcset="img/reviewer-1-tablet@1x.jpg 1x, img/reviewer-1-tablet@2x.jpg 2x">
-                  <img src="img/reviewer-1-desktop@1x.jpg" srcset="img/reviewer-1-desktop@2x.jpg 2x" alt="Комментатор" itemprop="image">
+                  <img src="img/reviewer-1-desktop@1x.jpg" srcset="img/reviewer-1-desktop@2x.jpg 2x" alt="Комментатор">
                 </picture>
                 <div class="reviews__content">
                   <blockquote>
-                    <cite class="reviews__item-title" itemprop="name">Серёжа Попов</cite>
-                    <p class="reviews__item-content">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан.
+                    <cite class="reviews__item-title">Серёжа Попов</cite>
+                    <p>Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан.
                       Огромным
                       плюсом питомника является возможность консультироваться в любое время</p>
                   </blockquote>
@@ -663,7 +650,7 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="slider__button slider__button--next">
+            <button type="button" class="reviews__slider-button reviews__slider-button-next slider__button slider__button--next">
               <span class="visually-hidden">Следующий отзыв</span>
             </button>
           </div>
@@ -675,7 +662,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <a href="#" class="logo footer__logo" aria-label="Логотип питомника Мейн Кунов">
+        <a class="logo footer__logo" aria-label="Логотип питомника Мейн Кунов">
           <svg class="crown crown--footer" width="47" height="21">
             <use xlink:href="#icon-crown" x="0" y="0"></use>
           </svg>

@@ -1,4 +1,4 @@
-.active-btn {
+.faq__active-btn {
   &::after {
     content: "";
     position: absolute;
@@ -11,10 +11,14 @@
     background-position: center;
     background-color: $brown;
   }
+
+  &:hover::after {
+    background-color: $darkgray-background;
+  }
 }
 
 @media (max-width: $mobile-max-width) {
-  .active-btn {
+  .faq__active-btn {
     &::after {
       width: 14.3%;
     }
