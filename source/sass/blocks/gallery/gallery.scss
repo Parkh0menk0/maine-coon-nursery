@@ -1,16 +1,21 @@
 .gallery {
-  overflow: hidden;
-  width: 86%;
-  margin: 0 auto;
+  width: 100%;
   margin-bottom: 49px;
+  column-count: 2;
+  column-gap: 6%;
+  padding-left: 23px;
+
+  overflow: hidden;
 }
 
 @media (max-width: $tablet-max-width) {
   .gallery {
-    width: 84.2%;
+    display: flex;
     height: 495px;
-    transform: translateX(-13px);
+    column-count: 1;
+    column-gap: 0;
     margin-bottom: 56px;
+    padding-left: 0;
   }
 }
 

@@ -94,7 +94,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("scripts", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/**/*.js")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(concat('main.js'))

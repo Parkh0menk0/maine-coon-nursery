@@ -165,191 +165,219 @@
     </div>
   </header>
   <main>
-    <section class="section pets">
-      <div class="container">
-        <div class="section__wrapper pets__wrapper">
-          <h2 class="section__title pets__title">Питомцы</h2>
-          <p class="section__lead pets__lead">Все представители нашего питомника имеют ветеринарный паспорт с отметками
-            о прививках
-            и документ с
-            родословной
-          </p>
-          <ul class="pets__list">
-            <li class="pets__item pets__item--current current">
-              <button type="button" class="pets__choise-btn">Коты</button>
-            </li>
-            <li class="pets__item">
-              <button type="button" class="pets__choise-btn">Кошки</button>
-            </li>
-            <li class="pets__item">
-              <button type="button" class="pets__choise-btn">Котята</button>
-            </li>
-          </ul>
-          <div class="slider pets__slider">
-            <div class="slider__adult-cats">
-              <div class="gallery">
-                <h3 class="visually-hidden">Галерея питомцев</h3>
-                <div class="gallery__wrapper">
-                  <div class="gallery__layout-column">
-                    <div class="gallery__item gallery__item--first">
-                      <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.webp 1x, img/pets-list-1-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.webp 1x, img/pets-list-1-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/pets-list-1-desktop@1x.webp 1x, img/pets-list-1-desktop@2x.webp 2x">
+    <!-- <section class="section pets">
+      <div class="section__wrapper pets__wrapper container">
+        <h2 class="section__title pets__title">Питомцы</h2>
+        <p class="section__lead pets__lead">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+        <ul class="pets__list">
+          <li class="pets__item pets__item">
+            <a class="pets__tab pets__tab--first pets__tab--active" href="#pets-tab-content-1">Коты</a>
+          </li>
+          <li class="pets__item">
+            <a class="pets__tab pets__tab--second" href="#pets-tab-content-2">Кошки</a>
+          </li>
+          <li class="pets__item">
+            <a class="pets__tab pets__tab--third" href="#pets-tab-content-3">Котята</a>
+          </li>
+        </ul>
+        <div class="pets__tab-content-wrapper">
+          <div class="pets__tab-content show" id="pets-tab-content-1">
+            <div class="pets__slider slider swiper-container">
+              <div class="gallery swiper-wrapper">
+                <div class="gallery__item gallery__item--top swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.webp 1x, img/pets-list-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.webp 1x, img/pets-list-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-list-1-desktop@1x.webp 1x, img/pets-list-1-desktop@2x.webp 2x">
 
-                        <source media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.jpg 1x, img/pets-list-1-mobile@2x.jpg 2x">
-                        <source media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.jpg 1x, img/pets-list-1-tablet@2x.jpg 2x">
-                        <img class="gallery__item-img gallery__item-img--top" src="img/pets-list-1-desktop@1x.png" srcset="img/pets-list-1-desktop@2x.png 2x" width="518" height="214" alt="Мейн Кун">
-                      </picture>
-                    </div>
-                    <div class="gallery__item gallery__item--second">
-                      <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.webp 1x, img/pets-list-2-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.webp 1x, img/pets-list-2-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/pets-list-2-desktop@1x.webp 1x, img/pets-list-2-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.jpg 1x, img/pets-list-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.jpg 1x, img/pets-list-1-tablet@2x.jpg 2x">
+                    <img class="gallery__item-img gallery__item-img--top" src="img/pets-list-1-desktop@1x.png" srcset="img/pets-list-1-desktop@2x.png 2x" width="518" height="214" alt="Мейн Кун">
+                  </picture>
+                </div>
+                <div class="gallery__item gallery__item--bottom swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.webp 1x, img/pets-list-2-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.webp 1x, img/pets-list-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-list-2-desktop@1x.webp 1x, img/pets-list-2-desktop@2x.webp 2x">
 
-                        <source media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.jpg 1x, img/pets-list-2-mobile@2x.jpg 2x">
-                        <source media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.jpg 1x, img/pets-list-2-tablet@2x.jpg 2x">
-                        <img class="gallery__item-img gallery__item-img--bottom" src="img/pets-list-2-desktop@1x.png" srcset="img/pets-list-2-desktop@2x.png 2x" width="518" height="241" alt="Мейн Кун">
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="gallery__item gallery__item--third">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.webp 1x, img/pets-list-3-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.webp 1x, img/pets-list-3-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.jpg 1x, img/pets-list-2-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.jpg 1x, img/pets-list-2-tablet@2x.jpg 2x">
+                    <img class="gallery__item-img gallery__item-img--bottom" src="img/pets-list-2-desktop@1x.png" srcset="img/pets-list-2-desktop@2x.png 2x" width="518" height="241" alt="Мейн Кун">
+                  </picture>
+                </div>
+                <div class="gallery__item gallery__item--large swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.webp 1x, img/pets-list-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.webp 1x, img/pets-list-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
 
-                      <source media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.jpg 1x, img/pets-list-3-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.jpg 1x, img/pets-list-3-tablet@2x.jpg 2x">
-                      <img class="gallery__item-img gallery__item-img--large" src="img/pets-list-3-desktop@1x.png" srcset="img/pets-list-3-desktop@2x.png 2x" width="471" height="485" alt="Мейн Кун">
-                    </picture>
-                  </div>
+                    <source media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.jpg 1x, img/pets-list-3-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.jpg 1x, img/pets-list-3-tablet@2x.jpg 2x">
+                    <img class="gallery__item-img gallery__item-img--large" src="img/pets-list-3-desktop@1x.png" srcset="img/pets-list-3-desktop@2x.png 2x" width="471" height="485" alt="Мейн Кун">
+                  </picture>
                 </div>
               </div>
-              <button type="button" class="swiper-button-prev pets__swiper-button-prev">
+              <button class="slider__button pets__slider-button-prev swiper-button-prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
               </button>
-              <button type="button" class="swiper-button-next pets__swiper-button-next">
+              <button class="slider__button pets__slider-button-next swiper-button-next" type="button">
                 <span class="visually-hidden">Следующий слайд</span>
               </button>
+            </div>
+            <div class="pets__btn-wraper">
+              <a href="#" class="pets__btn">Смотреть больше</a>
+            </div>
+          </div>
+          <div class="pets__tab-content" id="pets-tab-content-2">
+            <div class="pets__slider slider swiper-container">
+              <div class="gallery swiper-wrapper">
+                <div class="gallery__item gallery__item--top swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.webp 1x, img/pets-list-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.webp 1x, img/pets-list-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-list-1-desktop@1x.webp 1x, img/pets-list-1-desktop@2x.webp 2x">
+
+                    <source media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.jpg 1x, img/pets-list-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.jpg 1x, img/pets-list-1-tablet@2x.jpg 2x">
+                    <img class="gallery__item-img gallery__item-img--top" src="img/pets-list-1-desktop@1x.jpg" srcset="img/pets-list-1-desktop@2x.jpg 2x" width="518" height="214" alt="Мейн Кун">
+                  </picture>
+                </div>
+                <div class="gallery__item gallery__item--bottom swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.webp 1x, img/pets-list-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.webp 1x, img/pets-list-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-list-1-desktop@1x.webp 1x, img/pets-list-1-desktop@2x.webp 2x">
+
+                    <source media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.jpg 1x, img/pets-list-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.jpg 1x, img/pets-list-1-tablet@2x.jpg 2x">
+                    <img class="gallery__item-img gallery__item-img--top" src="img/pets-list-1-desktop@1x.jpg" srcset="img/pets-list-1-desktop@2x.jpg 2x" width="518" height="214" alt="Мейн Кун">
+                  </picture>
+                </div>
+                <div class="gallery__item gallery__item--large swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.webp 1x, img/pets-list-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.webp 1x, img/pets-list-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
+
+                    <source media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.jpg 1x, img/pets-list-3-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.jpg 1x, img/pets-list-3-tablet@2x.jpg 2x">
+                    <img class="gallery__item-img gallery__item-img--large" src="img/pets-list-3-desktop@1x.jpg" srcset="img/pets-list-3-desktop@2x.jpg 2x" width="471" height="485" alt="Мейн Кун">
+                  </picture>
+                </div>
+              </div>
+              <button class="slider__button pets__slider-button-prev swiper-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="slider__button pets__slider-button-next swiper-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
+            </div>
+            <div class="pets__btn-wraper">
+              <a href="#" class="pets__btn">Смотреть больше</a>
+            </div>
+          </div>
+          <div class="pets__tab-content" id="pets-tab-content-3">
+            <div class="pets__slider slider swiper-container">
+              <div class="gallery swiper-wrapper">
+                <div class="gallery__item gallery__item--top swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.webp 1x, img/pets-list-2-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.webp 1x, img/pets-list-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-list-2-desktop@1x.webp 1x, img/pets-list-2-desktop@2x.webp 2x">
+
+                    <source media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.jpg 1x, img/pets-list-2-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.jpg 1x, img/pets-list-2-tablet@2x.jpg 2x">
+                    <img class="gallery__item-img gallery__item-img--bottom" src="img/pets-list-2-desktop@1x.jpg" srcset="img/pets-list-2-desktop@2x.jpg 2x" width="518" height="241" alt="Мейн Кун">
+                  </picture>
+                </div>
+                <div class="gallery__item gallery__item--bottom swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.webp 1x, img/pets-list-2-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.webp 1x, img/pets-list-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-list-2-desktop@1x.webp 1x, img/pets-list-2-desktop@2x.webp 2x">
+
+                    <source media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.jpg 1x, img/pets-list-2-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.jpg 1x, img/pets-list-2-tablet@2x.jpg 2x">
+                    <img class="gallery__item-img gallery__item-img--bottom" src="img/pets-list-2-desktop@1x.jpg" srcset="img/pets-list-2-desktop@2x.jpg 2x" width="518" height="241" alt="Мейн Кун">
+                  </picture>
+                </div>
+                <div class="gallery__item gallery__item--large swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.webp 1x, img/pets-list-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.webp 1x, img/pets-list-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
+
+                    <source media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.png 1x, img/pets-list-3-mobile@2x.png 2x">
+                    <source media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.jpg 1x, img/pets-list-3-tablet@2x.jpg 2x">
+                    <img class="gallery__item-img gallery__item-img--large" src="img/pets-list-3-desktop@1x.jpg" srcset="img/pets-list-3-desktop@2x.jpg 2x" width="471" height="485" alt="Мейн Кун">
+                  </div>
+                </div>
+                <button class="slider__button pets__slider-button-prev swiper-button-prev" type="button">
+                  <span class="visually-hidden">Предыдущий слайд</span>
+                </button>
+                <button class="slider__button pets__slider-button-next swiper-button-next" type="button">
+                  <span class="visually-hidden">Следующий слайд</span>
+                </button>
+              </div>
               <div class="pets__btn-wraper">
                 <a href="#" class="pets__btn">Смотреть больше</a>
               </div>
             </div>
-            <div class="slider__adult-kittens">
-              <div class="gallery">
-                <h3 class="visually-hidden">Галерея питомцев</h3>
-                <div class="gallery__wrapper">
-                  <div class="gallery__layout-column">
-                    <div class="gallery__item">
-                      <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.webp 1x, img/pets-list-1-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.webp 1x, img/pets-list-1-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/pets-list-1-desktop@1x.webp 1x, img/pets-list-1-desktop@2x.webp 2x">
-
-                        <source media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.jpg 1x, img/pets-list-1-mobile@2x.jpg 2x">
-                        <source media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.jpg 1x, img/pets-list-1-tablet@2x.jpg 2x">
-                        <img class="gallery__item-img gallery__item-img--top" src="img/pets-list-1-desktop@1x.jpg" srcset="img/pets-list-1-desktop@2x.jpg 2x" width="518" height="214" alt="Мейн Кун">
-                      </picture>
-                    </div>
-                    <div class="gallery__item">
-                      <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.webp 1x, img/pets-list-2-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.webp 1x, img/pets-list-2-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/pets-list-2-desktop@1x.webp 1x, img/pets-list-2-desktop@2x.webp 2x">
-
-                        <source media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.jpg 1x, img/pets-list-2-mobile@2x.jpg 2x">
-                        <source media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.jpg 1x, img/pets-list-2-tablet@2x.jpg 2x">
-                        <img class="gallery__item-img gallery__item-img--bottom" src="img/pets-list-2-desktop@1x.jpg" srcset="img/pets-list-2-desktop@2x.jpg 2x" width="518" height="241" alt="Мейн Кун">
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="gallery__item">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.webp 1x, img/pets-list-3-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.webp 1x, img/pets-list-3-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
-
-                      <source media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.jpg 1x, img/pets-list-3-mobile@2x.jpg 2x">
-
-                      <source media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.jpg 1x, img/pets-list-3-tablet@2x.jpg 2x">
-
-                      <img class="gallery__item-img gallery__item-img--large" src="img/pets-list-3-desktop@1x.jpg" srcset="img/pets-list-3-desktop@2x.jpg 2x" width="471" height="485" alt="Мейн Кун">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <button type="button" class="slider__button slider__button--prev">
-                <span class="visually-hidden">Предыдущий слайд</span>
-              </button>
-              <button type="button" class="slider__button slider__button--next">
-                <span class="visually-hidden">Следующий слайд</span>
-              </button>
-              <a href="#" class="pets__btn">Смотреть больше</a>
-            </div>
-            <div class="slider__kittens">
-              <div class="gallery">
-                <h3 class="visually-hidden">Галерея питомцев</h3>
-                <div class="gallery__wrapper">
-                  <div class="gallery__layout-column">
-                    <div class="gallery__item">
-                      <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.webp 1x, img/pets-list-1-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.webp 1x, img/pets-list-1-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/pets-list-1-desktop@1x.webp 1x, img/pets-list-1-desktop@2x.webp 2x">
-
-                        <source media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.jpg 1x, img/pets-list-1-mobile@2x.jpg 2x">
-                        <source media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.jpg 1x, img/pets-list-1-tablet@2x.jpg 2x">
-                        <img class="gallery__item-img gallery__item-img--top" src="img/pets-list-1-desktop@1x.jpg" srcset="img/pets-list-1-desktop@2x.jpg 2x" width="518" height="214" alt="Мейн Кун">
-                      </picture>
-                    </div>
-                    <div class="gallery__item">
-                      <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.webp 1x, img/pets-list-2-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.webp 1x, img/pets-list-2-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/pets-list-2-desktop@1x.webp 1x, img/pets-list-2-desktop@2x.webp 2x">
-
-                        <source media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.jpg 1x, img/pets-list-2-mobile@2x.jpg 2x">
-
-                        <source media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.jpg 1x, img/pets-list-2-tablet@2x.jpg 2x">
-
-                        <img class="gallery__item-img gallery__item-img--bottom" src="img/pets-list-2-desktop@1x.jpg" srcset="img/pets-list-2-desktop@2x.jpg 2x" width="518" height="241" alt="Мейн Кун">
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div class="gallery__item">
-                    <picture>
-
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.webp 1x, img/pets-list-3-mobile@2x.webp 2x">
-
-                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.webp 1x, img/pets-list-3-tablet@2x.webp 2x">
-
-                      <source type="image/webp" srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
-
-
-                      <source media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.png 1x, img/pets-list-3-mobile@2x.png 2x">
-
-                      <source media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.jpg 1x, img/pets-list-3-tablet@2x.jpg 2x">
-
-                      <img class="gallery__item-img gallery__item-img--large" src="img/pets-list-3-desktop@1x.jpg" srcset="img/pets-list-3-desktop@2x.jpg 2x" width="471" height="485" alt="Мейн Кун">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <button type="button" class="slider__button slider__button--prev">
-                <span class="visually-hidden">Предыдущий слайд</span>
-              </button>
-              <button type="button" class="slider__button slider__button--next">
-                <span class="visually-hidden">Следующий слайд</span>
-              </button>
-              <a href="#" class="pets__btn">Смотреть больше</a>
-            </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="gallery__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.webp 1x, img/pets-list-1-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.webp 1x, img/pets-list-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/pets-list-1-desktop@1x.webp 1x, img/pets-list-1-desktop@2x.webp 2x">
+
+              <source media="(max-width: 767px)" srcset="img/pets-list-1-mobile@1x.jpg 1x, img/pets-list-1-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/pets-list-1-tablet@1x.jpg 1x, img/pets-list-1-tablet@2x.jpg 2x">
+              <img src="img/pets-list-1-desktop@1x.png" srcset="img/pets-list-1-desktop@2x.png 2x" width="518" height="214" alt="Мейн Кун">
+            </picture>
+          </div>
+          <div class="gallery__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.webp 1x, img/pets-list-2-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.webp 1x, img/pets-list-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/pets-list-2-desktop@1x.webp 1x, img/pets-list-2-desktop@2x.webp 2x">
+
+              <source media="(max-width: 767px)" srcset="img/pets-list-2-mobile@1x.jpg 1x, img/pets-list-2-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/pets-list-2-tablet@1x.jpg 1x, img/pets-list-2-tablet@2x.jpg 2x">
+              <img src="img/pets-list-2-desktop@1x.png" srcset="img/pets-list-2-desktop@2x.png 2x" width="518" height="241" alt="Мейн Кун">
+            </picture>
+          </div>
+          <div class="gallery__item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.webp 1x, img/pets-list-3-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.webp 1x, img/pets-list-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
+
+              <source media="(max-width: 767px)" srcset="img/pets-list-3-mobile@1x.jpg 1x, img/pets-list-3-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/pets-list-3-tablet@1x.jpg 1x, img/pets-list-3-tablet@2x.jpg 2x">
+              <img class="gallery__item-img gallery__item-img--large" src="img/pets-list-3-desktop@1x.png" srcset="img/pets-list-3-desktop@2x.png 2x" width="471" height="485" alt="Мейн Кун">
+            </picture>
+          </div>
+        </div>
+        <button class="swiper-button-prev" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="swiper-button-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+      </div>
+
+
+
+
+
 
     <section class="section breed-features">
       <div class="container">
@@ -606,7 +634,7 @@
         <div class="section__wrapper reviews__wrapper">
           <h2 class="section__title reviews__title">Отзывы</h2>
           <div class="reviews__slider slider">
-            <button type="button" class="reviews__slider-button-prev slider__button slider__button--prev">
+            <button type="button" class="slider__button slider__button--prev">
               <span class="visually-hidden">Предыдущий отзыв</span>
             </button>
             <div class="reviews__list">
@@ -650,7 +678,7 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="reviews__slider-button reviews__slider-button-next slider__button slider__button--next">
+            <button type="button" class="slider__button slider__button--next">
               <span class="visually-hidden">Следующий отзыв</span>
             </button>
           </div>

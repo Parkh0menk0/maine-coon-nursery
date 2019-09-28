@@ -1,6 +1,7 @@
 @charset "UTF-8";
 // Глобальные стили
 @import "vendor/normalize";
+@import "vendor/swiper";
 @import "global/variables";
 @import "global/fonts";
 @import "global/mixins";
@@ -31,8 +32,9 @@
 @import "blocks/pets/pets__lead";
 @import "blocks/pets/pets__list";
 @import "blocks/pets/pets__item";
-@import "blocks/pets/pets__choise-btn";
-@import "blocks/pets/pets__slider";
+@import "blocks/pets/pets__tab";
+@import "blocks/pets/pets__tab-content";
+@import "blocks/pets/pets__sliders-wrapper";
 @import "blocks/pets/pets__btn-wrapper";
 @import "blocks/pets/pets__btn";
 @import "blocks/slider/slider__adult-cats";
@@ -114,3 +116,5 @@
 @import "blocks/footer/footer__logo";
 @import "blocks/footer/footer__social";
 @import "blocks/footer/footer__link";
+
+@import "global/show";

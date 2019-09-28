@@ -1,4 +1,9 @@
-.pets__slider {
+.pets__sliders-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   align-self: stretch;
 
   button {
@@ -6,8 +11,9 @@
   }
 }
 
+
 @media (max-width: $tablet-max-width) {
-  .pets__slider {
+  .pets__sliders-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,7 +47,7 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .pets__slider {
+  .pets__sliders-wrapper {
     button {
       width: 19px;
       height: 19px;
