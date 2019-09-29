@@ -1,0 +1,26 @@
+.team__img-wrapper {
+  z-index: 5;
+  width: 50%;
+}
+
+@media (max-width: $tablet-max-width) {
+  .team__img-wrapper {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .team__img-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: auto;
+    right: auto;
+
+    width: 126px;
+    height: 126px;
+    transform: translateX(-50%);
+  }
+}

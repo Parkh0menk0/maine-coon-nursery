@@ -1,6 +1,12 @@
 .team__item-wrapper {
-  background-color: $lightgray-background;
+  width: 60%;
+  margin-left: -10%;
   padding: 68px 98px 74px;
+  border: 24px solid #151313;
+  border-right-width: 36px;
+  border-left-width: 26px;
+  background-color: $lightgray-background;
+  outline: 1px solid rgba($brown, 0.43);
 }
 
 .team__item-wrapper blockquote p {
@@ -16,7 +22,9 @@
 
 @media (max-width: $tablet-max-width) {
   .team__item-wrapper {
+    width: 100%;
     padding: 70px 95px 75px 105px;
+    margin-left: 0;
   }
 
   .team__item-wrapper blockquote p {
@@ -26,7 +34,11 @@
 
 @media (max-width: $mobile-max-width) {
   .team__item-wrapper {
+    width: auto;
     padding: 84px 10px 16px 13px;
+
+    border: none;
+    outline: none;
   }
 
   .team__item-wrapper blockquote p {

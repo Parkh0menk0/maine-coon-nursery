@@ -182,7 +182,7 @@
         </ul>
         <div class="pets__tab-content-wrapper">
           <div class="pets__tab-content show" id="pets-tab-content-1">
-            <div class="pets__slider slider swiper-container">
+            <div class="pets__slider slider swiper-container pets-slider-js">
               <div class="gallery swiper-wrapper">
                 <div class="gallery__item gallery__item--top swiper-slide">
                   <picture>
@@ -230,7 +230,7 @@
             </div>
           </div>
           <div class="pets__tab-content" id="pets-tab-content-2">
-            <div class="pets__slider slider swiper-container">
+            <div class="pets__slider slider swiper-container pets-slider-js">
               <div class="gallery swiper-wrapper">
                 <div class="gallery__item gallery__item--top swiper-slide">
                   <picture>
@@ -278,7 +278,7 @@
             </div>
           </div>
           <div class="pets__tab-content" id="pets-tab-content-3">
-            <div class="pets__slider slider swiper-container">
+            <div class="pets__slider slider swiper-container pets-slider-js">
               <div class="gallery swiper-wrapper">
                 <div class="gallery__item gallery__item--top swiper-slide">
                   <picture>
@@ -328,11 +328,6 @@
         </div>
       </div>
     </section>
-
-
-
-
-
 
     <section class="section breed-features">
       <div class="container">
@@ -455,32 +450,25 @@
 
     <section class="section team">
       <div class="container">
-        <div class="section__wrapper team__wrapper">
+        <div class="team__wrapper">
           <h2 class="section__title team__title">Наша команда</h2>
           <p class="section__lead team__lead">Все сотрудники нашего питомника дипломированые специалисты
             в области фелинологии и ветеринарии</p>
-          <div class="team__slider slider">
-            <button type="button" class="slider__button slider__button--prev">
-              <span class="visually-hidden">Предыдущий сотрудник</span>
-            </button>
-            <div class="team__list">
-              <div class="team__item">
+          <div class="team__slider slider swiper-container slider-js">
+            <div class="team__list swiper-wrapper">
+              <div class="team__item swiper-slide">
                 <div class="team__wrapper-outer">
-                  <picture>
+                  <div class="team__img-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/employee-1-mobile@1x.webp 1x, img/employee-1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/employee-1-tablet@1x.webp 1x, img/employee-1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/employee-1-desktop@1x.webp 1x, img/employee-1-desktop@2x.webp 2x">
 
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/employee-1-mobile@1x.webp 1x, img/employee-1-mobile@2x.webp 2x">
-
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/employee-1-tablet@1x.webp 1x, img/employee-1-tablet@2x.webp 2x">
-
-                    <source type="image/webp" srcset="img/employee-1-desktop@1x.webp 1x, img/employee-1-desktop@2x.webp 2x">
-
-
-                    <source media="(max-width: 767px)" srcset="img/employee-1-mobile@1x.jpg 1x, img/employee-1-mobile@2x.jpg 2x">
-
-                    <source media="(max-width: 1023px)" srcset="img/employee-1-tablet@1x.jpg 1x, img/employee-1-tablet@2x.jpg 2x">
-
-                    <img src="img/employee-1-desktop@1x.jpg" srcset="img/employee-1-desktop@2x.jpg 2x" width="360" height="356" alt="Работник">
-                  </picture>
+                      <source media="(max-width: 767px)" srcset="img/employee-1-mobile@1x.jpg 1x, img/employee-1-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/employee-1-tablet@1x.jpg 1x, img/employee-1-tablet@2x.jpg 2x">
+                      <img src="img/employee-1-desktop@1x.jpg" srcset="img/employee-1-desktop@2x.jpg 2x" width="360" height="356" alt="Работник">
+                    </picture>
+                  </div>
                   <div class="team__item-wrapper">
                     <blockquote>
                       <cite>
@@ -519,8 +507,62 @@
                   </div>
                 </div>
               </div>
+              <div class="team__item swiper-slide">
+                <div class="team__wrapper-outer">
+                  <div class="team__img-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/employee-1-mobile@1x.webp 1x, img/employee-1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/employee-1-tablet@1x.webp 1x, img/employee-1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/employee-1-desktop@1x.webp 1x, img/employee-1-desktop@2x.webp 2x">
+
+                      <source media="(max-width: 767px)" srcset="img/employee-1-mobile@1x.jpg 1x, img/employee-1-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/employee-1-tablet@1x.jpg 1x, img/employee-1-tablet@2x.jpg 2x">
+                      <img src="img/employee-1-desktop@1x.jpg" srcset="img/employee-1-desktop@2x.jpg 2x" width="360" height="356" alt="Работник">
+                    </picture>
+                  </div>
+                  <div class="team__item-wrapper">
+                    <blockquote>
+                      <cite>
+                        <span class="team__item-title">Серёжа Попов 2</span>
+                        <b class="team__item-jobTitle">Основатель питомника</b>
+                      </cite>
+                      <p>Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого
+                        приобретенного вами питомца</p>
+                    </blockquote>
+                    <ul class="social team__social">
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <span class="visually-hidden">Фейсбук</span>
+                          <svg class="social__icon social__icon--fb" width="7" height="15">
+                            <use xlink:href="#icon-fb" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <span class="visually-hidden">Твиттер</span>
+                          <svg class="social__icon social__icon--tw" width="21" height="14">
+                            <use xlink:href="#icon-tw" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <span class="visually-hidden">ВКонтакте</span>
+                          <svg class="social__icon social__icon--vk" width="22" height="12">
+                            <use xlink:href="#icon-vk" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button type="button" class="slider__button slider__button--next">
+            <button type="button" class="slider__button slider__button--prev swiper-button-prev">
+                <span class="visually-hidden">Предыдущий сотрудник</span>
+              </button>
+            <button type="button" class="slider__button slider__button--next swiper-button-next">
               <span class="visually-hidden">Следующий сотрудник</span>
             </button>
           </div>
@@ -588,20 +630,19 @@
       <div class="container">
         <div class="section__wrapper reviews__wrapper">
           <h2 class="section__title reviews__title">Отзывы</h2>
-          <div class="reviews__slider slider">
-            <button type="button" class="slider__button slider__button--prev">
-              <span class="visually-hidden">Предыдущий отзыв</span>
-            </button>
-            <div class="reviews__list">
-              <div class="reviews__item">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/reviewer-1-mobile@1x.webp 1x, img/reviewer-1-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/reviewer-1-tablet@1x.webp 1x, img/reviewer-1-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/reviewer-1-desktop@1x.webp 1x, img/reviewer-1-desktop@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="img/reviewer-1-mobile@1x.jpg 1x, img/reviewer-1-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)" srcset="img/reviewer-1-tablet@1x.jpg 1x, img/reviewer-1-tablet@2x.jpg 2x">
-                  <img src="img/reviewer-1-desktop@1x.jpg" srcset="img/reviewer-1-desktop@2x.jpg 2x" width="481" height="331" alt="Комментатор">
-                </picture>
+          <div class="reviews__slider slider swiper-container slider-js">
+            <div class="reviews__list swiper-wrapper">
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/reviewer-1-mobile@1x.webp 1x, img/reviewer-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/reviewer-1-tablet@1x.webp 1x, img/reviewer-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/reviewer-1-desktop@1x.webp 1x, img/reviewer-1-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/reviewer-1-mobile@1x.jpg 1x, img/reviewer-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="img/reviewer-1-tablet@1x.jpg 1x, img/reviewer-1-tablet@2x.jpg 2x">
+                    <img src="img/reviewer-1-desktop@1x.jpg" srcset="img/reviewer-1-desktop@2x.jpg 2x" width="481" height="331" alt="Комментатор">
+                  </picture>
+                </div>
                 <div class="reviews__content">
                   <blockquote>
                     <cite class="reviews__item-title">Серёжа Попов</cite>
@@ -633,6 +674,9 @@
                 </div>
               </div>
             </div>
+            <button type="button" class="slider__button slider__button--prev">
+                <span class="visually-hidden">Предыдущий отзыв</span>
+              </button>
             <button type="button" class="slider__button slider__button--next">
               <span class="visually-hidden">Следующий отзыв</span>
             </button>
