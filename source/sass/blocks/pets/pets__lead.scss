@@ -3,10 +3,17 @@
   max-width: 523px;
 }
 
+@media (max-width: $tablet-max-width) {
+  .pets__lead {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media (max-width: $mobile-max-width) {
   .pets__lead {
-    line-height: 144%;
     margin-bottom: 30px;
+    line-height: 144%;
     word-spacing: 1px;
   }
 }

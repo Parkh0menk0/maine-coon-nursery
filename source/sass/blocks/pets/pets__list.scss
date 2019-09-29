@@ -12,16 +12,17 @@
 
 @media (max-width: $tablet-max-width) {
   .pets__list {
-    width: auto;
-    max-width: 40%;
+    width: 35%;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 38px;
-    padding-right: 18px;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .pets__list {
-    max-width: 100%;
+    max-width: 300px;
+    width: 70%;
     margin-bottom: 38px;
     padding-right: 0;
   }

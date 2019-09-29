@@ -1,0 +1,19 @@
+.pets__slider {
+  button {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .pets__slider {
+    button {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .pets__slider {
+
+  }
+}

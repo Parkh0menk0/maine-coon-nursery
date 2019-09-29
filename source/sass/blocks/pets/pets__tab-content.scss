@@ -1,4 +1,19 @@
 .pets__tab-content {
+  display: none;
+}
 
+
+@media (max-width: $tablet-max-width) {
+  .pets__tab-content {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .pets__tab-content {
+    width: 70%;
+  }
 }
 

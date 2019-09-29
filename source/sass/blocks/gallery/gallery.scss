@@ -1,11 +1,11 @@
 .gallery {
+  display: block;
   width: 100%;
+  height: auto;
   margin-bottom: 49px;
   column-count: 2;
   column-gap: 6%;
   padding-left: 23px;
-
-  overflow: hidden;
 }
 
 @media (max-width: $tablet-max-width) {
@@ -22,8 +22,9 @@
 @media (max-width: $mobile-max-width) {
   .gallery {
     width: 82%;
-    height: 248px;
+    height: 100%;
     transform: translateX(0);
     margin-bottom: 42px;
+    overflow: visible;
   }
 }

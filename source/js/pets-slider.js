@@ -1,49 +1,114 @@
 'use strict';
-
 (function () {
-  var petsList = document.querySelector('.pets__list');
-  var petsTabs = document.querySelectorAll('.pets__tab');
-  var petsTabContents = document.querySelectorAll('.pets__tab-content');
+  var swipers = [];
+  var swiperElements = document.querySelectorAll('.pets__slider');
+  if (!swiperElements.length) {
+    return;
+  }
 
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    spaceBetween: -200,
-    effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  var createSlider = function () {
+    swipers = [];
 
-  if (petsList) {
-    petsList.addEventListener('click', function (evt) {
-      evt.preventDefault();
+    for (var i = 0; i < swiperElements.length; i++) {
+      var swiper = new window.Swiper(swiperElements[i], {
+        observeParents: true,
+        observer: true,
+        centeredSlides: true,
+        initialSlide: 2,
+        slidesPerView: 'auto',
+        spaceBetween: -100,
+        effect: 'coverflow',
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 0,
+          modifier: 1,
+          slideShadows: false,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        loopedSlides: 3,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: -100,
+          }
+        },
+        breakpointsInverse: true,
+      });
 
-      if (evt.target.classList.contains('pets__tab')) {
+      swipers.push(swiper);
+    }
+  };
 
-        for (var i = 0; i < petsTabContents.length; i++) {
-          petsTabContents[i].classList.remove('show-slider');
-          petsTabs[i].classList.remove('pets__tab--active');
+
+  var createMobileSlider = function () {
+    swipers = [];
+
+    for (var i = 0; i < swiperElements.length; i++) {
+      var swiper = new window.Swiper(swiperElements[i], {
+        observeParents: true,
+        speed: 300,
+        observer: true,
+        centeredSlides: true,
+        initialSlide: 2,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        effect: 'coverflow',
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 0,
+          modifier: 1,
+          slideShadows: false,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        loopedSlides: 3,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: -100,
+          }
+        },
+        breakpointsInverse: true,
+      });
+
+      swipers.push(swiper);
+    }
+  };
+
+  var initSlider = function () {
+    if (window.matchMedia('(max-width: 1023px)').matches) {
+      if (!swipers.length) {
+        createSlider();
+      }
+    } else {
+      if (swipers.length) {
+        for (var i = 0; i < swiperElements.length; i++) {
+          swipers[i].destroy(true, true);
         }
 
-
-        var idTabContent = evt.target.href.split('#')[1];
-        var petsTabContentShow = document.querySelector('#' + idTabContent);
-
-        petsTabContentShow.classList.add('show-slider');
-        evt.target.classList.add('pets__tab--active');
+        swipers = [];
       }
-    });
-  }
+    }
+  };
+
+
+  initSlider();
+  window.addEventListener('resize', initSlider);
 })();
