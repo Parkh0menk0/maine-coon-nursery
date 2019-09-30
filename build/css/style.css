@@ -1788,8 +1788,8 @@ img {
     height: 216px; }
   .gallery__item--bottom {
     width: 106%;
-    max-height: 241px;
-    height: 241px; }
+    max-height: 238px;
+    height: 238px; }
   .gallery__item--large {
     width: 98%;
     height: 485px; }
@@ -1875,22 +1875,23 @@ img {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%); } }
 
-@media (max-width: 1023px) {
-  .gallery__item-img--top {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .gallery__item-img--bottom {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .gallery__item-img--large {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); } }
+.gallery__item-img--top {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.gallery__item-img--bottom {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.gallery__item-img--large {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 @media (max-width: 767px) {
   .gallery__item-img--top {
