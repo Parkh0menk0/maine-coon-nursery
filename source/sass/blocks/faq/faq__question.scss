@@ -15,9 +15,10 @@
   text-align: left;
   outline: none;
   z-index: 2;
-  transition: background-color 0.3s ease-out;
 
   appearance: none;
+
+  transition: background-color 0.3s ease-out;
 
   &::after {
     content: "";
@@ -26,10 +27,12 @@
     right: 0;
     width: 13.3%;
     height: 100%;
-    background-image: url("../img/+.svg");
+    background-image: url("../img/plus.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-left: 1px solid $brown;
+
+    transition: background-color 0.3s ease-out;
   }
 
   &:hover,

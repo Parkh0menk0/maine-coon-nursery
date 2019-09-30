@@ -31,9 +31,7 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active),
-form input[type="checkbox"],
-form input[type="radio"] {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);

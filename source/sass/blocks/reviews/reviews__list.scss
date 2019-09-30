@@ -1,21 +1,18 @@
 .reviews__list {
-  width: 89%;
+  width: 100%;
   position: relative;
   margin: 0 auto;
 }
 
 @media (max-width: $tablet-max-width) {
   .reviews__list {
-    width: 81%;
-    transform: translateX(9px);
-    height: 351px;
+    width: 100%;
+    height: auto;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .reviews__list {
     width: 100%;
-    transform: translateX(0);
-    height: 340px;
   }
 }

@@ -1,16 +1,7 @@
 .pets__item {
-  margin-right: 44px;
-  opacity: 0.5;
-
-  &.current {
-    opacity: 1;
-  }
+  margin-right: auto;
 
   &:last-of-type {
     margin-right: 0;
-  }
-
-  &:hover {
-    opacity: 1;
   }
 }

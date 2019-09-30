@@ -1,11 +1,9 @@
 .care__list {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
   width: 96%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }
 
 @media (max-width: $tablet-max-width) {
@@ -13,6 +11,9 @@
     flex-direction: column;
     width: 78.2%;
     transform: translateX(9px);
+    column-count: 1;
+    column-gap: 0;
+    column-width: auto;
   }
 }
 

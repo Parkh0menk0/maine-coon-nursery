@@ -1,4 +1,5 @@
 .slider__button {
+  z-index: 5;
   display: block;
   width: 14px;
   height: 31px;
@@ -8,11 +9,29 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  &::after {
+    display: none;
+  }
+
   &--prev {
+    left: 0;
     background-image: url("../img/arrowPrev.svg");
   }
 
   &--next {
+    right: 0;
     background-image: url("../img/arrowNext.svg");
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .slider__button {
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
   }
 }

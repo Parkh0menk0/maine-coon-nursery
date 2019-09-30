@@ -1,0 +1,56 @@
+.pets__sliders-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  align-self: stretch;
+
+  button {
+    display: none;
+  }
+}
+
+
+@media (max-width: $tablet-max-width) {
+  .pets__sliders-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      display: block;
+      width: 14px;
+      height: 31px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translateY(-24px);
+      transition: opacity 0.3s ease-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      &:first-of-type {
+        background-image: url("../img/arrowPrev.svg");
+      }
+
+      &:last-of-type {
+        background-image: url("../img/arrowNext.svg");
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .pets__sliders-wrapper {
+    button {
+      width: 19px;
+      height: 19px;
+    }
+  }
+}

@@ -1,12 +1,39 @@
 .care__item {
   display: flex;
   flex-basis: 48.3%;
-  margin-right: 3.4%;
-  margin-bottom: 3.7%;
+  margin-bottom: 3.9%;
+  margin-right: auto;
 
-  &:nth-of-type(2n) {
+  &:nth-child(2n + 1) {
+    margin-right: auto;
+  }
+
+  &--wool {
+    order: 0;
+  }
+
+  &--earsandeyes {
+    order: 2;
+    margin-right: auto;
+  }
+
+  &--claws {
+    order: 1;
     margin-right: 0;
   }
+
+  &--food {
+    order: 3;
+    margin-right: 0;
+  }
+}
+
+.care__item.care__item--food {
+  margin-right: 0;
+}
+
+.care__item.care__item--claws {
+  margin-right: 0;
 }
 
 @media (max-width: $tablet-max-width) {
@@ -15,19 +42,19 @@
     margin-bottom: 23px;
 
     &--wool {
+      order: 0;
+    }
+
+    &--earsandeyes {
       order: 1;
     }
 
     &--claws {
-      order: 3;
-    }
-
-    &--earsandeyes {
       order: 2;
     }
 
     &--food {
-      order: 4;
+      order: 3;
     }
   }
 }
@@ -35,14 +62,5 @@
 @media (max-width: $mobile-max-width) {
   .care__item {
     margin-bottom: 30px;
-
-    &--claws p {
-      width: 80%;
-      line-height: 140%;
-    }
-
-    &--claws a {
-      padding: 21px 18% 21px 24px;
-    }
   }
 }

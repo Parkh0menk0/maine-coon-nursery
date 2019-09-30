@@ -1,6 +1,4 @@
 .pets__slider {
-  align-self: stretch;
-
   button {
     display: none;
   }
@@ -8,29 +6,11 @@
 
 @media (max-width: $tablet-max-width) {
   .pets__slider {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
 
     button {
+      top: 47%;
       display: block;
-      width: 14px;
-      height: 31px;
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-      background-repeat: no-repeat;
-      background-position: center;
-      transform: translateY(-24px);
-
-      &:first-of-type {
-        background-image: url("data:image/svg+xml,%3Csvg width='15' height='31' viewBox='0 0 15 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 1L2 16.037L14 30' stroke='%23A07B50' stroke-opacity='0.47' stroke-width='2'/%3E%3C/svg%3E%0A");
-      }
-
-      &:last-of-type {
-        background-image: url("data:image/svg+xml,%3Csvg width='15' height='31' viewBox='0 0 15 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L13 16.037L1 30' stroke='%23A07B50' stroke-opacity='0.47' stroke-width='2'/%3E%3C/svg%3E%0A");
-      }
     }
   }
 }
@@ -38,8 +18,17 @@
 @media (max-width: $mobile-max-width) {
   .pets__slider {
     button {
-      width: 19px;
-      height: 19px;
+      width: 9px;
+      height: 18px;
+      padding: 0 10px;
+
+      &:first-of-type {
+        left: 0;
+      }
+
+      &:last-of-type {
+        right: 0;
+      }
     }
   }
 }

@@ -13,6 +13,10 @@
   padding-top: 47px;
   padding-bottom: 16px;
 
+  transition: background-color 0.3s ease-out,
+    fill 0.3s ease-out,
+    stroke 0.3s ease-out;
+
   &:hover {
     background-color: $brown;
 
@@ -28,6 +32,9 @@
     stroke-width: 2;
     stroke: $lightgray-background;
     margin-bottom: 23px;
+
+    transition: fill 0.3s ease-out,
+      stroke 0.3s ease-out;
 
     &.icon-counseling24 {
       margin-bottom: 33px;

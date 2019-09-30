@@ -1,20 +1,19 @@
 .team__wrapper-outer {
-  border: 1px solid $brown;
-  padding: 22px 31px 22px 25px;
-  width: 64.2%;
-  margin-left: auto;
+  display: flex;
+  padding: 2px 90px 2px 90px;
 
   img {
-    width: px;
-    height: px;
+    width: 360px;
+    height: auto;
   }
 }
 
 @media (max-width: $tablet-max-width) {
   .team__wrapper-outer {
-    padding: 23px 23px 23px 25px;
-    width: 100%;
-    margin-left: 0;
+    position: relative;
+    padding-right: 27px;
+    padding-left: 0;
+    width: auto;
 
     img {
       width: 207px;
@@ -25,8 +24,10 @@
 
 @media (max-width: $mobile-max-width) {
   .team__wrapper-outer {
-    border: none;
-    padding: 0;
+    flex-direction: column;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
 
     img {
       width: 166px;

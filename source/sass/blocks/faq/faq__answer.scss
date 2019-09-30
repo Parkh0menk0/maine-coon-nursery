@@ -1,19 +1,27 @@
 .faq__answer {
-  display: none;
-  transition: 0.3s ease-out;
+  width: 99.9%;
+  height: 0;
+  padding: 0 42px;
   border: 0 solid $brown;
+  opacity: 0;
+
+  transition: height 0.3s ease-out,
+    padding 0.3s ease-out,
+    border 0.3s ease-out,
+    opacity 0.3s ease-out;
 
   &--show {
-    display: block;
     width: 99.9%;
-    height: 100%;
+    height: auto;
     padding: 38px 42px 39px;
     border: 1px solid $brown;
     border-top: none;
     z-index: 1;
+    opacity: 1;
   }
 
   p {
+    width: auto;
     margin: 0;
     font-family: $roboto;
     font-style: normal;
@@ -36,6 +44,9 @@
 
 @media (max-width: $tablet-max-width) {
   .faq__answer {
+    padding-left: 28px;
+    padding-right: 143px;
+
     &--show {
       padding: 24px 143px 29px 28px;
     }
@@ -44,8 +55,11 @@
 
 @media (max-width: $mobile-max-width) {
   .faq__answer {
+    padding-left: 14px;
+    padding-right: 25px;
+
     &--show {
-      padding: 11px 25px 11px 14px;;
+      padding: 11px 25px 11px 14px;
     }
 
     p {
