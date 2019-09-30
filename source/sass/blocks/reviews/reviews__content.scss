@@ -1,7 +1,7 @@
 .reviews__content {
   width: 50%;
-  margin-left: -100px;
-  padding: 109px 90px 82px 145px;
+  margin-left: -106px;
+  padding: 109px 95px 78px 145px;
   background-color: $darkgray-background;
   display: flex;
   flex-direction: column;
@@ -27,11 +27,11 @@
 
 @media (max-width: $tablet-max-width) {
   .reviews__content {
-    width: 100%;
-    margin-left: 0;
-    padding: 148px 89px 16px 111px;
+    width: 54%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 148px 89px 15px 111px;
     align-items: center;
-    transform: translateX(-80px);
   }
 
   .reviews__content blockquote p {
@@ -42,14 +42,16 @@
 
 @media (max-width: $mobile-max-width) {
   .reviews__content {
-    padding: 114px 27px 39px;
-    transform: translateX(0);
+    width: auto;
+    margin: 0;
+    margin-top: -83px;
+    padding: 116px 27px 39px;
   }
 
   .reviews__content blockquote p {
     font-size: 14px;
     line-height: 140%;
     text-align: center;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
 }

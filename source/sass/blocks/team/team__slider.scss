@@ -22,10 +22,12 @@
     }
 
     &:first-of-type {
+      top: 51%;
       background-image: url("../img/arrowPrev.svg");
     }
 
     &:last-of-type {
+      top: 51%;
       background-image: url("../img/arrowNext.svg");
     }
   }
@@ -35,7 +37,7 @@
   .team__slider {
     position: relative;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     padding-bottom: 105px;
 
     button {
@@ -45,17 +47,17 @@
       &:first-of-type,
       &:last-of-type {
         top: auto;
-        bottom: 0;
+        bottom: 9px;
       }
 
       &:first-of-type {
         left: auto;
-        right: 285px;
+        right: 330px;
       }
 
       &:last-of-type {
         left: auto;
-        right: 7px;
+        right: 54px;
       }
     }
   }
@@ -65,6 +67,7 @@
   .team__slider {
     width: 100%;
     transform: translateX(0);
+    padding-bottom: 0;
 
     button {
 
@@ -73,7 +76,7 @@
 
       &:first-of-type,
       &:last-of-type {
-        top: 75px;
+        top: 22.5%;
         bottom: auto;
       }
 

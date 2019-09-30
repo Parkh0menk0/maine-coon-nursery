@@ -8321,7 +8321,7 @@
         effect: 'coverflow',
         coverflowEffect: {
           rotate: 0,
-          stretch: 0,
+          stretch: 32,
           depth: 0,
           modifier: 1,
           slideShadows: false,
@@ -8334,11 +8334,11 @@
         loopedSlides: 3,
         breakpoints: {
           320: {
-            slidesPerView: 1,
-            spaceBetween: 30,
+            slidesPerView: 'auto',
+            spaceBetween: 50,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 'auto',
             spaceBetween: -100,
           }
         },
@@ -8411,10 +8411,11 @@
   var initSlider = function () {
 
     for (var i = 0; i < swiperElements.length; i++) {
+      // eslint-disable-next-line
       var swiper = new window.Swiper(swiperElements[i], {
         observeParents: true,
         observer: true,
-        slidesPerView: 1,
+        slidesPerView: 'auto',
         spaceBetween: 200,
         effect: 'slide',
         navigation: {

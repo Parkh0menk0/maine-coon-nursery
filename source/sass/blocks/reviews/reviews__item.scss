@@ -21,15 +21,16 @@
 
 @media (max-width: $tablet-max-width) {
   .reviews__item {
+    flex-direction: column;
     position: relative;
     padding-left: 0;
     width: 100%;
 
     img {
-      position: absolute;
+      position: relative;
       width: 302px;
       height: 208px;
-      top: 0;
+      top: 10px;
       left: 0;
     }
   }
@@ -38,11 +39,10 @@
 @media (max-width: $mobile-max-width) {
   .reviews__item {
     img {
-      width: 242px;
-      height: 166px;
-      top: -83px;
-      left: 50%;
-      transform: translateX(-50%);
+      position: relative;
+      width: auto;
+      height: auto;
+      top: 0;
     }
 
     time {

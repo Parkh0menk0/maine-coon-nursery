@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 65px;
+  padding-left: 65px;
 
   button {
     display: block;
@@ -17,7 +17,8 @@
     width: 100%;
     position: relative;
     padding: 0;
-    padding-top: 90px;
+    padding-top: 95px;
+    padding-left: 13px;
 
     button {
       display: block;
@@ -40,19 +41,19 @@
 
       &:first-of-type {
         z-index: 5;
-        left: 126px;
+        left: 17.5%;
         background-image: url("../img/arrowPrevLong.svg");
         background-position: center;
       }
 
       &:last-of-type {
-        right: 104px;
+        right: 14.5%;
         background-image: url("../img/arrowNextLong.svg");
       }
 
       &:first-of-type,
       &:last-of-type {
-        top: 138px;
+        top: 155px;
       }
     }
   }
@@ -60,6 +61,11 @@
 
 @media (max-width: $mobile-max-width) {
   .reviews__slider {
+    padding-top: 0;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+
     button {
       position: absolute;
       width: 19px;
@@ -67,7 +73,7 @@
 
       &:first-of-type,
       &:last-of-type {
-        top: 100px;
+        top: 97px;
       }
 
       &:first-of-type {

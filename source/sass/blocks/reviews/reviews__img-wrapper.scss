@@ -1,7 +1,8 @@
 .reviews__img-wrapper {
   width: 60%;
-  margin-top: 40px;
+  margin-top: 45px;
   z-index: 5;
+  margin-left: 54px;
 }
 
 @media (max-width: $tablet-max-width) {
@@ -9,11 +10,12 @@
     width: 302px;
     height: 208px;
     margin-top: 0;
+    margin-left: 0;
     position: absolute;
     z-index: 5;
-    top: -100px;
+    top: -105px;
     left: 50%;
-    transform: translateX(-70%);
+    transform: translateX(-50%);
   }
 }
 
@@ -22,7 +24,7 @@
     width: 242px;
     height: 166px;
     margin-top: 0;
-    position: absolute;
+    position: relative;
     z-index: 5;
     top: 0;
     left: 50%;

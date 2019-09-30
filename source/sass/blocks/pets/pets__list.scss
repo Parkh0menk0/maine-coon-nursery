@@ -8,21 +8,23 @@
   margin: 0 auto;
   width: 259px;
   margin-bottom: 44px;
+  padding-right: 10px;
 }
 
 @media (max-width: $tablet-max-width) {
   .pets__list {
-    width: 35%;
+    width: 36.5%;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 38px;
+    padding-right: 10px;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .pets__list {
     max-width: 300px;
-    width: 70%;
+    width: 80%;
     margin-bottom: 38px;
     padding-right: 0;
   }

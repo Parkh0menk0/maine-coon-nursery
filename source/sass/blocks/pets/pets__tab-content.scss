@@ -13,7 +13,8 @@
 
 @media (max-width: $mobile-max-width) {
   .pets__tab-content {
-    width: 70%;
+    width: 100%;
+    max-width: 500px;
   }
 }
 

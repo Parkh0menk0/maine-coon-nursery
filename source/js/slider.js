@@ -9,10 +9,11 @@
   var initSlider = function () {
 
     for (var i = 0; i < swiperElements.length; i++) {
+      // eslint-disable-next-line
       var swiper = new window.Swiper(swiperElements[i], {
         observeParents: true,
         observer: true,
-        slidesPerView: 1,
+        slidesPerView: 'auto',
         spaceBetween: 200,
         effect: 'slide',
         navigation: {

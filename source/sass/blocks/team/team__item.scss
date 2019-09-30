@@ -15,19 +15,24 @@
 
     img {
       position: absolute;
-      bottom: -105px;
-      right: 57px;
+      bottom: -95px;
+      right: 102px;
     }
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .team__item {
+
     img {
+      display: block;
+      position: relative;
       bottom: auto;
       right: auto;
-      width: 126px;
-      height: 126px;
+      width: 100%;
+      height: auto;
+
+      line-height: 0;
     }
   }
 }

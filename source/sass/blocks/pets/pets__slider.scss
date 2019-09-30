@@ -6,7 +6,9 @@
 
 @media (max-width: $tablet-max-width) {
   .pets__slider {
+    position: relative;
     button {
+      top: 47%;
       display: block;
     }
   }
@@ -14,6 +16,18 @@
 
 @media (max-width: $mobile-max-width) {
   .pets__slider {
+    button {
+      width: 9px;
+      height: 18px;
+      padding: 0 10px;
 
+      &:first-of-type {
+        left: 0;
+      }
+
+      &:last-of-type {
+        right: 0;
+      }
+    }
   }
 }

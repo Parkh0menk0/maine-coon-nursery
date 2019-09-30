@@ -1,19 +1,19 @@
 .reviews__wrapper {
   display: block;
   padding-top: 27px;
-  padding-bottom: 111px;
+  padding-bottom: 112px;
 }
 
 @media (max-width: $tablet-max-width) {
   .reviews__wrapper {
     padding-top: 34px;
-    padding-bottom: 104px;
+    padding-bottom: 86px;
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .reviews__wrapper {
     padding-top: 15px;
-    padding-bottom: 77px;
+    padding-bottom: 60px;
   }
 }

@@ -1,6 +1,6 @@
 .team__wrapper-outer {
   display: flex;
-  padding: 22px 100px 22px 120px;
+  padding: 2px 90px 2px 90px;
 
   img {
     width: 360px;
@@ -11,8 +11,9 @@
 @media (max-width: $tablet-max-width) {
   .team__wrapper-outer {
     position: relative;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 27px;
+    padding-left: 0;
+    width: auto;
 
     img {
       width: 207px;
@@ -24,7 +25,7 @@
 @media (max-width: $mobile-max-width) {
   .team__wrapper-outer {
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 0;
     padding-right: 0;
     padding-left: 0;
 

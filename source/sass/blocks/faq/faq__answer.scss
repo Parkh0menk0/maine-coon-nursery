@@ -3,10 +3,12 @@
   height: 0;
   padding: 0 42px;
   border: 0 solid $brown;
+  opacity: 0;
 
   transition: height 0.3s ease-out,
     padding 0.3s ease-out,
-    border 0.3s ease-out;
+    border 0.3s ease-out,
+    opacity 0.3s ease-out;
 
   &--show {
     width: 99.9%;
@@ -15,6 +17,7 @@
     border: 1px solid $brown;
     border-top: none;
     z-index: 1;
+    opacity: 1;
   }
 
   p {

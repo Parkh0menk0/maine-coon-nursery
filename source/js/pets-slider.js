@@ -20,7 +20,7 @@
         effect: 'coverflow',
         coverflowEffect: {
           rotate: 0,
-          stretch: 0,
+          stretch: 32,
           depth: 0,
           modifier: 1,
           slideShadows: false,
@@ -33,11 +33,11 @@
         loopedSlides: 3,
         breakpoints: {
           320: {
-            slidesPerView: 1,
-            spaceBetween: 30,
+            slidesPerView: 'auto',
+            spaceBetween: 50,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 'auto',
             spaceBetween: -100,
           }
         },
