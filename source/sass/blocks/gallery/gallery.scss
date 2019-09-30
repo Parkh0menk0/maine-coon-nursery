@@ -1,10 +1,12 @@
 .gallery {
   display: block;
   width: 100%;
+  max-width: 1068px;
   height: auto;
-  margin-bottom: 56px;
+  margin: 0 auto 56px;
   column-count: 2;
-  column-gap: 6%;
+  column-gap: 30px;
+  padding-left: 30px;
 }
 
 @media (max-width: $tablet-max-width) {

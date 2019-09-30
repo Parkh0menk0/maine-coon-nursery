@@ -8,7 +8,7 @@
 
 @media (max-width: $tablet-max-width) {
   .care__list {
-    flex-direction: column;
+    display: block;
     width: 78.2%;
     transform: translateX(9px);
     column-count: 1;

@@ -1,44 +1,50 @@
 'use strict';
 (function () {
   var swipers = [];
-  var swiperElements = document.querySelectorAll('.pets-slider-js');
-  if (!swiperElements.length) {
+  var sliders = document.querySelectorAll('.pets-slider-js');
+  if (!sliders.length) {
     return;
   }
 
   var createSlider = function () {
     swipers = [];
 
-    for (var i = 0; i < swiperElements.length; i++) {
-      var swiper = new window.Swiper(swiperElements[i], {
+    for (var i = 0; i < sliders.length; i++) {
+      var swiper = new window.Swiper(sliders[i].querySelector('.swiper-container'), {
         observeParents: true,
         observer: true,
         centeredSlides: true,
         initialSlide: 2,
         slidesPerView: 'auto',
-        spaceBetween: -100,
         effect: 'coverflow',
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 32,
-          depth: 0,
-          modifier: 1,
-          slideShadows: false,
-        },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: sliders[i].querySelector('.swiper-button-next'),
+          prevEl: sliders[i].querySelector('.swiper-button-prev'),
         },
         loop: true,
         loopedSlides: 3,
         breakpoints: {
           320: {
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 0,
+              modifier: 1,
+              slideShadows: false,
+            },
             slidesPerView: 'auto',
             spaceBetween: 50,
           },
           768: {
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 170,
+              depth: 0,
+              modifier: 1,
+              slideShadows: false,
+            },
             slidesPerView: 'auto',
-            spaceBetween: -100,
+            spaceBetween: 0,
           }
         },
         breakpointsInverse: true,
@@ -55,7 +61,7 @@
       }
     } else {
       if (swipers.length) {
-        for (var i = 0; i < swiperElements.length; i++) {
+        for (var i = 0; i < sliders.length; i++) {
           swipers[i].destroy(true, true);
         }
 

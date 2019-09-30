@@ -145,60 +145,20 @@
     font-size: 14px;
     line-height: 140%;
     padding-left: 0;
+    top: 5px;
+    left: 0;
+    text-align: left;
+    max-width: none;
 
     &::before {
       width: 8px;
       height: 8px;
+      top: 4px;
+      left: -18px;
     }
 
     &:not(:last-child) {
       margin-bottom: 20px;
-    }
-
-    &--cohabitation {
-      top: 2px;
-      left: 0;
-      max-width: 233px;
-      text-align: left;
-
-      &::before {
-        top: 4px;
-        left: -18px;
-      }
-    }
-
-    &--instruction {
-      top: 5px;
-      left: 0;
-      max-width: 160px;
-
-      &::before {
-        top: 4px;
-        left: -18px;
-      }
-    }
-
-    &--weight {
-      top: 5px;
-      left: 0;
-      max-width: 254px;
-
-      &::before {
-        top: 4px;
-        left: -18px;
-      }
-    }
-
-    &--appearance {
-      top: 5px;
-      left: 0;
-      max-width: 163px;
-      text-align: left;
-
-      &::before {
-        top: 4px;
-        left: -18px;
-      }
     }
   }
 }

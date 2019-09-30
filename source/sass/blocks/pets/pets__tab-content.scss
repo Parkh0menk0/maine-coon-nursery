@@ -1,5 +1,10 @@
 .pets__tab-content {
   display: none;
+
+  button {
+    display: none;
+    margin: 0;
+  }
 }
 
 @media (max-width: $tablet-max-width) {
@@ -7,6 +12,11 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+
+    button {
+      top: 238px;
+      display: block;
+    }
   }
 }
 
@@ -14,5 +24,11 @@
   .pets__tab-content {
     width: 100%;
     max-width: 500px;
+
+    button {
+      top: calc(50% - 52px);
+      width: 9px;
+      height: 18px;
+    }
   }
 }
