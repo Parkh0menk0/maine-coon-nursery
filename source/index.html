@@ -595,11 +595,56 @@
                   </div>
                 </div>
               </div>
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/reviewer-1-mobile@1x.webp 1x, img/reviewer-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/reviewer-1-tablet@1x.webp 1x, img/reviewer-1-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/reviewer-1-desktop@1x.webp 1x, img/reviewer-1-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/reviewer-1-mobile@1x.jpg 1x, img/reviewer-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="img/reviewer-1-tablet@1x.jpg 1x, img/reviewer-1-tablet@2x.jpg 2x">
+                    <img src="img/reviewer-1-desktop@1x.jpg" srcset="img/reviewer-1-desktop@2x.jpg 2x" width="481" height="331" alt="Комментатор">
+                  </picture>
+                </div>
+                <div class="reviews__content">
+                  <blockquote>
+                    <cite class="reviews__item-title">Василиса Лазарева</cite>
+                    <p>Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан.
+                      Огромным плюсом питомника является возможность консультироваться в любое время</p>
+                  </blockquote>
+                  <div class="reviews__content-wrapper">
+                    <time datetime="2018-05-24">24 мая 2018</time>
+                    <ul class="social reviews__social">
+                      <li class="social__item reviews__social-item">
+                        <a href="#" class="social__link reviews__link">
+                          <span class="visually-hidden">Твиттер</span>
+                          <svg class="social__icon reviews__icon reviews__icon--tw" width="17" height="12">
+                            <use xlink:href="#icon-tw" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item reviews__social-item">
+                        <a href="#" class="social__link reviews__link">
+                          <span class="visually-hidden">ВКонтакте</span>
+                          <svg class="social__icon reviews__icon reviews__icon--vk" width="13" height="8">
+                            <use xlink:href="#icon-vk" x="0" y="0"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button type="button" class="slider__button slider__button--prev">
+            <button type="button" class="slider__button slider__button--prev swiper-button-prev">
                 <span class="visually-hidden">Предыдущий отзыв</span>
               </button>
-            <button type="button" class="slider__button slider__button--next">
+            <button type="button" class="slider__button slider__button--next swiper-button-next">
               <span class="visually-hidden">Следующий отзыв</span>
             </button>
           </div>

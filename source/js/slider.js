@@ -13,7 +13,7 @@
         observeParents: true,
         observer: true,
         slidesPerView: 1,
-        spaceBetween: 100,
+        spaceBetween: 200,
         effect: 'slide',
         navigation: {
           nextEl: '.swiper-button-next',

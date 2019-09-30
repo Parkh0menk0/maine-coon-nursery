@@ -1,12 +1,10 @@
 .reviews__item {
-  padding-left: 434px;
+  display: flex;
+  padding-left: 0;
 
   img {
     width: 481px;
-    height: 331px;
-    position: absolute;
-    top: 46px;
-    left: 53px;
+    height: auto;
   }
 
   blockquote {
@@ -23,14 +21,16 @@
 
 @media (max-width: $tablet-max-width) {
   .reviews__item {
+    position: relative;
     padding-left: 0;
+    width: 100%;
 
     img {
+      position: absolute;
       width: 302px;
       height: 208px;
-      top: -95px;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 0;
+      left: 0;
     }
   }
 }

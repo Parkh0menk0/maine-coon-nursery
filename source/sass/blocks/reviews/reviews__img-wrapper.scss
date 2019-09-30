@@ -1,0 +1,31 @@
+.reviews__img-wrapper {
+  width: 60%;
+  margin-top: 40px;
+  z-index: 5;
+}
+
+@media (max-width: $tablet-max-width) {
+  .reviews__img-wrapper {
+    width: 302px;
+    height: 208px;
+    margin-top: 0;
+    position: absolute;
+    z-index: 5;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-70%);
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .reviews__img-wrapper {
+    width: 242px;
+    height: 166px;
+    margin-top: 0;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

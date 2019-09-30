@@ -1,4 +1,6 @@
 .reviews__content {
+  width: 50%;
+  margin-left: -100px;
   padding: 109px 90px 82px 145px;
   background-color: $darkgray-background;
   display: flex;
@@ -25,8 +27,11 @@
 
 @media (max-width: $tablet-max-width) {
   .reviews__content {
+    width: 100%;
+    margin-left: 0;
     padding: 148px 89px 16px 111px;
     align-items: center;
+    transform: translateX(-80px);
   }
 
   .reviews__content blockquote p {
@@ -38,6 +43,7 @@
 @media (max-width: $mobile-max-width) {
   .reviews__content {
     padding: 114px 27px 39px;
+    transform: translateX(0);
   }
 
   .reviews__content blockquote p {
