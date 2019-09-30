@@ -1808,7 +1808,7 @@ img {
     .gallery__item--top {
       max-height: 1000px;
       margin-bottom: 0;
-      background-color: #0E0D10; }
+      background-color: #0e0d10; }
     .gallery__item--bottom {
       max-height: 1000px;
       background-color: #111116; }
@@ -2811,8 +2811,8 @@ img {
 @media (max-width: 1023px) {
   .team__img-wrapper {
     position: absolute;
-    bottom: 0px;
-    right: 0px; } }
+    bottom: 0;
+    right: 0; } }
 
 @media (max-width: 767px) {
   .team__img-wrapper {

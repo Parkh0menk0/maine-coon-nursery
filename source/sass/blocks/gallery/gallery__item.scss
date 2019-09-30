@@ -37,13 +37,12 @@
     width: 474px;
 
     transition: height 0.3s ease-out,
-    margin-top 0.3s ease-out;
-
+      margin-top 0.3s ease-out;
 
     &--top {
       max-height: 1000px;
       margin-bottom: 0;
-      background-color: #0E0D10;
+      background-color: #0e0d10;
     }
 
     &--bottom {
@@ -51,7 +50,7 @@
       background-color: #111116;
     }
 
-     &--large {
+    &--large {
       max-height: 1000px;
     }
 
@@ -109,10 +108,10 @@
 
     &--bottom {
       max-height: 1000px;
-      background-color: transparent;;
+      background-color: transparent;
     }
 
-     &--large {
+    &--large {
       max-height: 1000px;
     }
 
