@@ -2,3 +2,16 @@
   position: relative;
   background-color: $darkgray-background;
 }
+
+@media (max-width: $mobile-max-width) {
+  .header {
+    background-image: url("../img/main-cat-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+    background-position: right 0 bottom 0;
+
+    @media (min-resolution: $retina-2x-dpi), (min-resolution: $retina-2x-dppx) {
+      background-image: url("../img/main-cat-mobile@2x.png");
+    }
+  }
+}

@@ -1179,6 +1179,16 @@ img {
   position: relative;
   background-color: #151313; }
 
+@media (max-width: 767px) {
+  .header {
+    background-image: url("../img/main-cat-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+    background-position: right 0 bottom 0; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .header {
+      background-image: url("../img/main-cat-mobile@2x.png"); } }
+
 .header__container {
   position: relative;
   max-width: 1366px;
@@ -1211,12 +1221,7 @@ img {
 @media (max-width: 767px) {
   .header__container {
     padding: 0 15px;
-    background-image: url("../img/main-cat-mobile@1x.png");
-    background-size: 320px auto;
-    background-position: left 50% bottom 0; } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .header__container {
-      background-image: url("../img/main-cat-mobile@2x.png"); } }
+    background-image: none; } }
 
 .header__wrapper {
   margin: 0 auto;
