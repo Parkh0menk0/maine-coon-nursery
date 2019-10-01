@@ -6,11 +6,9 @@
     return;
   }
 
-  var initSlider = function () {
-
-    for (var i = 0; i < swiperElements.length; i++) {
-      // eslint-disable-next-line
-      var swiper = new window.Swiper(swiperElements[i], {
+  for (var i = 0; i < swiperElements.length; i++) {
+    (function () {
+      return new window.Swiper(swiperElements[i], {
         observeParents: true,
         observer: true,
         slidesPerView: 'auto',
@@ -23,8 +21,7 @@
         loop: true,
         breakpointsInverse: true,
       });
-    }
-  };
+    })();
+  }
 
-  initSlider();
 })();
